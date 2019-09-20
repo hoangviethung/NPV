@@ -1,0 +1,22 @@
+[hidden],
+.d-none,
+.hidden {
+	display: none !important;
+}
+
+.ofc {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	font-family: 'object-fit: cover, object-position: center';
+}
+
+.blur-up {
+	filter: blur(10px);
+	transition: filter 1s;
+
+	&.lazy-loaded {
+		filter: blur(0);
+	}
+}

@@ -1,0 +1,6 @@
+bower_components
+node_modules
+dist
+.jsbeautifyrc
+package-lock.json
+src/pages/_layout/_gmap-api.pug
