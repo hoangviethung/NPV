@@ -4,7 +4,9 @@
 @import 'pages/_layout/header';
 @import 'pages/_layout/footer';
 
-@import 'pages/_components/b-1';
+@import 'pages/_components/banner/b-1';
+@import 'pages/_components/about/a-1';
+@import 'pages/_components/list-service/s-1.scss';
 
 @import 'base/color';
 @import 'base/fonts';

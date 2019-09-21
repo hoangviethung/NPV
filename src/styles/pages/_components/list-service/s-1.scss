@@ -1,0 +1,140 @@
+.list-service {
+	.container-fluid {
+		padding: 0;
+	}
+
+	.block-service {
+		height: 490px;
+
+		figure.big-img {
+			cursor  : pointer;
+			position: relative;
+			overflow: hidden;
+			height  : 100%;
+
+			img {
+				transition: .5s all ease-in-out;
+			}
+
+			figcaption {
+				position: absolute;
+				color   : #FFFFFF;
+				top     : 50px;
+				left    : 50px;
+				z-index : 1;
+
+				.title {
+					font-weight  : 700;
+					font-size    : 37px;
+					margin-bottom: 15px;
+				}
+
+				.description {
+					width        : 80%;
+					padding-left : 25px;
+					margin-bottom: 15px;
+				}
+
+				>a {
+					padding-left: 25px;
+				}
+			}
+
+			&::after {
+				content   : '';
+				position  : absolute;
+				width     : 100%;
+				height    : 100%;
+				top       : 0;
+				left      : 0;
+				background: rgb(188, 46, 49);
+				background: -moz-linear-gradient(180deg, rgba(188, 46, 49, 0.9) 0%, rgba(188, 46, 49, 0.19931722689075626) 100%, rgba(188, 46, 49, 0) 100%);
+				background: -webkit-linear-gradient(180deg, rgba(188, 46, 49, 0.9) 0%, rgba(188, 46, 49, 0.19931722689075626) 100%, rgba(188, 46, 49, 0) 100%);
+				background: linear-gradient(180deg, rgba(188, 46, 49, 0.9) 0%, rgba(188, 46, 49, 0.19931722689075626) 100%, rgba(188, 46, 49, 0) 100%);
+				filter    : progid:DXImageTransform.Microsoft.gradient(startColorstr="#bc2e31", endColorstr="#bc2e31", GradientType=1);
+			}
+
+			&:hover {
+				img {
+					transform: scale(1.1);
+				}
+			}
+		}
+
+		.more-service {
+			display  : flex;
+			flex-wrap: wrap;
+
+			.item {
+				flex     : 0 0 50%;
+				max-width: 50%;
+				position : relative;
+				height   : 245px;
+
+				figure.small-img {
+					cursor  : pointer;
+					position: relative;
+					height  : 100%;
+					overflow: hidden;
+
+					img {
+						transition: .5s all ease-in-out;
+					}
+
+					&.bg-black {
+						background: #2B2B2B;
+						color     : #FFFFFF;
+					}
+
+					&.bg-white {
+						background: #F3F3F3;
+						color     : #2B2B2B;
+					}
+
+					&:hover {
+						img {
+							transform: scale(1.1);
+						}
+					}
+
+					figcaption {
+						width   : 88%;
+						position: absolute;
+						top     : 30px;
+						left    : 30px;
+
+						h5 {
+							font-size    : 25px;
+							font-weight  : 400;
+							margin-bottom: 5px;
+						}
+
+						p {
+							font-size    : 16px;
+							margin-bottom: 20px;
+
+							display           : -webkit-box;
+							max-height        : 72px;
+							-webkit-line-clamp: 3;
+							-webkit-box-orient: vertical;
+							overflow          : hidden;
+							text-overflow     : ellipsis;
+						}
+
+						>a {
+							img {
+								transition: .3s all ease-in-out;
+							}
+
+							&:hover {
+								img {
+									transform: scale(1.1);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
