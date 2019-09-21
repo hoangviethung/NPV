@@ -1,9 +1,14 @@
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 
+@import 'pages/_layout/header';
+@import 'pages/_layout/footer';
+
+@import 'pages/_components/b-1';
+
+@import 'base/color';
 @import 'base/fonts';
 @import 'base/reset';
 @import 'base/grid';
 @import 'base/global';
-
-@import 'pages/index';
+@import 'base/utilities';
