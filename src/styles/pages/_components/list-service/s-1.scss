@@ -23,13 +23,13 @@
 				left    : 50px;
 				z-index : 1;
 
-				.title {
+				h5 {
 					font-weight  : 700;
 					font-size    : 37px;
 					margin-bottom: 15px;
 				}
 
-				.description {
+				p {
 					width        : 80%;
 					padding-left : 25px;
 					margin-bottom: 15px;
@@ -110,15 +110,10 @@
 						}
 
 						p {
-							font-size    : 16px;
-							margin-bottom: 20px;
-
-							display           : -webkit-box;
+							font-size         : 16px;
+							margin-bottom     : 20px;
 							max-height        : 72px;
 							-webkit-line-clamp: 3;
-							-webkit-box-orient: vertical;
-							overflow          : hidden;
-							text-overflow     : ellipsis;
 						}
 
 						>a {
