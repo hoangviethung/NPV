@@ -112,7 +112,7 @@ function sliderCustomer() {
 
 function showBackToTop() {
 	$(window).scroll(function() {
-		if ($(this).scrollTop() > 500) {
+		if ($(this).scrollTop() > 800) {
 			$('#back-to-top').addClass('active');
 		} else {
 			$('#back-to-top').removeClass('active');
@@ -127,12 +127,23 @@ function showBackToTop() {
 	})
 }
 
+function showToolBarNav() {
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 800) {
+			$('#toolbar-nav').addClass('active');
+		} else {
+			$('#toolbar-nav').removeClass('active');
+		}
+	});
+}
+
 $(document).ready(function() {
 	objectFitImages("img.ofc");
 	sliderHomeBanner();
 	sliderMember();
 	sliderCustomer();
 	showBackToTop();
+	showToolBarNav();
 })
 
 $(window).on("scroll", function() {
