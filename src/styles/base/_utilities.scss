@@ -44,6 +44,22 @@
 	}
 }
 
+#back-to-top {
+	cursor    : pointer;
+	position  : fixed;
+	right     : 100px;
+	bottom    : 200px;
+	z-index   : 100;
+	opacity   : 0;
+	visibility: hidden;
+	transition: .5s all ease-in-out;
+
+	&.active {
+		opacity   : 1;
+		visibility: visible;
+	}
+}
+
 .limit-line {
 	overflow          : hidden;
 	text-overflow     : ellipsis;

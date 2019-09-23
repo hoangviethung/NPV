@@ -107,6 +107,24 @@ function sliderCustomer() {
 			prevEl: '.slider-Customer .swiper-button-prev',
 		},
 	});
+
+}
+
+function showBackToTop() {
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 500) {
+			$('#back-to-top').addClass('active');
+		} else {
+			$('#back-to-top').removeClass('active');
+		}
+	});
+
+	$("#back-to-top").on("click", function(e) {
+		e.preventDefault();
+		$("html,body").animate({
+			scrollTop: 0
+		})
+	})
 }
 
 $(document).ready(function() {
@@ -114,6 +132,9 @@ $(document).ready(function() {
 	sliderHomeBanner();
 	sliderMember();
 	sliderCustomer();
+	showBackToTop();
 })
 
-window.addEventListener("scroll", () => {})
+$(window).on("scroll", function() {
+	// Scroll
+})
