@@ -1,6 +1,13 @@
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 
+@import 'base/color';
+@import 'base/fonts';
+@import 'base/reset';
+@import 'base/grid';
+@import 'base/global';
+@import 'base/utilities';
+
 @import 'pages/_layout/header';
 @import 'pages/_layout/footer';
 
@@ -10,10 +17,4 @@
 @import 'pages/_components/list-service/s-1.scss';
 @import 'pages/_components/form-tuvan/f-1.scss';
 @import 'pages/_components/news/n-1.scss';
-
-@import 'base/color';
-@import 'base/fonts';
-@import 'base/reset';
-@import 'base/grid';
-@import 'base/global';
-@import 'base/utilities';
+@import 'pages/_components/list-clients/l-1.scss';

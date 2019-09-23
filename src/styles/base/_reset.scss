@@ -23,12 +23,13 @@ section {
 }
 
 ul {
-	padding: 0;
+	padding   : 0;
+	list-style: none;
 }
 
 body {
 	margin          : 0;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family     : 'Roboto Condensed', sans-serif;
 	font-size       : 16px;
 	font-weight     : 400;
 	line-height     : 1.5;

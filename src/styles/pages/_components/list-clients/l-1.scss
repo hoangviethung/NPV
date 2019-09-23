@@ -1,0 +1,39 @@
+.list-clients {
+	margin: 110px 0 15px;
+
+	.list-slider {
+		position: relative;
+
+		.btn {
+			margin: 0 auto 35px;
+		}
+
+		figure {
+			img {
+				display: block;
+				margin : 0 auto;
+			}
+		}
+
+		&::after {
+			content   : '';
+			position  : absolute;
+			width     : 1px;
+			height    : 70px;
+			background: #707070;
+			left      : 50%;
+			bottom    : 0;
+			transform : translateX(-50%);
+		}
+	}
+
+	.swiper-button-prev {
+		left            : 0;
+		background-image: url(../img/icons/prev-slider-clients.svg);
+	}
+
+	.swiper-button-next {
+		right           : 0;
+		background-image: url(../img/icons/next-slider-clients.svg);
+	}
+}

@@ -79,11 +79,41 @@ function sliderHomeBanner() {
 	});
 }
 
+function sliderMember() {
+	var swpier = new Swiper('.slider-Member', {
+		centeredSlides: true,
+		slidesPerView: 3,
+		speed: 1000,
+		loop: true,
+		autoplay: true,
+		breakpoints: {},
+		navigation: {
+			nextEl: '.slider-Member .swiper-button-next',
+			prevEl: '.slider-Member .swiper-button-prev',
+		},
+	});
+}
+
+function sliderCustomer() {
+	var swpier = new Swiper('.slider-Customer', {
+		centeredSlides: true,
+		slidesPerView: 3,
+		speed: 1000,
+		loop: true,
+		autoplay: true,
+		breakpoints: {},
+		navigation: {
+			nextEl: '.slider-Customer .swiper-button-next',
+			prevEl: '.slider-Customer .swiper-button-prev',
+		},
+	});
+}
 
 $(document).ready(function() {
 	objectFitImages("img.ofc");
 	sliderHomeBanner();
+	sliderMember();
+	sliderCustomer();
 })
 
-window.addEventListener("scroll", () => {
-})
+window.addEventListener("scroll", () => {})
