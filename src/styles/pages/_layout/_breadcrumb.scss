@@ -1,0 +1,38 @@
+#breadcrumb-wrapper {
+	.breadcrumb {
+		list-style   : none;
+		display      : flex;
+		padding      : 0;
+		border-top   : 1px dotted #707070;
+		border-bottom: 1px dotted #707070;
+
+		li {
+			a {
+				color    : #707070;
+				font-size: 16px;
+				display  : inline-block;
+				padding  : 20px 0;
+			}
+
+			&.active {
+				a {
+					color: #3E4095;
+				}
+			}
+
+			&+li {
+				&:before {
+					font     : normal normal normal 24px/1 "Material Design Icons";
+					content  : "\F13E";
+					font-size: 10px;
+					margin   : 0 12px;
+					color    : #1C1C1C;
+				}
+			}
+		}
+	}
+
+	@media(max-width: 1024px) {
+		display: none;
+	}
+}

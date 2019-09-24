@@ -1,0 +1,40 @@
+.introduce {
+	margin-top: 45px;
+
+	.title {
+		color: #2B2B2B;
+
+		span {
+			font-size  : 24px;
+			font-weight: 400;
+		}
+
+		h3 {
+			font-size  : 34px;
+			font-weight: 700;
+		}
+	}
+
+	.description {
+		margin-top: 35px;
+
+		p {
+			font-size    : 18px;
+			color        : #4D4D4D;
+			margin-bottom: 15px;
+
+			&.bold {
+				font-weight: 700;
+				color      : #2B2B2B;
+			}
+		}
+	}
+
+	figure {
+		margin-top: 20px;
+
+		img {
+			width: 100%;
+		}
+	}
+}
