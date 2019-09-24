@@ -43,6 +43,33 @@
 
 	&:hover {
 		background: #BC2E31;
+		border    : 1px solid transparent;
+
+		>a,
+		span {
+			color: #FFFFFF;
+		}
+	}
+}
+
+.btn-noClick {
+	text-align   : center;
+	background   : #FFFFFF;
+	line-height  : 45px;
+	width        : 220px;
+	border       : 1px solid #707070;
+	border-radius: 23px;
+	transition   : .3s all ease-in-out;
+
+	>a,
+	span {
+		cursor     : pointer;
+		display    : block;
+		font-size  : 16px;
+		font-weight: 700;
+		color      : #2B2B2B;
+		width      : 100%;
+		height     : 100%;
 	}
 }
 

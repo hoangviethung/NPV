@@ -84,13 +84,23 @@
 		}
 
 		.swiper-button-next {
-			background-image: url(../img/icons/slider-next.svg);
+			background-image: none;
 			right           : 0;
+			width           : 73px;
+			height          : 73px;
+			background      : rgba(255, 255, 255, 0.3);
+			z-index         : 1;
+			border-radius   : 50% 0 0 50%;
 		}
 
 		.swiper-button-prev {
-			background-image: url(../img/icons/slider-prev.svg);
+			background-image: none;
 			left            : 0;
+			width           : 73px;
+			height          : 73px;
+			background      : rgba(255, 255, 255, 0.3);
+			z-index         : 1;
+			border-radius   : 0 50% 50% 0;
 		}
 	}
 }
