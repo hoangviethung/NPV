@@ -127,12 +127,37 @@ function showBackToTop() {
 	})
 }
 
-function showToolBarNav() {
-	$(window).scroll(function() {
-		if ($(this).scrollTop() > 800) {
-			$('#toolbar-nav').addClass('active');
+// function showToolBarNav() {
+// 	$(window).scroll(function() {
+// 		if ($(this).scrollTop() > 800) {
+// 			$('#toolbar-nav').addClass('active');
+// 		} else {
+// 			$('#toolbar-nav').removeClass('active');
+// 		}
+// 	});
+// }
+
+function showList480() {
+	$('.fix-item .see-more-mb').click(function() {
+		var nameIcon = $(this).find('img').attr('src');
+		if (nameIcon == "resources/images/arrow-topw.png") {
+			$(this).find('img').attr('src', "resources/images/arrow-topd.png");
+			$('.fix-item .item').show(300);
 		} else {
-			$('#toolbar-nav').removeClass('active');
+			$(this).find('img').attr('src', "resources/images/arrow-topw.png");
+			$('.fix-item .item').hide(300);
+		}
+	});
+}
+
+function showListPC() {
+	$('.see-more-pc').click(function() {
+		if (!$('.see-more-pc').hasClass('see-more-show')) {
+			$(this).addClass('see-more-show');
+			$('.fix-item').show(300);
+		} else {
+			$(this).removeClass('see-more-show');
+			$('.fix-item').hide();
 		}
 	});
 }
@@ -143,7 +168,9 @@ $(document).ready(function() {
 	sliderMember();
 	sliderCustomer();
 	showBackToTop();
-	showToolBarNav();
+	// showToolBarNav();
+	showListPC();
+	showList480();
 })
 
 $(window).on("scroll", function() {

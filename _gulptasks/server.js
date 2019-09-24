@@ -33,15 +33,21 @@ export const server = () => {
 
 	watch([
 		"src/pages/**/**.pug"
-	], series(pugTask));
+	], {
+		delay: 800
+	}, series(pugTask));
 
 	watch([
 		"src/styles/**/**.scss"
-	], series(cssTask));
+	], {
+		delay: 800
+	}, series(cssTask));
 
 	watch([
 		"src/img/**/**.{svg,png,jpg,speg,gif}"
-	], series(cleanImage, copyImage));
+	], {
+		delay: 800
+	}, series(cleanImage, copyImage));
 
 	watch([
 		"./src/vid/**/**.{mkv,mp4,flv,avi}"
