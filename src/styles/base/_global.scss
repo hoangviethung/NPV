@@ -2,6 +2,14 @@ main {
 	padding-top: 120px;
 }
 
+.dichvu-page {
+	#breadcrumb-wrapper {
+		.breadcrumb {
+			border-top: none;
+		}
+	}
+}
+
 ::-webkit-scrollbar-track {
 	box-shadow      : inset 0 0 6px rgba(255, 255, 255, 0);
 	background-color: #fff;
