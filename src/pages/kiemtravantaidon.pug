@@ -1,0 +1,9 @@
+extends _layout/_layout.pug
+
+block var
+	- var title = 'NPV | Kiểm Tra Vận Tải Đơn'
+	- var bodyClass = 'kiemtravantaidon-page'
+
+block main
+	include ./_layout/_breadcrumb.pug
+	include _components/tracking/tr-3.pug
