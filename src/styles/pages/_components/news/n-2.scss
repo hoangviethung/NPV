@@ -93,6 +93,10 @@
 				}
 			}
 
+			&:last-child {
+				margin-bottom: 0;
+			}
+
 			&:hover {
 				figure {
 					.box-img {
