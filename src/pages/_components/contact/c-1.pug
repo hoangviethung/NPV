@@ -1,0 +1,17 @@
+section.contact
+	.container
+		.row
+			.col-lg-8
+				.list-contact
+					-for(i=1;i<10;i++)
+						.item
+							figure
+								img(src="./img/contact/"+i+".png", alt="")
+								figcaption
+									h3 TRẦN VĂN A
+									span Tổng Giám Đốc
+									p f: (+84) 903 604 838
+									p e: mdirector@asl-corp.com
+			.col-lg-4
+				include ../../_layout/_aside-menu.pug
+		include ../social-media/social-media.pug
