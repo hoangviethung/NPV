@@ -12,6 +12,7 @@
 	}
 
 	.time-news {
+		display       : inline-block;
 		font-size     : 13px;
 		letter-spacing: 4px;
 	}
@@ -19,24 +20,22 @@
 	.main-content {
 		margin-top: 50px;
 
-		.img {
+		figure {
 			margin: 50px 0;
 
-			figure {
-				img {
-					width: 100%;
-				}
+			img {
+				width: 100%;
 			}
 		}
-	}
 
-	p {
-		font-size    : 18px;
-		color        : #4D4D4D;
-		margin-bottom: 25px;
+		p {
+			font-size    : 18px;
+			color        : #4D4D4D;
+			margin-bottom: 25px;
 
-		&:last-child {
-			margin-bottom: 0;
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
 	}
 
