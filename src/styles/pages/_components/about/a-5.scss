@@ -3,6 +3,61 @@
 
 	.col-lg-8 {
 		padding-right: 40px;
+
+		.main-title {
+			font-size    : 34px;
+			color        : #2B2B2B;
+			font-weight  : 700;
+			margin-bottom: 40px;
+			margin-bottom: 40px;
+		}
+
+		.main-content {
+			p {
+				font-size    : 18px;
+				color        : #4D4D4D;
+				margin-bottom: 30px;
+
+				&.bold {
+					color        : #2B2B2B;
+					font-weight  : 700;
+					margin-bottom: 15px;
+				}
+
+				&:last-child {
+					margin-bottom: 55px;
+				}
+			}
+		}
+
+		.detail-title {
+			position    : relative;
+			color       : #2B2B2B;
+			font-size   : 24px;
+			font-weight : 700;
+			padding-left: 25px;
+			margin      : 25px 0 20px;
+
+			&:after {
+				content         : '';
+				position        : absolute;
+				left            : 0;
+				top             : 50%;
+				transform       : translateY(-50%);
+				width           : 20px;
+				height          : 20px;
+				background-image: url(../img/icons/sologan.png);
+			}
+		}
+
+		.detail-content {
+			padding-left: 25px;
+
+			p {
+				color    : #707070;
+				font-size: 18px;
+			}
+		}
 	}
 
 	.social-media {
