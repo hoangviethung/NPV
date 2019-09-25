@@ -162,6 +162,11 @@ function showListPC() {
 	});
 }
 
+
+const tienIchTabTuDien = () => {
+	return new Tab('.tienich-tudien .tab-container');
+}
+
 $(document).ready(function() {
 	objectFitImages("img.ofc");
 	sliderHomeBanner();
@@ -171,6 +176,7 @@ $(document).ready(function() {
 	// showToolBarNav();
 	showListPC();
 	showList480();
+	tienIchTabTuDien();
 })
 
 $(window).on("scroll", function() {
