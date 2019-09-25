@@ -1,0 +1,73 @@
+section.he-thong-cua-hang
+	.container
+		.row
+			.main-title.col-lg-12 LIÊN HỆ
+			.col-lg-4
+				p Nếu bạn có câu hỏi hoặc cần tư vấn, hãy liên hệ với chúng tôi qua điện thoại, email hoặc trực tiếp điền thông tin vào mẫu. Chúng tôi sẽ liên lạc với bạn trong thời gian sớm nhất hoặc gọi điện thoại để tư vấn.
+				.block-form-tu-van
+					form(action="#")
+						.form-row
+							.form-group.col-lg-12
+								input(type="text" placeholder="Họ và tên*")
+								img.icon(src="./img/icons/form-user.svg", alt="", srcset="")
+							.form-group.col-lg-12
+								input(type="text" placeholder="Email")
+								img.icon(src="./img/icons/form-email.svg", alt="", srcset="")
+							.form-group.col-lg-12
+								input(type="text" placeholder="Số điện thoại")
+								img.icon(src="./img/icons/form-phone.svg", alt="", srcset="")
+							.form-group.col-lg-12
+								textarea(placeholder="Nội dung tin nhắn")
+								button.submit
+									img(src="./img/icons/submit-form.svg", alt="")
+									span Gửi
+			.col-lg-8
+				#map
+			.list-address.col-lg-12
+				.map-list
+					#map-list
+						.map-item(onclick="myClick(0)")
+						.map-item(onclick="myClick(1)")
+						.map-item(onclick="myClick(2)")
+						.map-item(onclick="myClick(3)")
+						.map-item(onclick="myClick(4)")
+
+script.
+	var inputLocations = [
+		{
+			lat: 10.807100,
+			lng: 106.661638,
+			name: 'Ho Chi Minh Headoffice',
+			icon: "./img/icons/gmap.svg",
+			address: 'Floor 4, Thang Long Building, 29 Thang Long St., Ward 4,  Tan Binh Dist., HCMC, Vietnam.',
+			phone: '(+84) 903 910 430 - Mr.Linh',
+			optimized: false
+		},
+		{
+			lat: 21.029790,
+			lng: 105.800405,
+			name: 'Hanoi Branch',
+			icon: "./img/icons/gmap.svg",
+			address: '87 Nguyen Khang, Cau Giay, Ha Noi, Viet Nam',
+			phone: '(84.28) 3848 7858',
+			optimized: false
+		},
+		{
+			lat: 11.328765,
+			lng: 106.476674,
+			name: 'Binh Duong Branch',
+			icon: "./img/icons/gmap.svg",
+			address: '9b/5g Binh Dang Hamlet, Binh Hoa Village, Thuan An Dist Binh Duong',
+			phone: '(84.28) 3848 7858',
+			optimized: false
+		},
+		{
+			lat: 10.353826,
+			lng: 107.092081,
+			name: 'Vung Tau Branch',
+			icon: "./img/icons/gmap.svg",
+			address: '8th Floor, Rôm 813, Seaview 1building, Chi Linh Area, Vung Tau',
+			phone: '(84.28) 3848 7858',
+			optimized: false
+		}
+	];
