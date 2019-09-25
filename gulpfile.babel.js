@@ -17,7 +17,8 @@ import {
 	copyFonts,
 	copyImage,
 	copyFavicon,
-	copyVideo
+	copyVideo,
+	copyJs
 } from "./_gulptasks/copy";
 
 
@@ -35,6 +36,7 @@ exports.default = series(
 	),
 	cssTask,
 	jsTask,
+	copyJs,
 	pugTask,
 	server,
 )

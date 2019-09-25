@@ -16,6 +16,14 @@ export const copyVideo = () => {
 		.pipe(dest("dist/vid"))
 }
 
+export const copyJs = () => {
+	return src([
+		"./src/js/*.js",
+		"!./src/js/main.js",
+	])
+		.pipe(dest("dist/js"))
+}
+
 export const copyFonts = () => {
 	let glob = JSON.parse(readFileSync("_vendor.json"));
 	let fontList = glob.vendor.font;
@@ -36,5 +44,6 @@ module.exports = {
 	copyFonts,
 	copyImage,
 	copyFavicon,
-	copyVideo
+	copyVideo,
+	copyJs
 };

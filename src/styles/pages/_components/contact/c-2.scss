@@ -74,4 +74,22 @@
 	#map {
 		height: 495px;
 	}
+
+	.map-item {
+		margin: 80px 0;
+		cursor: pointer;
+
+		h4 {
+			font-size    : 18px;
+			color        : #3E4095;
+			font-weight  : 400;
+			margin-bottom: 15px;
+		}
+
+		p {
+			font-size   : 18px;
+			color       : #2B2B2B;
+			word-spacing: 8.7px;
+		}
+	}
 }

@@ -11,7 +11,8 @@ import cssCore from "./core-css"
 import cssTask from "./css"
 import {
 	copyImage,
-	copyVideo
+	copyVideo,
+	copyJs,
 } from "./copy";
 import {
 	cleanImage,
@@ -29,7 +30,7 @@ export const server = () => {
 
 	watch([
 		"src/js/*.js"
-	], series(jsTask));
+	], parallel(jsTask,copyJs));
 
 	watch([
 		"src/pages/**/**.pug"
