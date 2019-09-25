@@ -1,0 +1,15 @@
+extends _layout/_layout.pug
+
+block var
+	- var title = 'NPV | Tiện Ích - Kích thước Incoterm'
+	- var bodyClass = 'tienich-page'
+
+block main
+	include _layout/_breadcrumb
+	.section-tienich.tienich-content
+		.container
+			.row
+				.col-lg-8
+					include _components/tienich/t-4
+				.col-lg-4
+					include _layout/_aside-menu

@@ -1,0 +1,192 @@
+.section-tienich {
+	padding: 60px 0;
+}
+
+
+.tienich-table {
+	display: block;
+	margin-bottom: 30px;
+	overflow: auto;
+
+	table {
+		width: 100%;
+
+		thead {
+			th {
+				height: 65px;
+				background: #3E4095;
+				color: white;
+				text-transform: uppercase;
+				font-size: 24px;
+				font-weight: 400;
+			}
+		}
+
+		tbody {
+			td {
+				font-size: 18px;
+			}
+		}
+
+		th,
+		td {
+			border: 1px solid #C1C1C1;
+			padding: 10px 15px;
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.tienich-chuyendoi {
+	table {
+		thead {
+			th {
+				text-align: center;
+			}
+		}
+
+		tbody {
+			th {
+				text-align: center;
+				font-weight: 400;
+				color: #3E4095;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.tienich-tigia {
+	table {
+		thead {
+			th {
+				font-size: 18px;
+				text-align: center;
+			}
+		}
+	}
+}
+
+.tienich-content {
+	.content {
+		font-size: 18px;
+		color: #707070;
+		padding-bottom: 30px;
+		padding-top: 30px;
+
+		h3 {
+			font-weight: 400;
+			margin-bottom: 20px;
+			font-size: 18px;
+		}
+
+		p {
+			margin-bottom: 20px;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.tienich-content-2 {
+	.tienich-table {
+		h3 {
+			font-weight: 700;
+			color: #3E4095;
+			text-transform: uppercase;
+			margin-bottom: 30px;
+		}
+
+		table {
+			thead {
+				text-align: center;
+			}
+
+			tbody {
+				tr {
+					td.center {
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+
+	.content-2 {
+		font-size: 18px;
+		margin-bottom: 30px;
+
+		p {
+			text-indent: 25px;
+			margin-bottom: 20px;
+
+			&.red {
+				text-indent: 60px;
+				color: #BC2E31;
+			}
+		}
+
+		strong {
+			font-size: 18px;
+			text-transform: uppercase;
+			margin-bottom: 25px;
+			display: block;
+		}
+
+		b {
+			display: block;
+		}
+	}
+}
+
+.tienich-tudien {
+	.tab-container{
+		margin-bottom: 60px;
+	}
+	.nav-characters {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 30px;
+
+		a {
+			flex: 0 0 50px;
+			max-width: 50px;
+			border-radius: 5px;
+			font-weight: 700;
+			color: #3E4095;
+			cursor: pointer;
+			text-decoration: underline !important;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 50px;
+			transition: all .3s ease-out;
+
+			&.active {
+				color: #BC2E31;
+				box-shadow: 0 3px 6px rgba(black, .15);
+			}
+		}
+	}
+
+	.tab-content {
+		.item {
+			font-size: 18px;
+			margin-bottom: 25px;
+
+			h4 {
+				font-weight: 400;
+				color: #3E4095;
+			}
+
+			p {
+				color: #4D4D4D;
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+extends _layout/_layout.pug
+
+block var
+	- var title = 'NPV | Tiện Ích - Chuyển đổi đơn vị'
+	- var bodyClass = 'tienich-page'
+
+block main
+	include _layout/_breadcrumb
+	.section-tienich.tienich-chuyendoi
+		.container
+			.row
+				.col-lg-8
+					include _components/tienich/t-2
+				.col-lg-4
+					include _layout/_aside-menu
