@@ -1,0 +1,76 @@
+section.yeu-cau-bao-gia
+	.container
+		.row
+			.col-lg-8
+				.title
+					h3 YÊU CẦU BÁO GIÁ
+				p Trong trường hợp quý khách hàng có yêu cầu về dịch vụ Giao hàng tận nơi, Khai thuê Hải quan hoặc các dịch vụ khác vui lòng điền các yêu cầu theo mẫu dưới đây để nhận được báo giá.
+				form(action="#" method="method")
+					.form-row
+						.form-group.col-lg-6
+							input(type="text" placeholder="Họ và tên*")
+						.form-group.col-lg-6
+							input(type="text" placeholder="Partner ID (nếu có)")
+						.form-group.col-lg-6
+							input(type="text" placeholder="Số điện thoại*")
+						.form-group.col-lg-6
+							input(type="text" placeholder="Công ty")
+						.form-group.col-lg-6
+							input(type="text" placeholder="Email*")
+						.form-group.col-lg-6
+							input(type="text" placeholder="Địa chỉ")
+						.form-group.col-lg-6
+							input(type="text" placeholder="Tên hàng hóa*")
+						.form-group.col-lg-6
+							input(type="text" placeholder="Số lượng*")
+						.form-group.col-lg-6
+							input(type="text" placeholder="Tổng trọng lượng* (kgs)")
+						.form-group.col-lg-6
+							input(type="text" placeholder="Tổng khối  lượng* (cbm)")
+						.form-group.col-lg-6
+							input(type="text" placeholder="Phương thức vận chuyển*")
+						.form-group.col-lg-6
+							input(type="text" placeholder="Loại hình* (xuất/nhập)")
+						.form-group.col-lg-6
+							input(type="text" placeholder="Dịch vụ yêu cầu*")
+						.form-group.col-lg-6
+							input(type="text" placeholder="Dịch vụ khác")
+						.form-group.col-lg-6
+							input(type="text" placeholder="Cảng xếp hàng")
+						.form-group.col-lg-6
+							input(type="text" placeholder="Cảng dỡ hàng")
+						.form-group.col-lg-6
+							input(type="text" placeholder="Nơi nhận (nếu có)")
+						.form-group.col-lg-6
+							input(type="text" placeholder="Nơi giao (nếu có)")
+						.form-group.col-lg-6
+							input(type="date" placeholder="Ngày hàng sẵn sàng* (dd/mm/yyyy)")
+						.form-group.col-lg-6
+							input(type="date" placeholder="Ngày yêu cầu giao hàng (dd/mm/yyyy)")
+						.form-group.col-lg-6
+							select(name="")
+								option(value="") Incoterm
+								option(value="") TEST
+								option(value="") TEST
+								option(value="") TEST
+								option(value="") TEST
+								option(value="") TEST
+					.form-row.small
+						.form-group.small.col-lg-6
+							label(for="kichthuoc") Kích thước kiện (dài x rộng x cao) (cm)
+							textarea.small#kichthuoc(placeholder="Ví dụ: 123 x 435 x465")
+						.form-group.small.col-lg-3
+							label(for="soluong") Số lượng (kiện)
+							textarea.small#soluong(placeholder="Ví dụ: 165")
+						.form-group.small.col-lg-3
+							label(for="trongluong") Trọng lượng/ kiện (kgs)
+							textarea.small#trongluong(placeholder="Ví dụ: 659")
+					.form-row
+						.form-group.col-lg-12
+							textarea.big(placeholder="Yêu cầu dịch vụ*")
+							button.submit
+								img(src="./img/icons/submit-form.svg", alt="")
+								span Gửi
+					p (*) Phần thông tin bắt buộc
+			.col-lg-4
+				include ../../_layout/_aside-menu.pug
