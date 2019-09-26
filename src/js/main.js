@@ -10,7 +10,6 @@ const addClassLazyload = () => {
 	});
 }
 
-
 // Script cho tab
 class Tab {
 	selector;
@@ -60,6 +59,16 @@ class Tab {
 		this.runTabWhenClicked();
 		this.activeFirstTab();
 	}
+}
+
+function activeHeader() {
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 150) {
+			$('header').addClass('active');
+		} else {
+			$('header').removeClass('active');
+		}
+	});
 }
 
 function sliderHomeBanner() {
@@ -128,6 +137,29 @@ function showBackToTop() {
 	})
 }
 
+function libraryImgVideo() {
+	$('[data-fancybox').fancybox({
+		animationEffect: "rotate",
+		transitionEffect: "circular",
+		buttons: [
+			'zoom',
+			'thumbs',
+			'close',
+			'share',
+			'fullscreen',
+		],
+		thumbs: {
+			autoStart: true,
+		}
+	})
+}
+
+function showAlbumImg() {
+	$('.library .item').on('click', function() {
+		$(this).siblings('.d-none a').trigger('click');
+	})
+}
+
 // function showToolBarNav() {
 // 	$(window).scroll(function() {
 // 		if ($(this).scrollTop() > 800) {
@@ -178,6 +210,9 @@ $(document).ready(function() {
 	showListPC();
 	showList480();
 	tienIchTabTuDien();
+	activeHeader();
+	libraryImgVideo();
+	showAlbumImg();
 })
 
 $(window).on("scroll", function() {
