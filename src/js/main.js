@@ -138,8 +138,23 @@ function showBackToTop() {
 }
 
 function libraryImgVideo() {
-	$('[data-fancybox').fancybox({
+	$('[data-fancybox="images').fancybox({
 		animationEffect: "rotate",
+		transitionEffect: "circular",
+		buttons: [
+			'zoom',
+			'thumbs',
+			'close',
+			'share',
+			'fullscreen',
+		],
+		thumbs: {
+			autoStart: true,
+		}
+	})
+
+	$('[data-fancybox="videos').fancybox({
+		animationEffect: "slide",
 		transitionEffect: "circular",
 		buttons: [
 			'zoom',
