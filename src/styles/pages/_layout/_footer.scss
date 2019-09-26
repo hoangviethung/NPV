@@ -88,13 +88,22 @@ footer {
 		.form-group-2 {
 			margin-top: 30px;
 
-			input {
+			select {
 				width     : 100%;
-				font-size : 16px;
 				background: #2F3178;
 				border    : none;
 				padding   : 10px;
 				color     : rgba(255, 255, 255, 0.6);
+
+				optgroup {
+					font-size  : 16px;
+					font-weight: 700;
+
+					option {
+						font-size  : 13px;
+						font-weight: 400;
+					}
+				}
 			}
 		}
 	}
