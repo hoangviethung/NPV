@@ -5,6 +5,7 @@ header {
 	width     : 100%;
 	left      : 0;
 	z-index   : 100;
+	box-shadow: 0px 3px 6px rgba($color: #000000, $alpha: 0.16);
 
 	.container {
 		padding : 20px 10px 0 10px;
@@ -81,10 +82,9 @@ header {
 	}
 
 	.bottom-header {
-		width         : 825px;
-		margin-left   : auto;
-		margin-top    : 20px;
-		padding-bottom: 30.5px;
+		width      : 825px;
+		margin-left: auto;
+		margin-top : 20px;
 
 		.nav-list {
 			display        : flex;
@@ -92,10 +92,12 @@ header {
 		}
 
 		.nav-item {
-			position   : relative;
-			display    : flex;
-			align-items: center;
-			cursor     : pointer;
+			position      : relative;
+			display       : flex;
+			align-items   : center;
+			cursor        : pointer;
+			padding-bottom: 25.5px;
+			border-bottom : 5px solid transparent;
 
 			font-size  : 16px;
 			color      : #2B2B2B;
@@ -110,7 +112,8 @@ header {
 			}
 
 			&:hover {
-				color: #3E4095;
+				color        : #3E4095;
+				border-bottom: 5px solid #3E4095;
 
 				>a {
 					color: #3E4095;
@@ -124,22 +127,32 @@ header {
 			}
 
 			.sub-menu {
-				position     : absolute;
-				width        : 400px;
-				padding      : 50px;
-				top          : 100%;
-				left         : 50%;
-				transform    : translateX(-50%);
-				opacity      : 0;
-				visibility   : hidden;
-				background   : #3E4095;
-				border-radius: 30px;
+				position  : absolute;
+				width     : fit-content;
+				width     : 285px;
+				top       : 54px;
+				left      : 50%;
+				transform : translateX(-50%);
+				opacity   : 0;
+				visibility: hidden;
+				background: #FFFFFF;
+				transition: .3s all ease-in-out;
+				box-shadow: 0px 3px 6px rgba($color: #000000, $alpha: 0.16);
 
 				.item {
-					margin-bottom: 20px;
+					padding   : 15px;
+					transition: .3s all ease-in-out;
 
 					a {
-						color: #FFFFFF;
+						color: #000000;
+					}
+
+					&:hover {
+						background: #F3F3F3;
+
+						a {
+							color: #3E4095;
+						}
 					}
 				}
 			}
