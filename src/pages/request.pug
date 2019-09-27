@@ -1,0 +1,9 @@
+extends _layout/_layout.pug
+
+block var
+	- var title = 'NPV | Request'
+	- var bodyClass = 'request-page'
+
+block main
+	include ./_layout/_breadcrumb.pug
+	include _components/request/r-1.pug

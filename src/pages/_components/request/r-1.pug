@@ -1,0 +1,120 @@
+section.request
+	.container
+		.row
+			.col-lg-8
+				.title
+					h3 ĐĂNG KÝ SHIPPING INSTRUCTION
+					form(action="#" method="method")
+						.form-row
+							.form-group.col-lg-6
+								label.color-red(for="Id_booking") ID Booking Note*
+								input#Id_booking(type="text" placeholder="ID Booking Note")
+							.form-group.col-lg-6
+								label(for="Id_partner") ID Booking Note*
+								input#Id_partner(type="text" placeholder="Partner ID (nếu có)")
+							.form-group.col-lg-6
+								label(for="shipper") Shipper*
+								textarea#shipper(name="" placeholder="Shipper").small
+							.form-group.col-lg-6
+								label(for="consignee") Consignee*
+								textarea#consignee(name="" placeholder="Consignee").small
+							.form-group.col-lg-6
+								label(for="notifyparty") Notify Party*
+								textarea#notifyparty(name="" placeholder="Notify Party*").small
+							.form-group.col-lg-6
+								label(for="descriptionofgoods") Description of goods*
+								textarea#descriptionofgoods(name="" placeholder="Description of goods*").small
+							.form-group.col-lg-6
+								label(for="portofloading") Port of loading*
+								input#portofloading(type="text" placeholder="Port of loading")
+							.form-group.col-lg-6
+								label(for="portofdischarge") Port of discharge*
+								input#portofdischarge(type="text" placeholder="Port of discharge*")
+							.form-group.col-lg-6
+								label(for="noofpackages") No of packages*
+								input#noofpackages(type="text" placeholder="No of packages*")
+							.form-group.col-lg-6
+								label(for="grossweight") Gross Weight*
+								input#grossweight(type="text" placeholder="Gross Weight*")
+							.form-group.col-lg-6
+								label(for="measurement") Measurement*
+								input#measurement(type="text" placeholder="Measurement*")
+							.form-group.col-lg-6
+								label(for="shippingmarks") Shipping marks*
+								textarea#shippingmarks(name="" placeholder="Shipping marks*").small
+							.form-group.col-lg-6
+								label(for="") Frieght*
+								select(name="")
+									option(value="") Prepaid
+									option(value="") TEST
+									option(value="") TEST
+									option(value="") TEST
+									option(value="") TEST
+									option(value="") TEST
+							.form-group.col-lg-6
+								label(for="") Type of BL*
+								select(name="")
+									option(value="") Surrendered B/L
+									option(value="") TEST
+									option(value="") TEST
+									option(value="") TEST
+									option(value="") TEST
+									option(value="") TEST
+							.form-group.col-lg-6
+								label(for="") Type of Shipping*
+								select(name="")
+									option(value="") FCL
+									option(value="") TEST
+									option(value="") TEST
+									option(value="") TEST
+									option(value="") TEST
+									option(value="") TEST
+						.form-row
+							.form-group
+								label(for="") Container/seal number
+								.block-table
+									.item.select
+										.title Type Container
+										select(name="")
+											option(value="") 20'DC
+											option(value="") TEST
+											option(value="") TEST
+											option(value="") TEST
+											option(value="") TEST
+											option(value="") TEST
+									.item.input
+										.title ContainerNo
+										input(type="text" placeholder="Nhập")
+									.item.input
+										.title SealNo
+										input(type="text" placeholder="Nhập")
+									.item.number
+										.title GW
+										input(type="number", value="0",  min="0" max="100")
+									.item.number
+										.title CBM
+										input(type="number", value="0",  min="0" max="100")
+									.item
+										.title Number of Package
+										input(type="number", value="0",  min="0" max="100")
+									.item.select
+										.title Unit
+										select(name="")
+											option(value="") BAG
+											option(value="") TEST
+											option(value="") TEST
+											option(value="") TEST
+											option(value="") TEST
+											option(value="") TEST
+									.item.tac-vu
+										.title TÁC VỤ
+										figure
+											img(src="./img/icons/tacvu-form.svg", alt="", srcset="")
+						.form-row
+							.form-group.col-lg-12
+								label(for="remark") Remark
+								textarea#remark(name="" placeholder="Remark").big
+						button.btn.bg-blue ĐĂNG KÍ
+
+			.col-lg-4
+				include ../../_layout/_aside-menu.pug

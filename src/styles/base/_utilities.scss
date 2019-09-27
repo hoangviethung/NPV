@@ -41,6 +41,11 @@
 		height     : 100%;
 	}
 
+	&.bg-blue {
+		color     : #FFFFFF;
+		background: #3E4095;
+	}
+
 	&:hover {
 		background: #BC2E31;
 		color     : #FFFFFF;
@@ -50,7 +55,14 @@
 		span {
 			color: #FFFFFF;
 		}
+
+		&.bg-blue {
+			color     : #FFFFFF;
+			background: #3E4095;
+			border    : 1px solid #707070;
+		}
 	}
+
 }
 
 .btn-noClick {
