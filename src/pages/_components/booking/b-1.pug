@@ -3,13 +3,13 @@ section.form-report-request
 		.row
 			.col-lg-8
 				.title
-					h3 KIỂM TRA LỊCH TRÌNH HÀNG NHẬP
+					h3 KIỂM TRA BOOKING
 				.block-form
 					form(action="#")
 						.form-group
-							label(for="hbl") Enter HBL Sea
+							label(for="Id_booking") Enter ID Booking Note Sea
 							.form-input
-								input#hbl(type="text", placeholder="Your Number")
+								input#Id_booking(type="text", placeholder="Your Number")
 								span.error Bắt lỗi
 						.form-group
 							label(for="id") Enter Partner ID
@@ -31,5 +31,5 @@ section.form-report-request
 								span.error Bắt lỗi
 						button.btn TRACKING
 			.col-lg-4
-				include _aside-tracking.pug
+				include _aside-booking.pug
 		include ../social-media/social-media.pug

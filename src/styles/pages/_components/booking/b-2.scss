@@ -1,0 +1,108 @@
+.form-dangky-booking {
+	margin: 45px 20px;
+
+	.col-lg-8 {
+		padding-right: 40px;
+	}
+
+	.title {
+		margin-bottom: 50px;
+
+		h3 {
+			font-size  : 34px;
+			font-weight: 700;
+			color      : #2B2B2B;
+		}
+	}
+
+	.form-group {
+		position     : relative;
+		padding      : 0 10px;
+		margin-bottom: 20px;
+
+		&.small {
+			padding: 0 5px;
+		}
+
+		input[type='text'] {
+			width      : 100%;
+			font-size  : 16px;
+			color      : #707070;
+			font-style : italic;
+			line-height: 45px;
+			padding    : 0 20px;
+			border     : 1px solid #C1C1C1;
+			font-style : italic;
+		}
+
+		input[type='number'] {
+			width       : 100%;
+			font-size   : 16px;
+			color       : #707070;
+			font-style  : italic;
+			line-height : 45px;
+			padding-left: 20px;
+			border      : 1px solid #C1C1C1;
+			font-style  : italic;
+		}
+
+		input[type='date'] {
+			display   : block;
+			color     : #707070;
+			border    : 1px solid #C1C1C1;
+			padding   : 10px 15px;
+			width     : 100%;
+			height    : 45px;
+			font-size : 16px;
+			font-style: italic;
+		}
+
+		textarea.small {
+			font-size: 16px;
+			resize   : none;
+			padding  : 15px;
+			width    : 100%;
+			height   : 90px;
+			color    : #707070;
+			border   : 1px solid #C1C1C1;
+		}
+
+		textarea.big {
+			resize : none;
+			padding: 15px;
+			width  : 100%;
+			height : 160px;
+			color  : #707070;
+			border : 1px solid #C1C1C1;
+		}
+
+		label {
+			cursor       : pointer;
+			width        : 100%;
+			font-size    : 18px;
+			color        : #2B2B2B;
+			margin-bottom: 10px;
+
+			&.color-red {
+				color: #BC2E31;
+			}
+
+			&.block {
+				color      : #FFFFFF;
+				line-height: 45px;
+				padding    : 0 15px;
+				background : #3E4095;
+			}
+		}
+
+		select {
+			width     : 100%;
+			background: none;
+			height    : 45px;
+			color     : #707070;
+			border    : 1px solid #C1C1C1;
+			padding   : 10px 15px;
+			font-style: italic;
+		}
+	}
+}

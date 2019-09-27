@@ -1,0 +1,64 @@
+section.form-dangky-booking
+	.container
+		.row
+			.col-lg-8
+				.title
+					h3 ĐĂNG KÍ BOOKING
+				form(action="#" method="method")
+					.form-row
+						.form-group.col-lg-6
+							label.color-red(for="Id_partner") PartnerID
+							input#Id_partner(type="text" placeholder="ID Booking Note")
+						.form-group.col-lg-6
+							label(for="email") Email
+							input#email(type="text" placeholder="Email")
+						.form-group.col-lg-6
+							label(for="spvmail") Person in charges of NPV (Mail)
+							input#spvmail(type="text" placeholder="Person in charges of ASL (Mail)")
+						.form-group.col-lg-6
+							label(for="") Cargo ready date (Month/Day/Year)
+							input(type="date" placeholder="Ngày hàng sẵn sàng* (dd/mm/yyyy)")
+						.form-group.col-lg-6
+							label(for="shipper") Shipper
+							textarea#shipper(name="" placeholder="Shipper").small
+						.form-group.col-lg-6
+							label(for="consignee") Consignee
+							textarea#consignee(name="" placeholder="Consignee").small
+						.form-group.col-lg-6
+							label(for="portofdischarge") Port of discharge
+							input#portofdischarge(type="text" placeholder="Port of discharge")
+						.form-group.col-lg-6
+							label(for="portofloading") Port of loading
+							input#portofloading(type="text" placeholder="Port of loading")
+						.form-group.col-lg-6
+							label(for="placeofdelivery") Place of delivery
+							input#placeofdelivery(type="text" placeholder="Place of delivery")
+						.form-group.col-lg-6
+							label(for="grossweight") Commodity
+							input#commodity(type="text" placeholder="Commodity")
+						.form-group.col-lg-6
+							label(for="") Freight: Prepaid or Collect*
+							select(name="")
+								option(value="") Prepaid
+								option(value="") TEST
+								option(value="") TEST
+								option(value="") TEST
+								option(value="") TEST
+								option(value="") TEST
+						.form-group.col-lg-6
+							label(for="") Type of move
+							select(name="")
+								option(value="") FCL
+								option(value="") TEST
+								option(value="") TEST
+								option(value="") TEST
+								option(value="") TEST
+								option(value="") TEST
+					.form-row
+						.form-group.col-lg-12
+							label(for="remark") Remark
+							textarea#remark(name="" placeholder="Remark").big
+						button.btn.bg-blue ĐĂNG KÍ
+			.col-lg-4
+				include _aside-booking.pug
+		include ../social-media/social-media.pug
