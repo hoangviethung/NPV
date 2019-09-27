@@ -109,61 +109,79 @@
 			font-style: italic;
 		}
 
-		.block-table {
-			display: flex;
+		table {
+			border: 1px solid #C1C1C1;
 
-			.item {
-				border-right: 1px solid #C1C1C1;
+			th,
+			td {
+				border: 1px solid #C1C1C1;
+			}
 
-				.title {
-					display        : flex;
-					text-align     : center;
-					justify-content: center;
-					align-items    : center;
+			th {
+				font-size : 16px;
+				color     : white;
+				background: #3e4095;
 
-					font-size : 16px;
-					color     : white;
-					background: #3e4095;
+				text-align: center;
+				height    : 50px;
+				padding   : 10px 15px;
+			}
 
-					height     : 50px;
-					line-height: 1.3;
-					padding    : 10px 0;
+			tr {
+				&:nth-child(2) {
+					td {
+						&.tac-vu {
+							.delete {
+								display: none;
+							}
+						}
+					}
 				}
+			}
 
-				input,
-				select,
-				figure {
-					height       : 45px;
-					border       : none;
-					border-bottom: 1px solid #C1C1C1;
-				}
-
-				&.input {
-					width: 103px;
-				}
-
-				&.select {
+			td {
+				&:nth-child(1) {
 					width: 130px;
 				}
 
-				&.number {
-					width: 57px;
+				&:nth-child(2) {
+					width: 100px;
+				}
+
+				&:nth-child(3) {
+					width: 80px;
+				}
+
+				&:nth-child(4) {
+					width: 60px;
+				}
+
+				&:nth-child(5) {
+					width: 60px;
+				}
+
+				&:nth-child(6) {
+					width: 105px;
+				}
+
+				&:nth-child(7) {
+					width: 115px;
+				}
+
+				select,
+				input {
+					border: none !important;
 				}
 
 				&.tac-vu {
-					width     : 80px;
+					width     : 81px;
 					text-align: center;
 
-					figure {
-						cursor         : pointer;
-						display        : flex;
-						align-self     : center;
-						justify-content: center;
+					img {
+						cursor : pointer;
+						display: inline-block;
+						margin : 0 5px;
 					}
-				}
-
-				&:first-child {
-					border-left: 1px solid #C1C1C1;
 				}
 			}
 		}

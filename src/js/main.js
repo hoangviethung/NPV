@@ -210,6 +210,20 @@ function showListPC() {
 	});
 }
 
+function addBlockTableForm() {
+
+
+	$('body').on('click', '.tac-vu .add', function() {
+		var item_news = $(this).parents('tr');
+		item_news.parent().append(item_news.prop('outerHTML'));
+	});
+
+	$('body').on('click', '.tac-vu .delete', function() {
+		var item_delete = $(this).parents('tr');
+		item_delete.remove();
+	});
+}
+
 
 const tienIchTabTuDien = () => {
 	return new Tab('.tienich-tudien .tab-container');
@@ -228,6 +242,7 @@ $(document).ready(function() {
 	activeHeader();
 	libraryImgVideo();
 	showAlbumImg();
+	addBlockTableForm();
 })
 
 $(window).on("scroll", function() {
