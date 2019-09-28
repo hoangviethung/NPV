@@ -1,8 +1,16 @@
 .form-dangky-booking {
-	margin: 45px 20px;
+	margin: 45px 0px 100px;
 
 	.col-lg-8 {
 		padding-right: 40px;
+	}
+
+	.form-row {
+		margin: 0 -10px;
+
+		&.mt-70 {
+			margin-top: 70px;
+		}
 	}
 
 	.title {
@@ -13,6 +21,10 @@
 			font-weight: 700;
 			color      : #2B2B2B;
 		}
+	}
+
+	button {
+		float: right;
 	}
 
 	.form-group {
@@ -55,6 +67,17 @@
 			height    : 45px;
 			font-size : 16px;
 			font-style: italic;
+		}
+
+		#buttonchoose {
+			width        : 150px;
+			line-height  : 30px;
+			border-radius: 23px;
+			border       : 1px solid #C1C1C1;
+			text-align   : center;
+			font-size    : 16px;
+			color        : #707070;
+			margin-top   : 10px;
 		}
 
 		textarea.small {

@@ -54,11 +54,30 @@ section.form-dangky-booking
 								option(value="") TEST
 								option(value="") TEST
 								option(value="") TEST
+						.form-group.col-lg-6
+							label(for="contdropoffplace") Cont drop off place
+							input#contdropoffplace(type="text" placeholder="Cont drop off place")
+						.form-group.col-lg-3
+							label(for="quantity") Quantity
+							input#quantity(type="number", value="0",  min="0" max="100")
+						.form-group.col-lg-3
+							label(for="") Type of move*
+							select(name="")
+								option(value="") 20'DC
+								option(value="") TEST
+								option(value="") TEST
+								option(value="") TEST
+								option(value="") TEST
+								option(value="") TEST
+					.form-row.mt-70
+						.form-group.col-lg-12
+							p Details of goods: Quantity/G.W/Goods name/PO & style number/Measurement
+							label#buttonchoose(for="file") Choose File
+							input#file(type="file" hidden)
 					.form-row
 						.form-group.col-lg-12
 							label(for="remark") Remark
 							textarea#remark(name="" placeholder="Remark").big
-						button.btn.bg-blue ĐĂNG KÍ
+					button.btn.bg-blue ĐĂNG KÍ
 			.col-lg-4
 				include _aside-booking.pug
-		include ../social-media/social-media.pug
