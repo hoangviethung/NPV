@@ -84,23 +84,43 @@
 		}
 
 		.swiper-button-next {
-			background-image: none;
-			right           : 0;
-			width           : 73px;
-			height          : 73px;
-			background      : rgba(255, 255, 255, 0.3);
-			z-index         : 1;
-			border-radius   : 50% 0 0 50%;
+			background-image   : url(../img/icons/banner-slider-next.svg);
+			background-size    : 30px;
+			background         : rgba(255, 255, 255, 0.3);
+			background-position: 5px;
+			background-repeat  : no-repeat;
+
+			right        : -36px;
+			width        : 73px;
+			height       : 73px;
+			z-index      : 1;
+			border-radius: 50%;
+			transition   : .3s all ease-in-out;
+
+			&:hover {
+				border-radius: 50% 0 0 50%;
+				right        : -20px;
+			}
 		}
 
 		.swiper-button-prev {
-			background-image: none;
-			left            : 0;
-			width           : 73px;
-			height          : 73px;
-			background      : rgba(255, 255, 255, 0.3);
-			z-index         : 1;
-			border-radius   : 0 50% 50% 0;
+			background-image   : url(../img/icons/banner-slider-prev.svg);
+			background-size    : 30px;
+			background         : rgba(255, 255, 255, 0.3);
+			background-position: 35px;
+			background-repeat  : no-repeat;
+
+			left         : -36px;
+			width        : 73px;
+			height       : 73px;
+			z-index      : 1;
+			border-radius: 50%;
+			transition   : .3s all ease-in-out;
+
+			&:hover {
+				border-radius: 0 50% 50% 0;
+				left         : -20px;
+			}
 		}
 	}
 }

@@ -56,3 +56,15 @@
 		}
 	}
 }
+
+.lnr-chevron-left {
+	&::before {
+		content: '\e879'
+	}
+}
+
+.lnr-chevron-right {
+	&::before {
+		content: '\e87a'
+	}
+}
