@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>NPV | Kiểm Tra Hàng Xuất</title>
+		<title>NPV | Proof of Delivery</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="./css/core.min.css">
 		<link rel="stylesheet" href="./css/main.min.css"><link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&display=swap&subset=vietnamese" rel="stylesheet">
 	</head>
-	<body class="kiemtrahangxuat-page">
+	<body class="proofofdelivery-page">
 		<div id="loading">
 			<div class="logo-loader"><img src="./img/loading.gif" alt=""></div>
 			<div class="progstat-wrapper">Loading: <span id="progstat">0</span>%</div>
@@ -93,20 +93,37 @@
 					<div class="row">
 						<div class="col-lg-8">
 							<div class="title">
-								<h3>KIỂM TRA LỊCH TRÌNH HÀNG XUẤT</h3>
+								<h3>Arival Notice</h3>
 							</div>
 							<div class="block-form">
 								<form action="#">
 									<div class="form-group">
-										<label for="hbl">Enter HBL</label>
+										<label for="HBLNoSea">HBLNo Sea</label>
 										<div class="form-input">
-											<input id="hbl" type="text" placeholder="Your Number"><span class="error">Bắt lỗi</span>
+											<input id="HBLNoSea" type="text" placeholder="Your Number"><span class="error">Bắt lỗi</span>
 										</div>
 									</div>
 									<div class="form-group">
-										<label for="id">Enter Partner ID</label>
+										<label for="id_Sea">Enter Partner ID</label>
 										<div class="form-input">
-											<input id="id" type="text" placeholder="Your Number"><span class="error">Bắt lỗi</span>
+											<input id="id_Sea" type="text" placeholder="Your Number"><span class="error">Bắt lỗi</span>
+										</div>
+									</div>
+									<button class="btn">TRACKING</button>
+								</form>
+							</div>
+							<div class="block-form">
+								<form action="#">
+									<div class="form-group">
+										<label for="HBLNoAir">HBLNo Air</label>
+										<div class="form-input">
+											<input id="HBLNoAir" type="text" placeholder="Your Number"><span class="error">Bắt lỗi</span>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="id_Air">Enter Partner ID</label>
+										<div class="form-input">
+											<input id="id_Air" type="text" placeholder="Your Number"><span class="error">Bắt lỗi</span>
 										</div>
 									</div>
 									<button class="btn">TRACKING</button>
@@ -116,23 +133,13 @@
 						<div class="col-lg-4">
 							<div class="aside-form-report-request">
 								<div class="title-tracking">
-									<h3>TRA CỨU THÔNG TIN</h3>
+									<h3>REPORT</h3>
 								</div>
-								<ul class="list-tracking"><a href="kiemtrahangnhap.html">
-										<li class="item">Kiểm tra lịch trình hàng nhập</li></a><a href="kiemtrahangxuat.html">
-										<li class="item">Kiểm tra lịch trình hàng xuất</li></a><a href="kiemtravantaidon.html">
-										<li class="item">Kiểm tra vận tải đơn</li></a></ul>
+								<ul class="list-tracking"><a href="delivery-order.html">
+										<li class="item">Delivery Order</li></a><a href="arival-notice.html">
+										<li class="item">Arival Notice</li></a><a href="proof-of-delivery.html">
+										<li class="item">Proof of Delivery</li></a></ul>
 							</div>
-						</div>
-					</div>
-					<div class="social-media">
-						<div class="container">
-							<h5>Share:</h5>
-							<ul class="list-item">
-								<div class="item"><a href="#"><img src="./img/icons/printest.svg" alt="" srcset=""></a></div>
-								<div class="item"><a href="#"><img src="./img/icons/facebook.svg" alt="" srcset=""></a></div>
-								<div class="item"><a href="#"><img src="./img/icons/twitter.svg" alt="" srcset=""></a></div>
-							</ul>
 						</div>
 					</div>
 				</div>
