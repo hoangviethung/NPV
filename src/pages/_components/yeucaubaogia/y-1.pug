@@ -8,7 +8,7 @@ section.yeu-cau-bao-gia
 				form(action="#" method="method")
 					.form-row
 						.form-group.col-lg-6
-							input(type="text" placeholder="Họ và tên*")
+							input#name(type="text" placeholder="Họ và tên*")
 						.form-group.col-lg-6
 							input(type="text" placeholder="Partner ID (nếu có)")
 						.form-group.col-lg-6
@@ -28,11 +28,29 @@ section.yeu-cau-bao-gia
 						.form-group.col-lg-6
 							input(type="text" placeholder="Tổng khối  lượng* (cbm)")
 						.form-group.col-lg-6
-							input(type="text" placeholder="Phương thức vận chuyển*")
+							select(name="")
+								option(value="") Phương thức vận chuyển*
+								option(value="") TEST
+								option(value="") TEST
+								option(value="") TEST
+								option(value="") TEST
+								option(value="") TEST
 						.form-group.col-lg-6
-							input(type="text" placeholder="Loại hình* (xuất/nhập)")
+							select(name="")
+								option(value="") Loại hình* (xuất/nhập)
+								option(value="") TEST
+								option(value="") TEST
+								option(value="") TEST
+								option(value="") TEST
+								option(value="") TEST
 						.form-group.col-lg-6
-							input(type="text" placeholder="Dịch vụ yêu cầu*")
+							select(name="")
+								option(value="") Dịch vụ yêu cầu*
+								option(value="") TEST
+								option(value="") TEST
+								option(value="") TEST
+								option(value="") TEST
+								option(value="") TEST
 						.form-group.col-lg-6
 							input(type="text" placeholder="Dịch vụ khác")
 						.form-group.col-lg-6
@@ -44,9 +62,9 @@ section.yeu-cau-bao-gia
 						.form-group.col-lg-6
 							input(type="text" placeholder="Nơi giao (nếu có)")
 						.form-group.col-lg-6
-							input(type="date" placeholder="Ngày hàng sẵn sàng* (dd/mm/yyyy)")
+							input(type="date" placeholder="Ngày hàng sẵn sàng*" onchange="this.className=(this.value!=''?'has-value':'')")
 						.form-group.col-lg-6
-							input(type="date" placeholder="Ngày yêu cầu giao hàng (dd/mm/yyyy)")
+							input(type="date" placeholder="Ngày yêu cầu giao hàng" onchange="this.className=(this.value!=''?'has-value':'')")
 						.form-group.col-lg-6
 							select(name="")
 								option(value="") Incoterm

@@ -59,6 +59,9 @@
 			font-style: italic;
 		}
 
+		input[type='date']:not(.has-value)::before {
+			content: attr(placeholder);
+		}
 
 		textarea.small {
 			font-size: 16px;

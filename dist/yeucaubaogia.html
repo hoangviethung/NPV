@@ -99,7 +99,7 @@
 							<form action="#" method="method">
 								<div class="form-row">
 									<div class="form-group col-lg-6">
-										<input type="text" placeholder="Họ và tên*">
+										<input id="name" type="text" placeholder="Họ và tên*">
 									</div>
 									<div class="form-group col-lg-6">
 										<input type="text" placeholder="Partner ID (nếu có)">
@@ -129,13 +129,34 @@
 										<input type="text" placeholder="Tổng khối  lượng* (cbm)">
 									</div>
 									<div class="form-group col-lg-6">
-										<input type="text" placeholder="Phương thức vận chuyển*">
+										<select name="">
+											<option value="">Phương thức vận chuyển*</option>
+											<option value="">TEST</option>
+											<option value="">TEST</option>
+											<option value="">TEST</option>
+											<option value="">TEST</option>
+											<option value="">TEST</option>
+										</select>
 									</div>
 									<div class="form-group col-lg-6">
-										<input type="text" placeholder="Loại hình* (xuất/nhập)">
+										<select name="">
+											<option value="">Loại hình* (xuất/nhập)</option>
+											<option value="">TEST</option>
+											<option value="">TEST</option>
+											<option value="">TEST</option>
+											<option value="">TEST</option>
+											<option value="">TEST</option>
+										</select>
 									</div>
 									<div class="form-group col-lg-6">
-										<input type="text" placeholder="Dịch vụ yêu cầu*">
+										<select name="">
+											<option value="">Dịch vụ yêu cầu*</option>
+											<option value="">TEST</option>
+											<option value="">TEST</option>
+											<option value="">TEST</option>
+											<option value="">TEST</option>
+											<option value="">TEST</option>
+										</select>
 									</div>
 									<div class="form-group col-lg-6">
 										<input type="text" placeholder="Dịch vụ khác">
@@ -153,10 +174,10 @@
 										<input type="text" placeholder="Nơi giao (nếu có)">
 									</div>
 									<div class="form-group col-lg-6">
-										<input type="date" placeholder="Ngày hàng sẵn sàng* (dd/mm/yyyy)">
+										<input type="date" placeholder="Ngày hàng sẵn sàng*" onchange="this.className=(this.value!=''?'has-value':'')">
 									</div>
 									<div class="form-group col-lg-6">
-										<input type="date" placeholder="Ngày yêu cầu giao hàng (dd/mm/yyyy)">
+										<input type="date" placeholder="Ngày yêu cầu giao hàng" onchange="this.className=(this.value!=''?'has-value':'')">
 									</div>
 									<div class="form-group col-lg-6">
 										<select name="">
