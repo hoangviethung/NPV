@@ -1,0 +1,35 @@
+section.form-report-request
+	.container
+		.row
+			.col-lg-8
+				.title
+					h3 ARIVAL NOTICE
+				.block-form
+					form(action="#")
+						.form-group
+							label(for="Id_booking") Enter ID Booking Note Sea
+							.form-input
+								input#Id_booking(type="text", placeholder="Your Number")
+								span.error Bắt lỗi
+						.form-group
+							label(for="id") Enter Partner ID
+							.form-input
+								input#id(type="text", placeholder="Your Number")
+								span.error Bắt lỗi
+						button.btn TRACKING
+				.block-form
+					form(action="#")
+						.form-group
+							label(for="hbl") Enter HBL Air
+							.form-input
+								input#hbl(type="text", placeholder="Your Number")
+								span.error Bắt lỗi
+						.form-group
+							label(for="id") Enter Partner ID
+							.form-input
+								input#id(type="text", placeholder="Your Number")
+								span.error Bắt lỗi
+						button.btn TRACKING
+			.col-lg-4
+				include _aside-booking.pug
+		include ../social-media/social-media.pug
