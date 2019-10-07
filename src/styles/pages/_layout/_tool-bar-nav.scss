@@ -103,7 +103,6 @@
 			padding      : 10px;
 			margin-bottom: 15px;
 			background   : #EFEFEF;
-			transition   : .2s all ease-in-out;
 
 			&:last-child {
 				margin-bottom: 0;
@@ -139,6 +138,33 @@
 		}
 	}
 
+	@keyframes animate_small {
+		20% {
+			opacity        : 0.9;
+			animation-delay: 0.2s;
+		}
+
+		40% {
+			opacity        : 0.7;
+			animation-delay: 0.2s;
+		}
+
+		60% {
+			opacity        : 0.5;
+			animation-delay: 0.2s;
+		}
+
+		80% {
+			opacity        : 0.3;
+			animation-delay: 0.2s;
+		}
+
+		100% {
+			opacity        : 0.1;
+			animation-delay: 0.2s;
+		}
+	}
+
 	@media(max-width: 480px) {
 		bottom                   : 0;
 		left                     : 0;
@@ -147,45 +173,18 @@
 		border-top-left-radius   : 10px;
 		border-top-right-radius  : 10px;
 		border-bottom-left-radius: 0;
-		border                   : 1px solid #527691;
+		border                   : 1px solid $main-color-1;
 		display                  : block;
 		padding                  : 5px;
+		background               : $main-color-1;
 
 		.see-more-mb {
-			display    : block;
-			text-align : center;
-			font-size  : 17px;
-			color      : #fff;
-			padding    : 5px 0;
-			font-family: MYRIADPRO-REGULAR;
-			animation  : animate_small linear 1s infinite;
-		}
-
-		@keyframes animate_small {
-			20% {
-				opacity        : 0.9;
-				animation-delay: 0.2s;
-			}
-
-			40% {
-				opacity        : 0.7;
-				animation-delay: 0.2s;
-			}
-
-			60% {
-				opacity        : 0.5;
-				animation-delay: 0.2s;
-			}
-
-			80% {
-				opacity        : 0.3;
-				animation-delay: 0.2s;
-			}
-
-			100% {
-				opacity        : 0.1;
-				animation-delay: 0.2s;
-			}
+			display   : block;
+			text-align: center;
+			font-size : 17px;
+			color     : #fff;
+			padding   : 5px 0;
+			animation : animate_small linear 1s infinite;
 		}
 
 		.par {

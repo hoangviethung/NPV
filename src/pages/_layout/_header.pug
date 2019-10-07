@@ -2,9 +2,14 @@ header
 	.container
 		.row.no-gutters
 			.col-lg-auto
+				.toggle-menu-mobile
+					img(src="./img/icons/menu-mobile.svg", alt="")
 				.logo
 					a(href="index.html")
 						img(src="./img/logo.png", alt="", srcset="")
+				.search-mobile
+					img.search(src="./img/icons/search-mobile.svg", alt="")
+					img.close(src="./img/icons/close.svg", alt="")
 			.col-no-rel
 				.top-header
 					ul.social-media-menu
@@ -18,14 +23,14 @@ header
 							a(href="#")
 								img(src="./img/icons/twitter.svg", alt="", srcset="")
 					.search
-						input(type="text" placeholder="Tìm kiếm")
-						button
-							img(src="./img/icons/search.svg", alt="", srcset="")
-				#mobile-button
-					img(src="./img/icons/menu-mobile.svg", alt="")
+						form(action="#")
+							input(type="text" placeholder="Tìm kiếm")
+							button
+								img(src="./img/icons/search.svg", alt="", srcset="")
 				.bottom-header
 					.nav-list
-						.nav-item.active GIỚI THIỆU
+						.nav-item.active
+							a GIỚI THIỆU
 							.sub-menu
 								.item
 									a(href="gioithieu.html") GIỚI THIỆU VỀ CÔNG TY
@@ -39,7 +44,8 @@ header
 							a(href="dichvu.html") DỊCH VỤ
 						.nav-item
 							a(href="yeucaubaogia.html") YÊU CẦU BÁO GIÁ
-						.nav-item TIỆN ÍCH
+						.nav-item
+							a TIỆN ÍCH
 							.sub-menu
 								.item
 									a(href="tienich-container.html") KÍCH THƯỚC CONTAINER
@@ -55,7 +61,8 @@ header
 									a(href="tienich-tudien.html") TỪ ĐIỂN HẢI
 								.item
 									a(href="tienich-tigia.html") TỈ GIÁ NGOẠI TỆ
-						.nav-item TRA CỨU THÔNG TIN
+						.nav-item
+							a TRA CỨU THÔNG TIN
 							.sub-menu
 								.item
 									a(href="kiemtrahangnhap.html") TRA CỨU HÀNG NHẬP
@@ -65,7 +72,8 @@ header
 									a(href="kiemtravantaidon.html") KIỂM TRA VẬN TẢI ĐƠN
 						.nav-item
 							a(href="tintuc.html") TUYỂN DỤNG
-						.nav-item LIÊN HỆ
+						.nav-item
+							a LIÊN HỆ
 							.sub-menu
 								.item
 									a(href="lienhetructiep.html") LIÊN HỆ TRỰC TIẾP
