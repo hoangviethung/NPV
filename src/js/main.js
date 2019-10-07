@@ -224,9 +224,17 @@ function addBlockTableForm() {
 	});
 }
 
-
 const tienIchTabTuDien = () => {
 	return new Tab('.tienich-tudien .tab-container');
+}
+
+function showFAQ() {
+	$('.FAQ .item-group .question').click(function(e) {
+		e.preventDefault();
+
+		$(this).find('.arrow-icon').toggleClass('active');
+		$(this).siblings('.answer').slideToggle();
+	});
 }
 
 $(document).ready(function() {
@@ -243,6 +251,7 @@ $(document).ready(function() {
 	libraryImgVideo();
 	showAlbumImg();
 	addBlockTableForm();
+	showFAQ();
 })
 
 $(window).on("scroll", function() {
