@@ -62,13 +62,15 @@ class Tab {
 }
 
 function activeHeader() {
-	$(window).scroll(function() {
-		if ($(this).scrollTop() > 150) {
-			$('header').addClass('active');
-		} else {
-			$('header').removeClass('active');
-		}
-	});
+	if ($(window) > 1024) {
+		$(this).scroll(function() {
+			if ($(this).scrollTop() > 150) {
+				$('header').addClass('active');
+			} else {
+				$('header').removeClass('active');
+			}
+		});
+	}
 }
 
 function sliderHomeBanner() {
