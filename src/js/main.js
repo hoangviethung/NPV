@@ -269,6 +269,13 @@ function showSearchMobile() {
 	});
 }
 
+function showSubMenu() {
+	$('header .bottom-header .nav-item').click(function(e) {	
+		$('header .bottom-header .nav-item').find('.sub-menu').not(this).slideUp();
+		$(this).find('.sub-menu').slideToggle();
+	});
+}
+
 $(document).ready(function() {
 	objectFitImages("img.ofc");
 	sliderHomeBanner();
@@ -286,6 +293,7 @@ $(document).ready(function() {
 	showFAQ();
 	showMenuMobile();
 	showSearchMobile();
+	showSubMenu();
 })
 
 $(window).on("scroll", function() {
