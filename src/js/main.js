@@ -271,7 +271,7 @@ function showSearchMobile() {
 
 function showSubMenu() {
 	$('header .bottom-header .nav-item').click(function(e) {	
-		$('header .bottom-header .nav-item').find('.sub-menu').not(this).slideUp();
+		$(this).siblings('.nav-item').find('.sub-menu').slideUp();
 		$(this).find('.sub-menu').slideToggle();
 	});
 }

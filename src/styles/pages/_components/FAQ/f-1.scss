@@ -56,4 +56,33 @@
 			}
 		}
 	}
+
+	@media (max-width: 1024.98px) {
+		margin-top: 30px;
+	}
+
+	@media (max-width: 767.98px) {
+		.title {
+			font-size: 24px;
+		}
+
+		.detail-group {
+			margin-top: 25px;
+
+			.item-group {
+				.question {
+					padding: 25px 60px 25px 20px;
+
+					p {
+						font-size: 16px;
+					}
+				}
+
+				.answer {
+					padding: 25px 20px;
+				}
+			}
+		}
+
+	}
 }
