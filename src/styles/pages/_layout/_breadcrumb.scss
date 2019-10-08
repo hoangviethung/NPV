@@ -32,7 +32,14 @@
 		}
 	}
 
-	@media(max-width: 1024px) {
-		display: none;
+	@media (max-width: 767.98px) {
+		.breadcrumb {
+			li {
+				a {
+					font-size: 12px;
+					padding  : 10px 0;
+				}
+			}
+		}
 	}
 }

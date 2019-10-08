@@ -49,4 +49,39 @@
 			}
 		}
 	}
+
+
+	@media (max-width: 1024.98px) {
+		margin: 15px 0;
+	}
+
+	@media (max-width: 767.98px) {
+		h4 {
+			font-size: 16px;
+		}
+
+		.list-item-service {
+			padding-left: 0px;
+
+			.item {
+				margin-bottom: 15px;
+
+				h5 {
+					flex         : 0 0 100%;
+					max-width    : 100%;
+					margin-bottom: 15px;
+					font-size    : 16px;
+				}
+
+				ul {
+					flex     : 0 0 100%;
+					max-width: 100%;
+
+					li {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
 }
