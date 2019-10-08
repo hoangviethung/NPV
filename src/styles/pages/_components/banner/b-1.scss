@@ -97,9 +97,11 @@
 			border-radius: 50%;
 			transition   : .3s all ease-in-out;
 
-			&:hover {
-				border-radius: 50% 0 0 50%;
-				right        : -20px;
+			@media (min-width: 1025px) {
+				&:hover {
+					border-radius: 50% 0 0 50%;
+					right        : -20px;
+				}
 			}
 		}
 
@@ -117,9 +119,65 @@
 			border-radius: 50%;
 			transition   : .3s all ease-in-out;
 
-			&:hover {
-				border-radius: 0 50% 50% 0;
-				left         : -20px;
+			@media (min-width: 1025px) {
+				&:hover {
+					border-radius: 0 50% 50% 0;
+					left         : -20px;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 1024.98px) {
+		.slider-HomeBanner {
+			figure {
+				position: relative;
+				height  : auto;
+
+				figcaption {
+					left: 100px;
+					top : 50px;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 767.98px) {
+		.slider-HomeBanner {
+			figure {
+				figcaption {
+					left: 40px;
+					top : 30px;
+
+					.title {
+						font-size     : 20px;
+						letter-spacing: 1px;
+						margin-bottom : 10px;
+					}
+
+					.description {
+						font-size: 12px;
+					}
+				}
+			}
+		}
+
+		// SET HIỆU ỨNG CHO SLIDER
+		.swiper-container {
+			.swiper-button-next {
+				background-size: 15px;
+				right          : -25px;
+				width          : 44px;
+				height         : 44px;
+
+			}
+
+			.swiper-button-prev {
+				background-size    : 15px;
+				background-position: 25px;
+				left               : -25px;
+				width              : 44px;
+				height             : 44px;
 			}
 		}
 	}

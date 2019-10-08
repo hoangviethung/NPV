@@ -67,4 +67,39 @@
 			}
 		}
 	}
+
+	@media (max-width: 1024.98px) {
+		padding: 25px 0px;
+
+		.block-form-tuvan {
+			margin-top: 50px;
+
+			.form-group {
+				margin-bottom: 15px;
+
+				textarea {
+					margin-top: 0px;
+				}
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+	}
+
+	@media (max-width: 767.98px) {
+		.btn {
+			width: 190px;
+		}
+
+		.block-form-tuvan {
+
+			h3 {
+				font-size    : 20px;
+				margin-bottom: 25px;
+			}
+		}
+	}
 }

@@ -98,7 +98,12 @@ function sliderMember() {
 		speed: 1000,
 		loop: true,
 		autoplay: true,
-		breakpoints: {},
+		breakpoints: {
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 30,
+			},
+		},
 		navigation: {
 			nextEl: '.slider-Member .swiper-button-next',
 			prevEl: '.slider-Member .swiper-button-prev',
@@ -113,7 +118,12 @@ function sliderCustomer() {
 		speed: 1000,
 		loop: true,
 		autoplay: true,
-		breakpoints: {},
+		breakpoints: {
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 30,
+			},
+		},
 		navigation: {
 			nextEl: '.slider-Customer .swiper-button-next',
 			prevEl: '.slider-Customer .swiper-button-prev',
@@ -213,8 +223,6 @@ function showListPC() {
 }
 
 function addBlockTableForm() {
-
-
 	$('body').on('click', '.tac-vu .add', function() {
 		var item_news = $(this).parents('tr');
 		item_news.parent().append(item_news.prop('outerHTML'));

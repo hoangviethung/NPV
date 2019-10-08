@@ -116,6 +116,7 @@ header {
 			transition : .3s all ease-in-out;
 
 			>a {
+				width      : 100%;
 				font-size  : 16px;
 				color      : #2B2B2B;
 				font-weight: 700;
@@ -313,8 +314,16 @@ header {
 				display: block;
 
 				.nav-item {
-					padding      : 20px 0 20px 15px;
-					border-bottom: 1px solid $main-color-1;
+					padding       : 20px 0 20px 15px;
+					border-bottom : 1px solid $main-color-1;
+					flex-direction: column;
+
+					.sub-menu {
+						width    : 100%;
+						position : static;
+						left     : 0;
+						transform: translateX(0);
+					}
 				}
 			}
 		}

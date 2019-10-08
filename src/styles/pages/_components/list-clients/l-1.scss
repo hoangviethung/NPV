@@ -36,4 +36,18 @@
 		right           : 0;
 		background-image: url(../img/icons/next-slider-clients.svg);
 	}
+
+	@media (max-width: 1024.98px) {
+		margin: 30px 0 15px;
+
+		.list-slider {
+			.btn-noClick {
+				width: 100px;
+
+				span {
+					font-size: 14px;
+				}
+			}
+		}
+	}
 }
