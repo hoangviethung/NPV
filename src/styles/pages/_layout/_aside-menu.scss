@@ -150,6 +150,110 @@ aside {
 	}
 
 	@media (max-width: 1024.98px) {
-		display: none;
+		.block-service {
+			margin-top: 30px;
+
+			.title {
+				background: #F3F3F3;
+				box-shadow: none;
+
+				h3 {
+					padding-left: 25px;
+				}
+			}
+
+			.list-item-service {
+				box-shadow: none;
+
+				figure {
+					border-left  : 1px solid #F3F3F3;
+					border-right : 1px solid #F3F3F3;
+					border-bottom: 1px solid #F3F3F3;
+
+					.icon {
+						display: none;
+					}
+
+					figcaption {
+						margin-left: 25px;
+					}
+
+					&:after {
+						content: none;
+					}
+				}
+			}
+		}
+
+		.block-form-tu-van {
+			margin-top: 20px;
+
+			.title {
+				box-shadow: none;
+
+				h3 {
+					padding-left: 25px;
+				}
+			}
+
+			form.aside {
+				padding   : 25px 0;
+				box-shadow: none;
+
+				.form-group {
+					padding: 0 25px;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 767.98px) {
+		.block-service {
+			.title {
+				height: 50px;
+
+				h3 {
+					font-size  : 16px;
+					line-height: 50px;
+				}
+			}
+
+			.list-item-service {
+				figure {
+					height: 50px;
+
+					figcaption {
+						span {
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+
+		.block-form-tu-van {
+			.title {
+				height: 50px;
+
+				h3 {
+					font-size  : 16px;
+					line-height: 50px;
+				}
+			}
+
+			form.aside {
+				.form-group {
+					textarea {
+						padding: 15px 15px 40px 15px;
+					}
+
+					.submit {
+						right : 30px;
+						bottom: 15px;
+					}
+				}
+			}
+		}
+
 	}
 }

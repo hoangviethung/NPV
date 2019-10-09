@@ -128,4 +128,34 @@
 			font-style: italic;
 		}
 	}
+
+	@media (max-width: 1024.98px) {
+		margin: 25px 0;
+
+		.col-lg-8 {
+			padding-right: 15px;
+		}
+
+		.form-row {
+			&.mt-70 {
+				margin-top: 0;
+			}
+		}
+
+		.title {
+			margin-bottom: 25px;
+
+			h3 {
+				font-size  : 34px;
+				font-weight: 700;
+				color      : #2B2B2B;
+			}
+		}
+
+		button {
+			display: block;
+			float  : unset;
+			margin : 0 auto;
+		}
+	}
 }
