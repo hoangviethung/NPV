@@ -23,7 +23,6 @@
 				.box-img {
 					position    : relative;
 					min-width   : 282px;
-					height      : 228px;
 					overflow    : hidden;
 					margin-right: 45px;
 
@@ -86,8 +85,8 @@
 
 					.description {
 						font-size         : 18px;
-						height            : 80px;
-						-webkit-line-clamp: 3;
+						height            : 110px;
+						-webkit-line-clamp: 4;
 						color             : #4D4D4D;
 					}
 				}
@@ -120,7 +119,120 @@
 		}
 	}
 
-	.social-media {
-		margin-top: 35px;
+	@media (max-width: 1024.98px) {
+		margin: 30px 0 0 0;
+
+		.title {
+			margin-bottom: 25px;
+
+			h3 {
+				font-size  : 34px;
+				color      : #2B2B2B;
+				font-weight: 700;
+			}
+		}
+
+		.list-news {
+			.item {
+				figure {
+					.box-img {
+						margin-right: 30px;
+						min-width   : 200px;
+					}
+
+					figcaption {
+						.title-news {
+							font-size         : 18px;
+							max-height        : 27px;
+							-webkit-line-clamp: 1;
+						}
+
+						.time {
+							font-size    : 14px;
+							margin-bottom: 15px;
+						}
+
+						.description {
+							font-size         : 16px;
+							height            : 70px;
+							-webkit-line-clamp: 3;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 767.98px) {
+		.title {
+			h3 {
+				font-size: 24px;
+			}
+		}
+
+		.list-news {
+			.item {
+				margin-bottom : 15px;
+				padding-bottom: 10px;
+
+				figure {
+					display: block;
+
+					.box-img {
+						height      : 280px;
+						min-width   : unset;
+						margin-right: 0;
+					}
+
+					figcaption {
+						margin-top: 15px;
+
+						.title-news {
+							font-size         : 14px;
+							max-height        : 42px;
+							font-weight       : 400;
+							-webkit-line-clamp: 2;
+							margin-bottom     : 3px;
+						}
+
+						.time {
+							font-size    : 12px;
+							margin-bottom: 10px;
+						}
+
+						.description {
+							font-size         : 14px;
+							height            : 85px;
+							-webkit-line-clamp: 4;
+						}
+					}
+				}
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				&:hover {
+					figure {
+						.box-img {
+							img {
+								transform: scale(1.1);
+							}
+
+							.icon {
+								left          : 50%;
+								transform     : translate(-50%, -50%);
+								opacity       : 1;
+								pointer-events: visible;
+							}
+
+							&:after {
+								opacity: 1;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
