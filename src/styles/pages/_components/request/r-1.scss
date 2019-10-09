@@ -186,4 +186,48 @@
 			}
 		}
 	}
+
+	@media (max-width: 1024.98px) {
+		margin: 30px 0;
+
+		.col-lg-8 {
+			padding-right: 15px;
+		}
+
+		h3 {
+			margin-bottom: 15px;
+		}
+
+		.form-group {
+			input[type='number'] {
+				padding: 0 7px;
+			}
+
+			table {
+				td {
+					&.tac-vu {
+						width: 100px;
+					}
+				}
+			}
+		}
+
+		button {
+			display: block;
+			margin : 0 auto;
+			float  : unset;
+		}
+	}
+
+	@media (max-width: 767.98px) {
+		.form-group {
+			label {
+				font-size: 16px;
+			}
+		}
+
+		h3 {
+			font-size: 24px;
+		}
+	}
 }
