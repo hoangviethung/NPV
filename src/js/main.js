@@ -284,6 +284,13 @@ function showSubMenu() {
 	}
 }
 
+function getNameFile() {
+	$('input[type="file"]').change(function(e) {
+		var fileName = e.target.files[0].name;
+		$(this).siblings('p').html(fileName);
+	});
+}
+
 $(document).ready(function() {
 	objectFitImages("img.ofc");
 	sliderHomeBanner();
@@ -298,6 +305,7 @@ $(document).ready(function() {
 	libraryImgVideo();
 	showAlbumImg();
 	addBlockTableForm();
+	getNameFile();
 	showFAQ();
 	showMenuMobile();
 	showSearchMobile();
