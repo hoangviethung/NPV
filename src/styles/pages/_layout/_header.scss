@@ -134,6 +134,15 @@ header {
 				appearance : none;
 			}
 
+			img {
+				display : none;
+				position: absolute;
+				width   : 12px;
+				height  : 7px;
+				right   : 15px;
+				top     : 15px;
+			}
+
 			&:last-child {
 				&:after {
 					content          : '';
@@ -358,6 +367,21 @@ header {
 
 						.item {
 							border-bottom: 1px solid $main-color-2;
+						}
+					}
+
+					img {
+						display: block;
+					}
+
+					select {
+						width: unset;
+					}
+
+					&:last-child {
+						&:after {
+							right: 15px;
+							top  : 15px;
 						}
 					}
 				}

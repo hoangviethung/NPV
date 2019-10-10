@@ -72,45 +72,47 @@
 					.form-group
 						label(for="") Container/seal number
 						table
-							tr
-								th Type Container
-								th ContainerNo
-								th SealNo
-								th GW
-								th CBM
-								th Number of Package
-								th Unit
-								th Tác Vụ
-							tr
-								td
-									select(name="")
-										option(value="") 20'DC
-										option(value="") TEST
-										option(value="") TEST
-										option(value="") TEST
-										option(value="") TEST
-										option(value="") TEST
-								td
-									input(type="text" placeholder="Nhập")
-								td
-									input(type="text" placeholder="Nhập")
-								td
-									input(type="number", value="0",  min="0" max="100")
-								td
-									input(type="number", value="0",  min="0" max="100")
-								td
-									input(type="number", value="0",  min="0" max="100")
-								td
-									select(name="")
-										option(value="") BAG
-										option(value="") TEST
-										option(value="") TEST
-										option(value="") TEST
-										option(value="") TEST
-										option(value="") TEST
-								td.tac-vu
-									img.add(src="./img/icons/tacvu-them.svg", alt="", srcset="")
-									img.delete(src="./img/icons/tacvu-xoa.svg", alt="", srcset="")
+							thead
+								tr
+									th Type Container
+									th ContainerNo
+									th SealNo
+									th GW
+									th CBM
+									th Number of Package
+									th Unit
+									th Tác Vụ
+							tbody
+								tr
+									td
+										select
+											option(value="") 20'DC
+											option(value="") TEST
+											option(value="") TEST
+											option(value="") TEST
+											option(value="") TEST
+											option(value="") TEST
+									td
+										input(type="text" placeholder="Nhập")
+									td
+										input(type="text" placeholder="Nhập")
+									td
+										input(type="number", value="0",  min="0" max="100")
+									td
+										input(type="number", value="0",  min="0" max="100")
+									td
+										input(type="number", value="0",  min="0" max="100")
+									td
+										select
+											option(value="") BAG
+											option(value="") TEST
+											option(value="") TEST
+											option(value="") TEST
+											option(value="") TEST
+											option(value="") TEST
+									td.tac-vu
+										img.add(src="./img/icons/tacvu-them.svg", alt="", srcset="")
+										img.delete(src="./img/icons/tacvu-xoa.svg", alt="", srcset="")
 				.form-row
 					.form-group.col-lg-12
 						label(for="remark") Remark

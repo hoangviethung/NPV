@@ -124,12 +124,24 @@
 				padding   : 10px 15px;
 			}
 
-			tr {
-				&:nth-child(2) {
-					td {
-						&.tac-vu {
-							.delete {
-								display: none;
+			tbody {
+				tr {
+					&:nth-child(1) {
+						td {
+							&.tac-vu {
+								.delete {
+									display: none;
+								}
+							}
+						}
+					}
+
+					+tr {
+						td {
+							&.tac-vu {
+								.add {
+									display: none;
+								}
 							}
 						}
 					}
