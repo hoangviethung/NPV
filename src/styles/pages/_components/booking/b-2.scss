@@ -1,9 +1,6 @@
 .form-dangky-booking {
-	margin: 45px 0px 100px;
-
-	.col-lg-8 {
-		padding-right: 40px;
-	}
+	margin       : 45px 0px 100px;
+	padding-right: 40px;
 
 	.form-row {
 		margin: 0 -10px;
@@ -130,11 +127,9 @@
 	}
 
 	@media (max-width: 1024.98px) {
-		margin: 25px 0;
+		margin       : 25px 0;
+		padding-right: 15px;
 
-		.col-lg-8 {
-			padding-right: 15px;
-		}
 
 		.form-row {
 			&.mt-70 {

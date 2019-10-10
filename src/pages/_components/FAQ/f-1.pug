@@ -1,17 +1,16 @@
-section.FAQ
-	.container
-		.row
-			.col-lg-8
-				.title
-					h3 FAQ
-				.detail-group
-					-for(i=1;i<10;i++)
-						.item-group
-								.question
-									p Any inquiry about freight, customs clearance, inland transportation, please send your contact information in the form below. Items marked?
-									.arrow-icon
-										img(src="./img/icons/arrow-FAQ.svg", alt="")
-								.answer
-									p All of our domestic offices are located around all main ports of Viet nam as such at Hochiminh City Port, Haiphong City Port, Danang City Port, as well our office in The Capital of Hanoi. In addition, we also have an office located in City of Los Angeles.
-			.col-lg-4
-				include ../../_layout/_aside-menu.pug
+.container
+	.row
+		.col-lg-8.FAQ
+			.title
+				h3 FAQ
+			.detail-group
+				-for(i=1;i<10;i++)
+					.item-group
+							.question
+								p Any inquiry about freight, customs clearance, inland transportation, please send your contact information in the form below. Items marked?
+								.arrow-icon
+									img(src="./img/icons/arrow-FAQ.svg", alt="")
+							.answer
+								p All of our domestic offices are located around all main ports of Viet nam as such at Hochiminh City Port, Haiphong City Port, Danang City Port, as well our office in The Capital of Hanoi. In addition, we also have an office located in City of Los Angeles.
+		.col-lg-4
+			include ../../_layout/_aside-menu.pug

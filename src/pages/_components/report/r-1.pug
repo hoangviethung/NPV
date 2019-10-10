@@ -1,34 +1,33 @@
-section.form-report-request
-	.container
-		.row
-			.col-lg-8
-				.title
-					h3 Delivery Order
-				.block-form
-					form(action="#")
-						.form-group
-							label(for="HBLNoSea") HBLNo Sea
-							.form-input
-								input#HBLNoSea(type="text", placeholder="Your Number")
-								span.error Bắt lỗi
-						.form-group
-							label(for="id_Sea") Enter Partner ID
-							.form-input
-								input#id_Sea(type="text", placeholder="Your Number")
-								span.error Bắt lỗi
-						button.btn TRACKING
-				.block-form
-					form(action="#")
-						.form-group
-							label(for="HBLNoAir") HBLNo Air
-							.form-input
-								input#HBLNoAir(type="text", placeholder="Your Number")
-								span.error Bắt lỗi
-						.form-group
-							label(for="id_Air") Enter Partner ID
-							.form-input
-								input#id_Air(type="text", placeholder="Your Number")
-								span.error Bắt lỗi
-						button.btn TRACKING
-			.col-lg-4
-				include _aside-report.pug
+.container
+	.row
+		.col-lg-8.form-report-request
+			.title
+				h3 Delivery Order
+			.block-form
+				form(action="#")
+					.form-group
+						label(for="HBLNoSea") HBLNo Sea
+						.form-input
+							input#HBLNoSea(type="text", placeholder="Your Number")
+							span.error Bắt lỗi
+					.form-group
+						label(for="id_Sea") Enter Partner ID
+						.form-input
+							input#id_Sea(type="text", placeholder="Your Number")
+							span.error Bắt lỗi
+					button.btn TRACKING
+			.block-form
+				form(action="#")
+					.form-group
+						label(for="HBLNoAir") HBLNo Air
+						.form-input
+							input#HBLNoAir(type="text", placeholder="Your Number")
+							span.error Bắt lỗi
+					.form-group
+						label(for="id_Air") Enter Partner ID
+						.form-input
+							input#id_Air(type="text", placeholder="Your Number")
+							span.error Bắt lỗi
+					button.btn TRACKING
+		.col-lg-4
+			include _aside-report.pug
