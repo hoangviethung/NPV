@@ -100,7 +100,7 @@ function sliderMember() {
 		autoplay: true,
 		breakpoints: {
 			768: {
-				slidesPerView: 2,
+				slidesPerView: 1,
 				spaceBetween: 30,
 			},
 		},
@@ -120,7 +120,7 @@ function sliderCustomer() {
 		autoplay: true,
 		breakpoints: {
 			768: {
-				slidesPerView: 2,
+				slidesPerView: 1,
 				spaceBetween: 30,
 			},
 		},
