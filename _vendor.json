@@ -6,6 +6,7 @@
 			"bower_components/linearicons/dist/web-font/fonts/**"
 		],
 		"js": [
+			"bower_components/wow/dist/wow.js",
 			"bower_components/object-fit-images/dist/ofi.browser.js",
 			"bower_components/lazysizes/lazysizes.js",
 			"_vendor/ls.unveilhooks.min.js",
@@ -14,6 +15,7 @@
 			"bower_components/fancybox/dist/jquery.fancybox.js"
 		],
 		"css": [
+			"bower_components/wow/css/libs/animate.css",
 			"bower_components/swiper/dist/css/swiper.css",
 			"bower_components/fancybox/dist/jquery.fancybox.css",
 			"bower_components/animate.css/animate.css"

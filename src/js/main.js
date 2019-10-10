@@ -303,6 +303,7 @@ $(document).ready(function() {
 	showSearchMobile();
 	showSubMenu();
 	_getThumbnailYoutube();
+	new WOW().init();
 })
 
 $(window).on("scroll", function() {
