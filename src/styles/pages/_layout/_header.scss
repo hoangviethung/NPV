@@ -107,8 +107,8 @@ header {
 			display       : flex;
 			align-items   : center;
 			cursor        : pointer;
-			padding-bottom: 25.5px;
-			border-bottom : 5px solid transparent;
+			padding-bottom: 27.5px;
+			border-bottom : 2px solid transparent;
 
 			font-size  : 16px;
 			color      : #2B2B2B;
@@ -124,11 +124,28 @@ header {
 			}
 
 			select {
+				width      : 50px;
+				cursor     : pointer;
 				background : none;
 				border     : none;
 				font-size  : 16px;
 				color      : #2B2B2B;
-				font-weight: 700;
+				font-weight: 400;
+				appearance : none;
+			}
+
+			&:last-child {
+				&:after {
+					content          : '';
+					background-image : url(../img/icons/arrow-select.svg);
+					position         : absolute;
+					right            : 8px;
+					top              : 8px;
+					width            : 12px;
+					height           : 7px;
+					background-repeat: no-repeat;
+					background-size  : cover;
+				}
 			}
 
 			&.active {
@@ -180,18 +197,20 @@ header {
 			}
 
 			@media (min-width: 1025px) {
-				&:hover {
-					color        : #3E4095;
-					border-bottom: 5px solid #3E4095;
+				&:not(:last-child) {
+					&:hover {
+						color        : #3E4095;
+						border-bottom: 2px solid #3E4095;
 
-					>a {
-						color: #3E4095;
-					}
+						>a {
+							color: #3E4095;
+						}
 
-					.sub-menu {
-						opacity   : 1;
-						visibility: visible;
-						transition: .3s all ease-in-out;
+						.sub-menu {
+							opacity   : 1;
+							visibility: visible;
+							transition: .3s all ease-in-out;
+						}
 					}
 				}
 			}
