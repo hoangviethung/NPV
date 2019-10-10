@@ -1,4 +1,4 @@
-var markers = [];
+ var markers = [];
 
 var mapOptions = {
 	zoom: 12,
@@ -168,6 +168,9 @@ function initialize() {
 									<div class="col-lg-4">
 										<p><b>Email: </b>${marker.email}</p>
 										<p><b>Website: </b>${marker.website}</p>
+									</div>
+									<div class="col-lg-12">
+										<p class="hot-line"><b>HOT LINE: </b>${marker.hotLine}</p>
 									</div>
 								</div>
 							</div>

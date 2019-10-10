@@ -140,7 +140,6 @@ header {
 			}
 
 			.sub-menu {
-
 				position : absolute;
 				width    : 285px;
 				top      : 54px;
@@ -159,8 +158,10 @@ header {
 					transition: .3s all ease-in-out;
 
 					a {
-						font-size: 16px;
-						color    : #000000;
+						text-transform: capitalize;
+						font-weight   : 400;
+						font-size     : 16px;
+						color         : #707070;
 					}
 
 					&:hover {

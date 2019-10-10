@@ -91,5 +91,43 @@
 			color       : #2B2B2B;
 			word-spacing: 8.7px;
 		}
+
+		.hot-line {
+			margin-top: 10px;
+
+			b {
+				color: #BC2E31;
+			}
+		}
+	}
+
+	@media (max-width: 1024.98px) {
+		margin: 30px 0;
+
+		.col-lg-4 {
+			padding-right: 15px;
+		}
+
+		p {
+			color: #000000;
+		}
+
+		.block-form-tu-van {
+			margin-top: 15px;
+
+			form {
+				.form-group {
+					margin-bottom: 5px;
+				}
+			}
+		}
+
+		.map-item {
+			margin: 30px 0;
+
+			p {
+				font-size: 16px;
+			}
+		}
 	}
 }

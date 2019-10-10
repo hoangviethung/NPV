@@ -270,10 +270,12 @@ function showSearchMobile() {
 }
 
 function showSubMenu() {
-	$('header .bottom-header .nav-item').click(function(e) {	
-		$(this).siblings('.nav-item').find('.sub-menu').slideUp();
-		$(this).find('.sub-menu').slideToggle();
-	});
+	if ($(window).width() < 1024) {
+		$('header .bottom-header .nav-item').click(function(e) {
+			$(this).siblings('.nav-item').find('.sub-menu').slideUp();
+			$(this).find('.sub-menu').slideToggle();
+		});
+	}
 }
 
 $(document).ready(function() {
