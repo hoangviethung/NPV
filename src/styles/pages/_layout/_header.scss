@@ -329,7 +329,7 @@ header {
 			left       : -100%;
 			margin-top : 0;
 			margin-left: 0;
-			width      : 65%;
+			width      : 100%;
 			height     : 100vh;
 			background : #FFFFFF;
 			transition : .3s all ease-in-out;
@@ -349,13 +349,16 @@ header {
 					align-items   : unset;
 
 					.sub-menu {
-						margin-top   : 10px;
-						display      : none;
-						width        : 96%;
-						position     : static;
-						left         : 0;
-						transform    : translateX(0);
-						// box-shadow: none;
+						margin   : 25px 0;
+						display  : none;
+						width    : 96%;
+						position : static;
+						left     : 0;
+						transform: translateX(0);
+
+						.item {
+							border-bottom: 1px solid $main-color-2;
+						}
 					}
 				}
 			}
@@ -364,8 +367,6 @@ header {
 
 	@media (max-width: 767.98px) {
 		.bottom-header {
-			width: 100%;
-
 			.nav-list {
 				.nav-item {
 					padding: 10px 0 10px 15px;
