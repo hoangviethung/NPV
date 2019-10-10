@@ -1,24 +1,35 @@
 .section-tienich {
-	padding: 60px 0;
+	margin       : 60px 0;
+	padding-right: 40px;
+
+	@media (max-width: 1024.98px) {
+		margin       : 30px 0;
+		padding-right: 15px;
+	}
+
+	@media (max-width: 1024.98px) {
+		margin       : 15px 0;
+		padding-right: 15px;
+	}
 }
 
 
 .tienich-table {
-	display: block;
+	display      : block;
 	margin-bottom: 30px;
-	overflow: auto;
+	overflow     : auto;
 
 	table {
 		width: 100%;
 
 		thead {
 			th {
-				height: 65px;
-				background: #3E4095;
-				color: white;
+				height        : 65px;
+				background    : #3E4095;
+				color         : white;
 				text-transform: uppercase;
-				font-size: 24px;
-				font-weight: 400;
+				font-size     : 24px;
+				font-weight   : 400;
 			}
 		}
 
@@ -30,7 +41,7 @@
 
 		th,
 		td {
-			border: 1px solid #C1C1C1;
+			border : 1px solid #C1C1C1;
 			padding: 10px 15px;
 
 			img {
@@ -50,9 +61,9 @@
 
 		tbody {
 			th {
-				text-align: center;
-				font-weight: 400;
-				color: #3E4095;
+				text-align     : center;
+				font-weight    : 400;
+				color          : #3E4095;
 				text-decoration: underline;
 			}
 		}
@@ -63,7 +74,7 @@
 	table {
 		thead {
 			th {
-				font-size: 18px;
+				font-size : 18px;
 				text-align: center;
 			}
 		}
@@ -72,15 +83,15 @@
 
 .tienich-content {
 	.content {
-		font-size: 18px;
-		color: #707070;
+		font-size     : 18px;
+		color         : #707070;
 		padding-bottom: 30px;
-		padding-top: 30px;
+		padding-top   : 30px;
 
 		h3 {
-			font-weight: 400;
+			font-weight  : 400;
 			margin-bottom: 20px;
-			font-size: 18px;
+			font-size    : 18px;
 		}
 
 		p {
@@ -96,10 +107,10 @@
 .tienich-content-2 {
 	.tienich-table {
 		h3 {
-			font-weight: 700;
-			color: #3E4095;
+			font-weight   : 700;
+			color         : #3E4095;
 			text-transform: uppercase;
-			margin-bottom: 30px;
+			margin-bottom : 30px;
 		}
 
 		table {
@@ -118,24 +129,24 @@
 	}
 
 	.content-2 {
-		font-size: 18px;
+		font-size    : 18px;
 		margin-bottom: 30px;
 
 		p {
-			text-indent: 25px;
+			text-indent  : 25px;
 			margin-bottom: 20px;
 
 			&.red {
 				text-indent: 60px;
-				color: #BC2E31;
+				color      : #BC2E31;
 			}
 		}
 
 		strong {
-			font-size: 18px;
+			font-size     : 18px;
 			text-transform: uppercase;
-			margin-bottom: 25px;
-			display: block;
+			margin-bottom : 25px;
+			display       : block;
 		}
 
 		b {
@@ -145,30 +156,31 @@
 }
 
 .tienich-tudien {
-	.tab-container{
+	.tab-container {
 		margin-bottom: 60px;
 	}
+
 	.nav-characters {
-		display: flex;
-		flex-wrap: wrap;
+		display      : flex;
+		flex-wrap    : wrap;
 		margin-bottom: 30px;
 
 		a {
-			flex: 0 0 50px;
-			max-width: 50px;
-			border-radius: 5px;
-			font-weight: 700;
-			color: #3E4095;
-			cursor: pointer;
+			flex           : 0 0 50px;
+			max-width      : 50px;
+			border-radius  : 5px;
+			font-weight    : 700;
+			color          : #3E4095;
+			cursor         : pointer;
 			text-decoration: underline !important;
-			display: flex;
+			display        : flex;
 			justify-content: center;
-			align-items: center;
-			height: 50px;
-			transition: all .3s ease-out;
+			align-items    : center;
+			height         : 50px;
+			transition     : all .3s ease-out;
 
 			&.active {
-				color: #BC2E31;
+				color     : #BC2E31;
 				box-shadow: 0 3px 6px rgba(black, .15);
 			}
 		}
@@ -176,12 +188,12 @@
 
 	.tab-content {
 		.item {
-			font-size: 18px;
+			font-size    : 18px;
 			margin-bottom: 25px;
 
 			h4 {
 				font-weight: 400;
-				color: #3E4095;
+				color      : #3E4095;
 			}
 
 			p {
