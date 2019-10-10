@@ -165,19 +165,15 @@ function libraryImgVideo() {
 		}
 	})
 
-	$('[data-fancybox="videos').fancybox({
+	$('.video[data-fancybox]').fancybox({
 		animationEffect: "slide",
 		transitionEffect: "circular",
 		buttons: [
 			'zoom',
-			'thumbs',
 			'close',
 			'share',
 			'fullscreen',
 		],
-		thumbs: {
-			autoStart: true,
-		}
 	})
 }
 
@@ -236,6 +232,16 @@ function addBlockTableForm() {
 
 const tienIchTabTuDien = () => {
 	return new Tab('.tienich-tudien .tab-container');
+}
+// GET THUMBNAIL YOUTUBE
+function _getThumbnailYoutube() {
+	$(".library .item.video").each(function() {
+		var src = $(this).attr("href");
+		var youtube_video_id = src.match(/youtube\.com.*(\?v=|\/embed\/)(.{11})/).pop();
+		if (youtube_video_id.length == 11) {
+			$(this).find("img").attr("src", "https://img.youtube.com/vi/" + youtube_video_id + "/mqdefault.jpg");
+		}
+	})
 }
 
 function showFAQ() {
@@ -296,6 +302,7 @@ $(document).ready(function() {
 	showMenuMobile();
 	showSearchMobile();
 	showSubMenu();
+	_getThumbnailYoutube();
 })
 
 $(window).on("scroll", function() {

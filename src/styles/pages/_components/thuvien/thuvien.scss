@@ -66,11 +66,10 @@
 
 				.box-video {
 					position  : relative;
+					background: #dddddd;
 					box-shadow: 0px 3px 6px rgba($color: #000000, $alpha: 0.16);
-
-					img {
-						width: 100%;
-					}
+					height    : 210px;
+					width     : 100%;
 
 					.icon {
 						background-image : url(../img/icons/library-video.svg);
