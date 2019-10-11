@@ -82,7 +82,10 @@ function sliderHomeBanner() {
 		centeredSlides: true,
 		speed: 1000,
 		loop: true,
-		autoplay: true,
+		autoplay: {
+			delay: 4000,
+			disableOnInteraction: false,
+		},
 		breakpoints: {},
 		navigation: {
 			nextEl: '.slider-HomeBanner .swiper-button-next',
