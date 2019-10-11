@@ -1,47 +1,18 @@
-section.service-list
-	.container
-		.row
-			.col-lg-6
-				.list-img
-					.item.wow.fadeIn(data-wow-delay=".2s")
-						figure
-							img.ofc(src="./img/about/2.png", alt="")
-					.item.wow.fadeIn(data-wow-delay=".3s")
-						figure
-							img.ofc(src="./img/about/3.png", alt="")
-					.item.wow.fadeIn(data-wow-delay=".4s")
-						figure
-							img.ofc(src="./img/about/4.png", alt="")
-					.item.wow.fadeIn(data-wow-delay=".5s")
-						figure
-							img.ofc(src="./img/about/5.png", alt="")
-			.col-lg-6
-				.list-item-service
-					h4 Hiện tại, NPV cung cấp tất cả các dịch vụ của ngành giao nhận vận tải nhằm hướng tới một NPV tiêu chuẩn quốc tế chuyên nghiệp:
-					.item
-						h5 - Chuyển phát nhanh quốc tế
-					.item
-						h5 - Giao nhận vận tải quốc tế
-						ul
-							li + Hàng không
-							li + Đường biển
-					.item
-						h5 - Dịch vụ Logistics 
-						ul
-							li + Khai báo hải quan
-							li + Vận chuyển đường bộ
-							li + Hàng dự án
-					.item
-						h5 - Dịch vụ gia tăng giá trị
-						ul
-							li + Những dịch vụ hỗ trợ cho khai hải quan
-							li (Kiểm văn hóa, Kiểm tra chất lượng nhà nước)
-							li + Dịch vụ mua bảo hiểm
-							li + Hàng cá nhân
-							li + Đăng ký xin giấy phép
-							li + Dịch vụ mua bảo hiểm
-					.item
-						h5 - Thương mại
-						ul
-							li + Container
-							li + Thiết bị dầu khí
+.container
+	.row
+		.col-lg-8.vismis
+			.main-title.wow.fadeIn(data-wow-delay=".5s") LỊCH SỬ HÌNH THÀNH
+			.ckFinder
+				p(style="font-weight:700") Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+				p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+				p In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean vulputate eleifend tellus.
+				p In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean vulputate eleifend tellus.
+				figure
+					img(src="./img/about/6.png", alt="")
+			.ckFinder
+				-for(i=1;i<10;i++)
+					p
+						span(style="color: #3E4095") Tháng 05 năm 2005: 
+						| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.  Aenean massa.
+		.col-lg-4
+			include ../../_layout/_aside-menu.pug
