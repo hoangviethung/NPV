@@ -23,6 +23,18 @@
 		margin-bottom: 40px;
 	}
 
+	.title-news {
+		font-size    : 34px;
+		color        : #2B2B2B;
+		margin-bottom: 20px;
+	}
+
+	.time-news {
+		display       : inline-block;
+		font-size     : 13px;
+		letter-spacing: 4px;
+	}
+
 	.ckFinder {
 		p {
 			font-size    : 18px;
@@ -63,6 +75,10 @@
 			margin-bottom: 15px;
 		}
 
+		.title-news {
+			margin-bottom: 0px;
+		}
+
 		.title-img {
 			margin: 15px 0;
 		}
@@ -70,6 +86,10 @@
 
 	@media (max-width: 767.98px) {
 		margin: 15px 0;
+
+		.title-news {
+			font-size: 24px;
+		}
 
 		.main-title {
 			font-size: 24px;
