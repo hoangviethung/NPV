@@ -1,5 +1,6 @@
 #doc-form {
-	margin-top: 45px;
+	margin-top   : 45px;
+	margin-bottom: 200px;
 
 	.header-docForm {
 		.thong-tin-cong-ty {
@@ -25,7 +26,8 @@
 		}
 
 		.box-right {
-			margin-left: auto;
+			margin-left  : auto;
+			padding-right: 15px;
 
 			span {
 				position    : relative;
@@ -140,11 +142,18 @@
 		}
 
 		.tong-chi-phi {
+			width          : 100%;
 			display        : flex;
+			padding-right  : 15px;
 			justify-content: space-between;
 			margin-top     : 15px;
-			margin-left    : 325px;
+			margin-left    : 50%;
 			font-weight    : 700;
+		}
+
+		.date {
+			margin-top: 150px;
+			text-align: right;
 		}
 	}
 }
