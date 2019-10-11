@@ -156,5 +156,28 @@
 			margin-top: 150px;
 			text-align: right;
 		}
+
+		.nguoi-gui {
+			display  : flex;
+			flex-wrap: wrap;
+			padding  : 0 15px;
+
+			span {
+				flex     : 0 0 20%;
+				max-width: 20%;
+
+				&:after {
+					content : ':';
+					position: absolute;
+					right   : 0;
+					top     : 0;
+				}
+			}
+
+			.content {
+				flex     : 0 0 80%;
+				max-width: 80%;
+			}
+		}
 	}
 }
