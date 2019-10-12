@@ -92,6 +92,7 @@
 				p {
 					&:nth-child(2) {
 						font-style: italic;
+						font-size : 14px;
 					}
 
 					&.bold {
@@ -158,25 +159,16 @@
 		}
 
 		.nguoi-gui {
-			display  : flex;
-			flex-wrap: wrap;
-			padding  : 0 15px;
-
 			span {
-				flex     : 0 0 20%;
-				max-width: 20%;
-
-				&:after {
-					content : ':';
-					position: absolute;
-					right   : 0;
-					top     : 0;
+				i {
+					font-size: 14px;
 				}
 			}
 
-			.content {
-				flex     : 0 0 80%;
-				max-width: 80%;
+			p {
+				&:first-child {
+					font-weight: 700;
+				}
 			}
 		}
 	}

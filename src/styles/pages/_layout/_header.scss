@@ -198,10 +198,24 @@ header {
 					&:hover {
 						background: #F3F3F3;
 
-						a {
+						>a {
 							color: #3E4095;
 						}
+
+						>.sub-menu.children {
+							opacity   : 1;
+							visibility: visible;
+						}
 					}
+				}
+
+				&.children {
+					opacity   : 0;
+					visibility: hidden;
+					left      : 150%;
+					box-shadow: unset;
+					transition: .2s all ease-in-out;
+					background: #F3F3F3;
 				}
 
 				@media (min-width: 1025px) {
@@ -220,7 +234,7 @@ header {
 							color: #3E4095;
 						}
 
-						.sub-menu {
+						>.sub-menu {
 							opacity   : 1;
 							visibility: visible;
 							transition: .3s all ease-in-out;
@@ -373,6 +387,18 @@ header {
 
 						.item {
 							border-bottom: 1px solid $main-color-2;
+						}
+
+						&.children {
+							display   : block;
+							opacity   : 1;
+							visibility: visible;
+							margin    : 5px 0;
+							background: none;
+
+							.item {
+								border-bottom: none;
+							}
 						}
 					}
 
