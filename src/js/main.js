@@ -376,6 +376,19 @@ function getNameFile() {
 	});
 }
 
+function activeMenuByUrl() {
+	var url = window.location.href.split('/').pop();
+
+	let listNavItem = $('.bottom-header .nav-list .nav-item a');
+	listNavItem.each(function() {
+		let hung = $(this).attr('href');
+		if (url.includes(hung)) {
+			$(this).parents('.nav-item').addClass('active');
+		}
+	})
+
+}
+
 
 $(document).ready(function() {
 	objectFitImages("img.ofc");
@@ -384,6 +397,7 @@ $(document).ready(function() {
 	sliderMember();
 	sliderCustomer();
 	showBackToTop();
+	activeMenuByUrl();
 	// showToolBarNav();
 	showListPC();
 	showList480();
