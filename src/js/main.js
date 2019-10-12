@@ -73,6 +73,27 @@ function activeHeader() {
 	}
 }
 
+function sliderHomeLocator() {
+	var swpier = new Swiper('.slider-HomeLocator', {
+		slidesPerView: 4,
+		speed: 1000,
+		loop: true,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false,
+		},
+		breakpoints: {
+			1024: {
+				slidesPerView: 1,
+			}
+		},
+		navigation: {
+			nextEl: '.slider-HomeLocator .swiper-button-next',
+			prevEl: '.slider-HomeLocator .swiper-button-prev',
+		},
+	});
+}
+
 function sliderHomeBanner() {
 	var swpier = new Swiper('.slider-HomeBanner', {
 		effect: 'fade',
@@ -359,6 +380,7 @@ function getNameFile() {
 $(document).ready(function() {
 	objectFitImages("img.ofc");
 	sliderHomeBanner();
+	sliderHomeLocator();
 	sliderMember();
 	sliderCustomer();
 	showBackToTop();
