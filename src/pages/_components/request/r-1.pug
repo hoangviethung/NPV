@@ -71,47 +71,97 @@
 				.form-row
 					.form-group
 						label(for="") Container/seal number
-						table
-							thead
-								tr
-									th Type Container
-									th ContainerNo
-									th SealNo
-									th GW
-									th CBM
-									th Number of Package
-									th Unit
-									th Tác Vụ
-							tbody
-								tr.tableForm
-									td.TypeContainer
-										select
-											option(value="0") 20'DC
-											option(value="1") TEST
-											option(value="2") TEST
-											option(value="3") TEST
-											option(value="4") TEST
-									td.ContainerNo
-										input(type="text" placeholder="Nhập")
-									td.SealNo
-										input(type="text" placeholder="Nhập")
-									td.GW
-										input(type="number", value="0",  min="0" max="100")
-									td.CBM
-										input(type="number", value="0",  min="0" max="100")
-									td.NumberOfPackage
-										input(type="number", value="0",  min="0" max="100")
-									td.Unit
-										select
-											option(value="") BAG
-											option(value="") TEST
-											option(value="") TEST
-											option(value="") TEST
-											option(value="") TEST
-											option(value="") TEST
-									td.tac-vu
-										img.add(src="./img/icons/tacvu-them.svg", alt="", srcset="")
-										img.delete(src="./img/icons/tacvu-xoa.svg", alt="", srcset="")
+						.form-table-wrapper
+							.row.no-gutters.tableForm
+								.col-xl-6
+									table
+										thead
+											tr
+												th Type Container
+												th ContainerNo
+												th SealNo
+												th GW
+										tbody
+											tr
+												td.TypeContainer
+													select
+														option(value="0") 20'DC
+														option(value="1") TEST
+														option(value="2") TEST
+														option(value="3") TEST
+														option(value="4") TEST
+												td.ContainerNo
+													input(type="text" placeholder="Nhập")
+												td.SealNo
+													input(type="text" placeholder="Nhập")
+												td.GW
+													input(type="number", value="0",  min="0" max="100")
+								.col-xl-6
+									table
+										thead
+											tr
+												th CBM
+												th Number of Package
+												th Unit
+												th Tác Vụ
+										tbody
+											tr
+												td.CBM
+													input(type="number", value="0",  min="0" max="100")
+												td.NumberOfPackage
+													input(type="number", value="0",  min="0" max="100")
+												td.Unit
+													select
+														option(value="") BAG
+														option(value="") TEST
+														option(value="") TEST
+														option(value="") TEST
+														option(value="") TEST
+														option(value="") TEST
+												td.tac-vu
+													img.add(src="./img/icons/tacvu-them.svg", alt="", srcset="")
+													img.delete(src="./img/icons/tacvu-xoa.svg", alt="", srcset="")
+						//- table
+						//- 	thead
+						//- 		tr
+						//- 			th Type Container
+						//- 			th ContainerNo
+						//- 			th SealNo
+						//- 			th GW
+						//- 			th CBM
+						//- 			th Number of Package
+						//- 			th Unit
+						//- 			th Tác Vụ
+						//- 	tbody
+						//- 		tr.tableForm
+						//- 			td.TypeContainer
+						//- 				select
+						//- 					option(value="0") 20'DC
+						//- 					option(value="1") TEST
+						//- 					option(value="2") TEST
+						//- 					option(value="3") TEST
+						//- 					option(value="4") TEST
+						//- 			td.ContainerNo
+						//- 				input(type="text" placeholder="Nhập")
+						//- 			td.SealNo
+						//- 				input(type="text" placeholder="Nhập")
+						//- 			td.GW
+						//- 				input(type="number", value="0",  min="0" max="100")
+						//- 			td.CBM
+						//- 				input(type="number", value="0",  min="0" max="100")
+						//- 			td.NumberOfPackage
+						//- 				input(type="number", value="0",  min="0" max="100")
+						//- 			td.Unit
+						//- 				select
+						//- 					option(value="") BAG
+						//- 					option(value="") TEST
+						//- 					option(value="") TEST
+						//- 					option(value="") TEST
+						//- 					option(value="") TEST
+						//- 					option(value="") TEST
+						//- 			td.tac-vu
+						//- 				img.add(src="./img/icons/tacvu-them.svg", alt="", srcset="")
+						//- 				img.delete(src="./img/icons/tacvu-xoa.svg", alt="", srcset="")
 				.form-row
 					.form-group.col-lg-12
 						label(for="remark") Remark

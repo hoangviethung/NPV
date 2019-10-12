@@ -1,33 +1,73 @@
 .tienich-table {
-	display      : block;
+	display: flex;
 	margin-bottom: 30px;
-	overflow     : auto;
+
+	@media (max-width: 767.98px) {
+		flex-wrap: wrap;
+	}
+
+	.table-img {
+		flex: 0 0 340px;
+		max-width: 340px;
+
+		table {
+			height: 100%;
+		}
+
+		@media (max-width: 767.98px) {
+			flex: 0 0 100%;
+			max-width: 100%;
+			margin-bottom: 10px;
+		}
+	}
+
+	.table-content {
+		flex-basis: 0;
+		flex-grow: 1;
+		max-width: 100%;
+
+		@media (max-width: 767.98px) {
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+	}
+
+	.content {
+		flex: 0 0 100%;
+		max-width: 100%;
+		display: block;
+		overflow-x: auto;
+	}
 
 	table {
 		width: 100%;
 
 		thead {
 			th {
-				height        : 65px;
-				background    : #3E4095;
-				color         : white;
+				height: 65px;
+				background: #3E4095;
+				color: white;
 				text-transform: uppercase;
-				font-size     : 24px;
-				font-weight   : 400;
-				text-align    : center;
+				font-size: 24px;
+				font-weight: 400;
+				text-align: center;
 			}
 		}
 
 		tbody {
 			td {
-				font-size : 18px;
+				font-size: 18px;
 				text-align: center;
+
+				@media (max-width: 1024.98px) {
+					font-size: 14px;
+				}
 			}
 		}
 
 		th,
 		td {
-			border : 1px solid #C1C1C1;
+			border: 1px solid #C1C1C1;
 			padding: 10px 15px;
 
 			img {
@@ -47,9 +87,9 @@
 
 		tbody {
 			th {
-				text-align     : center;
-				font-weight    : 400;
-				color          : #3E4095;
+				text-align: center;
+				font-weight: 400;
+				color: #3E4095;
 				text-decoration: underline;
 			}
 		}
@@ -60,7 +100,7 @@
 	table {
 		thead {
 			th {
-				font-size : 18px;
+				font-size: 18px;
 				text-align: center;
 			}
 		}
@@ -73,26 +113,26 @@
 	}
 
 	.nav-characters {
-		display      : flex;
-		flex-wrap    : wrap;
+		display: flex;
+		flex-wrap: wrap;
 		margin-bottom: 30px;
 
 		a {
-			flex           : 0 0 50px;
-			max-width      : 50px;
-			border-radius  : 5px;
-			font-weight    : 700;
-			color          : #3E4095;
-			cursor         : pointer;
+			flex: 0 0 50px;
+			max-width: 50px;
+			border-radius: 5px;
+			font-weight: 700;
+			color: #3E4095;
+			cursor: pointer;
 			text-decoration: underline !important;
-			display        : flex;
+			display: flex;
 			justify-content: center;
-			align-items    : center;
-			height         : 50px;
-			transition     : all .3s ease-out;
+			align-items: center;
+			height: 50px;
+			transition: all .3s ease-out;
 
 			&.active {
-				color     : #BC2E31;
+				color: #BC2E31;
 				box-shadow: 0 3px 6px rgba(black, .15);
 			}
 		}
@@ -100,12 +140,12 @@
 
 	.tab-content {
 		.item {
-			font-size    : 18px;
+			font-size: 18px;
 			margin-bottom: 25px;
 
 			h4 {
 				font-weight: 400;
-				color      : #3E4095;
+				color: #3E4095;
 			}
 
 			p {
