@@ -201,59 +201,77 @@
 							<div class="form-row">
 								<div class="form-group">
 									<label for="">Container/seal number</label>
-									<table>
-										<thead>
-											<tr>
-												<th>Type Container</th>
-												<th>ContainerNo</th>
-												<th>SealNo</th>
-												<th>GW</th>
-												<th>CBM</th>
-												<th>Number of Package</th>
-												<th>Unit</th>
-												<th>Tác Vụ</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr class="tableForm">
-												<td class="TypeContainer">
-													<select>
-														<option value="0">20'DC</option>
-														<option value="1">TEST</option>
-														<option value="2">TEST</option>
-														<option value="3">TEST</option>
-														<option value="4">TEST</option>
-													</select>
-												</td>
-												<td class="ContainerNo">
-													<input type="text" placeholder="Nhập">
-												</td>
-												<td class="SealNo">
-													<input type="text" placeholder="Nhập">
-												</td>
-												<td class="GW">
-													<input type="number" value="0" min="0" max="100">
-												</td>
-												<td class="CBM">
-													<input type="number" value="0" min="0" max="100">
-												</td>
-												<td class="NumberOfPackage">
-													<input type="number" value="0" min="0" max="100">
-												</td>
-												<td class="Unit">
-													<select>
-														<option value="">BAG</option>
-														<option value="">TEST</option>
-														<option value="">TEST</option>
-														<option value="">TEST</option>
-														<option value="">TEST</option>
-														<option value="">TEST</option>
-													</select>
-												</td>
-												<td class="tac-vu"><img class="add" src="./img/icons/tacvu-them.svg" alt="" srcset=""><img class="delete" src="./img/icons/tacvu-xoa.svg" alt="" srcset=""></td>
-											</tr>
-										</tbody>
-									</table>
+									<div class="form-table-wrapper">
+										<div class="row no-gutters tableForm">
+											<div class="col-xl-6">
+												<table>
+													<thead>
+														<tr>
+															<th>Type Container</th>
+															<th>ContainerNo</th>
+															<th>SealNo</th>
+															<th>GW</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="TypeContainer">
+																<select>
+																	<option value="0">20'DC</option>
+																	<option value="1">TEST</option>
+																	<option value="2">TEST</option>
+																	<option value="3">TEST</option>
+																	<option value="4">TEST</option>
+																</select>
+															</td>
+															<td class="ContainerNo">
+																<input type="text" placeholder="Nhập">
+															</td>
+															<td class="SealNo">
+																<input type="text" placeholder="Nhập">
+															</td>
+															<td class="GW">
+																<input type="number" value="0" min="0" max="100">
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<div class="col-xl-6">
+												<table>
+													<thead>
+														<tr>
+															<th>CBM</th>
+															<th>Number of Package</th>
+															<th>Unit</th>
+															<th>Tác Vụ</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="CBM">
+																<input type="number" value="0" min="0" max="100">
+															</td>
+															<td class="NumberOfPackage">
+																<input type="number" value="0" min="0" max="100">
+															</td>
+															<td class="Unit">
+																<select>
+																	<option value="">BAG</option>
+																	<option value="">TEST</option>
+																	<option value="">TEST</option>
+																	<option value="">TEST</option>
+																	<option value="">TEST</option>
+																	<option value="">TEST</option>
+																</select>
+															</td>
+															<td class="tac-vu"><img class="add" src="./img/icons/tacvu-them.svg" alt="" srcset=""><img class="delete" src="./img/icons/tacvu-xoa.svg" alt="" srcset=""></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="form-row">

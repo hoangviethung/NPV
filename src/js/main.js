@@ -255,8 +255,8 @@ function addBlockTableForm() {
 		let Unit = $('.tableForm').eq(0).find('.Unit option:selected').val();
 		let nameUnit = 'containers[' + i + '].Unit';
 
-		// Khi nhập vào nút thêm sẽ coppy ra thêm 1 table
-		var item_news = $(this).parents('tr');
+		// Khi nhập vào nút thêm sẽ copy ra thêm 1 table
+		var item_news = $(this).parents('.tableForm');
 		item_news.parent().append(item_news.prop('outerHTML'));
 
 		// Giá trị thứ i của containers[i] tăng lên sau mỗi lần click
@@ -285,7 +285,7 @@ function addBlockTableForm() {
 
 	// XÓA ĐỐI TƯỚNG KHI CLICK VÀO
 	$('body').on('click', '.tac-vu .delete', function() {
-		var item_delete = $(this).parents('tr');
+		var item_delete = $(this).parents('.tableForm');
 		item_delete.remove();
 	});
 }
