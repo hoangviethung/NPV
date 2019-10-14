@@ -141,6 +141,7 @@
 		.mot-so-luu-y {
 			margin-top : 30px;
 			font-weight: 700;
+			line-height: 30px;
 		}
 
 		.tong-chi-phi {
@@ -169,6 +170,54 @@
 				&:first-child {
 					font-weight: 700;
 				}
+			}
+		}
+
+		.giao-hang-theo {
+			margin-top : 10px;
+			font-weight: 700;
+
+			h5 {
+				text-align: center;
+				padding   : 10px;
+				border    : 1px solid #000000;
+			}
+		}
+
+		.danh-sach-cac-chi-phi {
+			margin-top: 40px;
+
+			.ten-chi-phi {
+				position    : relative;
+				padding-left: 35px;
+
+				&:after {
+					content         : '';
+					position        : absolute;
+					left            : 0;
+					top             : 0;
+					width           : 26px;
+					height          : 26px;
+					background-image: url(../img/icons/checked.svg);
+				}
+			}
+
+			ul {
+				display        : flex;
+				justify-content: space-between;
+
+				&.tong-tien {
+					width      : 50%;
+					padding    : 0 15px;
+					font-weight: 700;
+					margin-left: auto;
+					padding-top: 10px;
+					border-top : 1px solid #000000;
+				}
+			}
+
+			.row {
+				margin-bottom: 10px;
 			}
 		}
 	}
