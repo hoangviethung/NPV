@@ -102,6 +102,10 @@
 					&.bold {
 						font-weight: 700;
 					}
+
+					&.text-center {
+						text-align: center;
+					}
 				}
 			}
 		}
@@ -179,6 +183,12 @@
 			p {
 				&:first-child {
 					font-weight: 700;
+				}
+			}
+
+			.row {
+				&:nth-child(2) {
+					margin-top: 10px;
 				}
 			}
 		}
