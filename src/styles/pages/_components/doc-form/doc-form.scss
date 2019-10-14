@@ -73,11 +73,15 @@
 			}
 		}
 
-		.gioi-thieu {
-			margin-top: 15px;
+		.text {
+			margin: 15px 0;
 
 			p {
-				&:last-child {
+				&.bold {
+					font-weight: 700;
+				}
+
+				&.italic {
 					font-style: italic;
 				}
 			}
@@ -108,8 +112,6 @@
 				border: 1px solid #000000;
 
 				thead {
-					border-bottom: 1px solid #000000;
-
 					tr {
 						th {
 							border-right: 1px solid #000000;
@@ -128,10 +130,18 @@
 
 				tbody {
 					tr {
+						border-top: 1px solid #000000;
+
 						td {
 							padding     : 20px;
 							text-align  : center;
 							border-right: 1px solid #000000;
+
+							p {
+								&.bold {
+									font-weight: 700;
+								}
+							}
 						}
 					}
 				}
@@ -218,6 +228,85 @@
 
 			.row {
 				margin-bottom: 10px;
+			}
+		}
+
+		.bill {
+			font-weight: 700;
+
+			h3 {
+				text-decoration: underline;
+				margin-bottom  : 10px;
+			}
+
+			span {
+				font-weight: 400;
+			}
+
+			.item {
+				margin-bottom  : 5px;
+				display        : flex;
+				justify-content: space-between;
+			}
+		}
+
+		.routing {
+
+			h3 {
+				font-weight    : 700;
+				text-decoration: underline;
+				margin-bottom  : 10px;
+			}
+
+			table {
+				width : 100%;
+				border: 1px solid #000000;
+
+				thead {
+					tr {
+						th {
+							font-size      : 13px;
+							border-right   : 1px solid #000000;
+							padding        : 5px;
+							text-align     : center;
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+
+			tbody {
+				tr {
+					border-top: 1px solid #000000;
+
+					td {
+						padding     : 5px;
+						border-right: 1px solid #000000;
+						text-align  : center;
+					}
+				}
+			}
+		}
+
+		.thoi-gian-van-chuyen {
+			margin-top: 30px;
+
+			.item {
+				display    : flex;
+				font-weight: 700;
+
+				p {
+					position    : relative;
+					width       : 200px;
+					margin-right: 10px;
+
+					&:after {
+						content : ':';
+						position: absolute;
+						right   : 0;
+						top     : 0;
+					}
+				}
 			}
 		}
 	}
