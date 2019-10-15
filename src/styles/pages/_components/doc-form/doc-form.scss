@@ -73,6 +73,30 @@
 			}
 		}
 
+		.kinh-gui-small {
+			display    : flex;
+			flex-wrap  : wrap;
+			margin-top : 50px;
+			font-weight: 700;
+
+			p {
+				flex           : 0 0 10%;
+				display        : inline-block;
+				width          : 100px;
+				font-style     : italic;
+				text-decoration: underline;
+			}
+
+			span {
+				flex       : 0 0 90%;
+				margin-left: auto;
+			}
+
+			&.big-font {
+				font-size: 20px;
+			}
+		}
+
 		.text {
 			margin: 15px 0;
 
@@ -83,6 +107,22 @@
 
 				&.italic {
 					font-style: italic;
+				}
+
+				&.text-right {
+					text-align: right;
+				}
+
+				&.text-left {
+					text-align: left;
+				}
+
+				&.underline {
+					text-decoration: underline;
+				}
+
+				span.bold {
+					font-weight: 700;
 				}
 			}
 		}
@@ -317,6 +357,120 @@
 						top     : 0;
 					}
 				}
+			}
+		}
+
+		.ten-muc-luc {
+			margin-top: 10px;
+			display   : flex;
+
+			p {
+				font-weight    : 700;
+				text-decoration: underline;
+				margin-right   : 10px;
+
+				&:nth-child(2) {
+					font-weight    : 400;
+					text-decoration: unset;
+				}
+			}
+		}
+
+		.noi-dung-muc-luc {
+			font-size   : 14px;
+			margin-top  : 10px;
+			padding-left: 30px;
+
+			.muc-a {
+				display  : flex;
+				flex-wrap: wrap;
+
+				p {
+					position       : relative;
+					flex           : 0 0 10%;
+					display        : inline-block;
+					width          : 100px;
+					text-decoration: underline;
+					font-weight    : 700;
+
+					&:after {
+						content : ':';
+						position: absolute;
+						right   : 0;
+						top     : 0;
+					}
+				}
+
+				span {
+					flex        : 0 0 90%;
+					margin-left : auto;
+					padding-left: 10px;
+				}
+			}
+
+			.muc-c {
+				.ten-cac-dieu-khoan {
+					display  : flex;
+					flex-wrap: wrap;
+
+					.left {
+						flex     : 0 0 30px;
+						max-width: 30px;
+					}
+
+					.right {
+						margin-right: auto;
+					}
+
+					&.mt-20 {
+						margin-top: 20px;
+					}
+				}
+
+				.noi-dung-chi-tiet-dieu-khoan {
+					margin-top  : 20px;
+					padding-left: 30px;
+
+					.item {
+						display      : flex;
+						flex-wrap    : wrap;
+						margin-bottom: 10px;
+
+						.left {
+							position : relative;
+							flex     : 0 0 30%;
+							max-width: 30%;
+
+							&:after {
+								content : '*';
+								position: absolute;
+								left    : -10px;
+								top     : 0;
+							}
+
+							&:before {
+								content : ':';
+								position: absolute;
+								right   : 0;
+								top     : 0;
+							}
+						}
+
+						.right {
+							flex        : 0 0 70%;
+							max-width   : 70%;
+							padding-left: 10px;
+						}
+					}
+				}
+			}
+		}
+
+		.chu-ky {
+			margin-top: 50px;
+
+			.nguoi-ky {
+				text-align: center;
 			}
 		}
 	}
