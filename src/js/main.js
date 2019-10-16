@@ -391,7 +391,7 @@ function activeMenuByUrl() {
 
 function TableYeuCauBaoGia() {
 
-	$('.table-input').change(function (e) {
+	$('.table-input').on('keyup change', function (e) {
 		e.preventDefault();
 
 		// CÁC THÔNG SỐ NGƯỜI DÙNG NHẬP VÀO
