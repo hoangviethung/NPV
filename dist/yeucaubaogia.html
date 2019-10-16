@@ -216,20 +216,56 @@
 									</select>
 								</div>
 							</div>
-							<div class="form-row small">
-								<div class="form-group small col-lg-6">
-									<label for="kichthuoc">Kích thước kiện (dài x rộng x cao) (cm)</label>
-									<textarea class="small" id="kichthuoc" placeholder="Ví dụ: 123 x 435 x465"></textarea>
-								</div>
-								<div class="form-group small col-lg-3">
-									<label for="soluong">Số lượng (kiện)</label>
-									<textarea class="small" id="soluong" placeholder="Ví dụ: 165"></textarea>
-								</div>
-								<div class="form-group small col-lg-3">
-									<label for="trongluong">Trọng lượng/ kiện (kgs)</label>
-									<textarea class="small" id="trongluong" placeholder="Ví dụ: 659"></textarea>
-								</div>
-							</div>
+							<table>
+								<thead>
+									<tr>
+										<th colspan="3">Kích thước kiện (cm)</th>
+										<th rowspan="2">Số lượng (kiện)</th>
+										<th rowspan="2">Trọng lượng / kiện (kgs)</th>
+										<th rowspan="2">Tổng thể tích (cbm)</th>
+										<th rowspan="2">Tổng trọng lượng (kgs)</th>
+										<th colspan="2">Trọng lượng tinh cước (kgs)</th>
+									</tr>
+									<tr>
+										<th>Dài</th>
+										<th>Rộng</th>
+										<th>Cao</th>
+										<th>Air</th>
+										<th>Courier</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<input type="number" placeholder="123 cm">
+										</td>
+										<td>
+											<input type="number" placeholder="123 cm">
+										</td>
+										<td>
+											<input type="number" placeholder="123 cm">
+										</td>
+										<td>
+											<input type="number" placeholder="5 kiện">
+										</td>
+										<td>
+											<input type="number" placeholder="123 kgs">
+										</td>
+										<td>
+											<input type="number" placeholder="">
+										</td>
+										<td>
+											<input type="number" placeholder="">
+										</td>
+										<td>
+											<input type="number" placeholder="">
+										</td>
+										<td>
+											<input type="number" placeholder="">
+										</td>
+									</tr>
+								</tbody>
+							</table>
 							<div class="form-row">
 								<div class="form-group col-lg-12">
 									<textarea class="big" placeholder="Yêu cầu dịch vụ*"></textarea>
