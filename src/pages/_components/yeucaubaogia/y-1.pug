@@ -74,16 +74,16 @@
 							option(value="") TEST
 							option(value="") TEST
 							option(value="") TEST
-										//- .form-row.small
-										//- 	.form-group.small.col-lg-6
-										//- 		label(for="kichthuoc") Kích thước kiện (dài x rộng x cao) (cm)
-										//- 		textarea.small#kichthuoc(placeholder="Ví dụ: 123 x 435 x465")
-										//- 	.form-group.small.col-lg-3
-										//- 		label(for="soluong") Số lượng (kiện)
-										//- 		textarea.small#soluong(placeholder="Ví dụ: 165")
-										//- 	.form-group.small.col-lg-3
-										//- 		label(for="trongluong") Trọng lượng/ kiện (kgs)
-										//- 		textarea.small#trongluong(placeholder="Ví dụ: 659")
+					//- .form-row.small
+					//- 	.form-group.small.col-lg-6
+					//- 		label(for="kichthuoc") Kích thước kiện (dài x rộng x cao) (cm)
+					//- 		textarea.small#kichthuoc(placeholder="Ví dụ: 123 x 435 x465")
+					//- 	.form-group.small.col-lg-3
+					//- 		label(for="soluong") Số lượng (kiện)
+					//- 		textarea.small#soluong(placeholder="Ví dụ: 165")
+					//- 	.form-group.small.col-lg-3
+					//- 		label(for="trongluong") Trọng lượng/ kiện (kgs)
+					//- 		textarea.small#trongluong(placeholder="Ví dụ: 659")
 				table
 					thead
 						tr
@@ -92,7 +92,7 @@
 							th(rowspan=2) Trọng lượng / kiện (kgs)
 							th(rowspan=2) Tổng thể tích (cbm)
 							th(rowspan=2) Tổng trọng lượng (kgs)
-							th(colspan=2) Trọng lượng tinh cước (kgs)
+							th(colspan=2) Trọng lượng tính cước (kgs)
 						tr
 							th Dài
 							th Rộng
@@ -100,25 +100,25 @@
 							th Air
 							th Courier
 					tbody
-						tr
+						tr.table-input
 							td
-								input(type="number" placeholder="123 cm")
+								input.dai(type="number" placeholder="123 cm")
 							td
-								input(type="number" placeholder="123 cm")
+								input.rong(type="number" placeholder="123 cm")
 							td
-								input(type="number" placeholder="123 cm")
+								input.cao(type="number" placeholder="123 cm")
 							td
-								input(type="number" placeholder="5 kiện")
+								input.soluong(type="number" placeholder="5 kiện")
 							td
-								input(type="number" placeholder="123 kgs")
+								input.trongluong(type="number" placeholder="123 kgs")
 							td
-								input(type="number" placeholder="")
+								input.tongthetich(type="number" readonly)
 							td
-								input(type="number" placeholder="")
+								input.tongtrongluong(type="number" readonly)
 							td
-								input(type="number" placeholder="")
+								input.tongtrongluongAIR(type="number" readonly)
 							td
-								input(type="number" placeholder="")
+								input.tongtrongluongCourier(type="number" readonly)
 				.form-row
 					.form-group.col-lg-12
 						textarea.big(placeholder="Yêu cầu dịch vụ*")
