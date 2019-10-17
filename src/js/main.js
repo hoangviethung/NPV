@@ -394,6 +394,9 @@ function TableYeuCauBaoGia() {
 	$('.table-input').on('keyup change', function (e) {
 		e.preventDefault();
 
+		let textDai = $('input.dai').val();
+		let textRong = $('input.rong').val();
+		let textCao = $('input.cao').val();
 		// CÁC THÔNG SỐ NGƯỜI DÙNG NHẬP VÀO
 		let dai = Number($('input.dai').val());
 		let rong = Number($('input.rong').val());
@@ -413,6 +416,7 @@ function TableYeuCauBaoGia() {
 		$('input.tongtrongluong').val(tongtrongluong);
 		$('input.tongtrongluongAIR').val(tongtrongluongAIR);
 		$('input.tongtrongluongCourier').val(tongtrongluongCourier);
+		$('textarea.box-hiden-dai-rong-cao').val(textDai + "x" + textRong + "x" + textCao);
 	});
 }
 
