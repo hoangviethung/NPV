@@ -109,6 +109,25 @@
 								input.tongtrongluongAIR(type="number" readonly)
 							td
 								input.tongtrongluongCourier(type="number" readonly)
+						tr.table-input
+							td
+								input.dai(type="number" placeholder="123 cm")
+							td
+								input.rong(type="number" placeholder="123 cm")
+							td
+								input.cao(type="number" placeholder="123 cm")
+							td
+								input.soluong(type="number" placeholder="5 kiện")
+							td
+								input.trongluong(type="number" placeholder="123 kgs")
+							td
+								input.tongthetich(type="number" readonly)
+							td
+								input.tongtrongluong(type="number" readonly)
+							td
+								input.tongtrongluongAIR(type="number" readonly)
+							td
+								input.tongtrongluongCourier(type="number" readonly)
 						tr.table-tong-cong
 							td(colspan=3)
 								input(type="number" readonly placeholder="Tổng Cộng")
@@ -128,13 +147,13 @@
 				.form-row
 					.form-group.col-lg-4
 						label Dài Rộng Cao ( Bị Ẩn )
-						textarea.small.box-hiden-dai-rong-cao(name="" placeholder="Dài x Rộng x Cao")
+						textarea.small.box-hiden-dai-rong-cao(name="" placeholder="Dài x Rộng x Cao" readonly)
 					.form-group.col-lg-4
 						label(for) Số lượng ( Bị Ẩn )
-						textarea.small.box-so-luong(name="" placeholder="Số lượng")
+						textarea.small.box-so-luong(name="" placeholder="Số lượng" readonly)
 					.form-group.col-lg-4
 						label(for) Trọng lượng ( Bị Ẩn )
-						textarea.small.box-trong-luong(name=""  placeholder="Trọng lượng")
+						textarea.small.box-trong-luong(name=""  placeholder="Trọng lượng" readonly)
 				//- KẾT THÚC
 				.form-row
 					.form-group.col-lg-12

@@ -389,39 +389,65 @@ function activeMenuByUrl() {
 
 }
 
+function tinhtong(selector) {
+	let tempValue = 0;
+	$(selector).each(function() {
+		tempValue += Number($(this).val())
+	})
+	return tempValue;
+}
+
 function TableYeuCauBaoGia() {
 
-	$('.table-input').on('keyup change', function(e) {
-		e.preventDefault();
+	let totalArray = [];
+	$('.table-input').each(function(index) {
+		let tempChildArray = {};
 
-		let textDai = $('input.dai').val();
-		let textRong = $('input.rong').val();
-		let textCao = $('input.cao').val();
-		// CÁC THÔNG SỐ NGƯỜI DÙNG NHẬP VÀO
-		let dai = Number($('input.dai').val());
-		let rong = Number($('input.rong').val());
-		let cao = Number($('input.cao').val());
-		let trongluong = Number($('input.trongluong').val());
-		let soluong = Number($('input.soluong').val());
+		$(this).on('keyup change', function(e) {
+			e.preventDefault();
 
-		// CÁC CÔNG THỨC TÍNH
-		let tongthetich = (dai * rong * cao) / 1000000 * soluong;
-		let tongtrongluong = trongluong * soluong;
-		let tongtrongluongAIR = (dai * rong * cao) / 6000 * soluong;
-		let tongtrongluongCourier = (dai * rong * cao) / 5000 * soluong;
+			// CÁC THÔNG SỐ NGƯỜI DÙNG NHẬP VÀO
+			let dai = Number($(this).find('input.dai').val());
+			let rong = Number($(this).find('input.rong').val());
+			let cao = Number($(this).find('input.cao').val());
+			let trongluong = Number($(this).find('input.trongluong').val());
+			let soluong = Number($(this).find('input.soluong').val());
+
+			// CÁC CÔNG THỨC TÍNH
+			let tongthetich = (dai * rong * cao) / 1000000 * soluong;
+			let tongtrongluong = trongluong * soluong;
+			let tongtrongluongAIR = (dai * rong * cao) / 6000 * soluong;
+			let tongtrongluongCourier = (dai * rong * cao) / 5000 * soluong;
 
 
-		// IN CÁC KẾT QUẢ RA NGOÀI MÀN HÌNH
-		$('input.tongthetich').val(tongthetich);
-		$('input.tongtrongluong').val(tongtrongluong);
-		$('input.tongtrongluongAIR').val(tongtrongluongAIR);
-		$('input.tongtrongluongCourier').val(tongtrongluongCourier);
+			// IN CÁC KẾT QUẢ RA NGOÀI MÀN HÌNH
+			$(this).find('input.tongthetich').val(tongthetich);
+			$(this).find('input.tongtrongluong').val(tongtrongluong);
+			$(this).find('input.tongtrongluongAIR').val(tongtrongluongAIR);
+			$(this).find('input.tongtrongluongCourier').val(tongtrongluongCourier);
 
-		// IN RA TEXTAREA CHO BACK END LẤY DATA
-		$('textarea.box-hiden-dai-rong-cao').val(textDai + "x" + textRong + "x" + textCao);
-		$('textarea.box-so-luong').val(soluong);
-		$('textarea.box-trong-luong').val(trongluong);
-	});
+			// get dai-rong-cao
+			if (dai && rong && cao) {
+				tempChildArray.dai = dai;
+				tempChildArray.rong = rong;
+				tempChildArray.cao = cao;
+				totalArray.splice(index, 1, tempChildArray);
+				let tempString = '';
+				totalArray.forEach(el => {
+					tempString += `${el.dai}x${el.rong}x${el.cao}\n`
+				})
+				$('.box-hiden-dai-rong-cao').val(tempString)
+			}
+
+
+			let soluongSUMM = tinhtong('.soluong')
+			let trongluongSUMM = tinhtong('.trongluong')
+			let tongthetichSUMM = tinhtong('.tongthetich')
+			let tongtrongluongSUMM = tinhtong('.tongtrongluong')
+			let tongtrongluongAIRSUMM = tinhtong('.tongtrongluongAIR')
+			let tongtrongluongCourierSUMM = tinhtong('.tongtrongluongCourier')
+		});
+	})
 }
 
 $(document).ready(function() {
