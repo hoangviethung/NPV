@@ -136,6 +136,18 @@
 		}
 
 		tbody {
+			tr {
+				&.table-tong-cong {
+					td {
+						&:first-child {
+							input {
+								text-align: center;
+							}
+						}
+					}
+				}
+			}
+
 			input[type='number'] {
 				width: 100%;
 			}
