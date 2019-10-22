@@ -216,56 +216,76 @@
 									</select>
 								</div>
 							</div>
-							<table>
-								<thead>
-									<tr>
-										<th colspan="3">Kích thước kiện (cm)</th>
-										<th rowspan="2">Số lượng (kiện)</th>
-										<th rowspan="2">Trọng lượng / kiện (kgs)</th>
-										<th rowspan="2">Tổng thể tích (cbm)</th>
-										<th rowspan="2">Tổng trọng lượng (kgs)</th>
-										<th colspan="2">Trọng lượng tính cước (kgs)</th>
-									</tr>
-									<tr>
-										<th>Dài</th>
-										<th>Rộng</th>
-										<th>Cao</th>
-										<th>Air</th>
-										<th>Courier</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr class="table-input">
-										<td>
-											<input class="dai" type="number" placeholder="123 cm">
-										</td>
-										<td>
-											<input class="rong" type="number" placeholder="123 cm">
-										</td>
-										<td>
-											<input class="cao" type="number" placeholder="123 cm">
-										</td>
-										<td>
-											<input class="soluong" type="number" placeholder="5 kiện">
-										</td>
-										<td>
-											<input class="trongluong" type="number" placeholder="123 kgs">
-										</td>
-										<td>
-											<input class="tongthetich" type="number" readonly>
-										</td>
-										<td>
-											<input class="tongtrongluong" type="number" readonly>
-										</td>
-										<td>
-											<input class="tongtrongluongAIR" type="number" readonly>
-										</td>
-										<td>
-											<input class="tongtrongluongCourier" type="number" readonly>
-										</td>
-									</tr>
-								</tbody>
-							</table>
+							<div class="form-table-wrapper">
+								<div class="row no-gutters tableForm">
+									<div class="col-xl-6">
+										<table>
+											<thead>
+												<tr>
+													<th colspan="3">Kích thước kiện (cm)</th>
+													<th rowspan="2">Số lượng (kiện)</th>
+													<th rowspan="2">Trọng lượng / kiện (kgs)</th>
+												</tr>
+												<tr>
+													<th>Dài</th>
+													<th>Rộng</th>
+													<th>Cao</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="table-input">
+													<td>
+														<input class="dai" type="number" placeholder="123 cm">
+													</td>
+													<td>
+														<input class="rong" type="number" placeholder="123 cm">
+													</td>
+													<td>
+														<input class="cao" type="number" placeholder="123 cm">
+													</td>
+													<td>
+														<input class="soluong" type="number" placeholder="5 kiện">
+													</td>
+													<td>
+														<input class="trongluong" type="number" placeholder="123 kgs">
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="col-xl-6">
+										<table>
+											<thead>
+												<tr>
+													<th rowspan="2">Tổng thể tích (cbm)</th>
+													<th rowspan="2">Tổng trọng lượng (kgs)</th>
+													<th colspan="2">Trọng lượng tính cước (kgs)</th>
+												</tr>
+												<tr>
+													<th>Air</th>
+													<th>Courier</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="table-input">
+													<td>
+														<input class="tongthetich" type="number" readonly>
+													</td>
+													<td>
+														<input class="tongtrongluong" type="number" readonly>
+													</td>
+													<td>
+														<input class="tongtrongluongAIR" type="number" readonly>
+													</td>
+													<td>
+														<input class="tongtrongluongCourier" type="number" readonly>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
 							<div class="form-row">
 								<div class="form-group col-lg-12">
 									<textarea class="big" placeholder="Yêu cầu dịch vụ*"></textarea>

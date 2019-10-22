@@ -84,41 +84,51 @@
 					//- 	.form-group.small.col-lg-3
 					//- 		label(for="trongluong") Trọng lượng/ kiện (kgs)
 					//- 		textarea.small#trongluong(placeholder="Ví dụ: 659")
-				table
-					thead
-						tr
-							th(colspan=3) Kích thước kiện (cm)
-							th(rowspan=2) Số lượng (kiện)
-							th(rowspan=2) Trọng lượng / kiện (kgs)
-							th(rowspan=2) Tổng thể tích (cbm)
-							th(rowspan=2) Tổng trọng lượng (kgs)
-							th(colspan=2) Trọng lượng tính cước (kgs)
-						tr
-							th Dài
-							th Rộng
-							th Cao
-							th Air
-							th Courier
-					tbody
-						tr.table-input
-							td
-								input.dai(type="number" placeholder="123 cm")
-							td
-								input.rong(type="number" placeholder="123 cm")
-							td
-								input.cao(type="number" placeholder="123 cm")
-							td
-								input.soluong(type="number" placeholder="5 kiện")
-							td
-								input.trongluong(type="number" placeholder="123 kgs")
-							td
-								input.tongthetich(type="number" readonly)
-							td
-								input.tongtrongluong(type="number" readonly)
-							td
-								input.tongtrongluongAIR(type="number" readonly)
-							td
-								input.tongtrongluongCourier(type="number" readonly)
+				.form-table-wrapper
+					.row.no-gutters.tableForm
+						.col-xl-6
+							table
+								thead
+									tr
+										th(colspan=3) Kích thước kiện (cm)
+										th(rowspan=2) Số lượng (kiện)
+										th(rowspan=2) Trọng lượng / kiện (kgs)
+									tr
+										th Dài
+										th Rộng
+										th Cao
+								tbody
+									tr.table-input
+										td
+											input.dai(type="number" placeholder="123 cm")
+										td
+											input.rong(type="number" placeholder="123 cm")
+										td
+											input.cao(type="number" placeholder="123 cm")
+										td
+											input.soluong(type="number" placeholder="5 kiện")
+										td
+											input.trongluong(type="number" placeholder="123 kgs")
+						.col-xl-6
+							table
+								thead
+									tr
+										th(rowspan=2) Tổng thể tích (cbm)
+										th(rowspan=2) Tổng trọng lượng (kgs)
+										th(colspan=2) Trọng lượng tính cước (kgs)
+									tr
+										th Air
+										th Courier
+								tbody
+									tr.table-input
+										td
+											input.tongthetich(type="number" readonly)
+										td
+											input.tongtrongluong(type="number" readonly)
+										td
+											input.tongtrongluongAIR(type="number" readonly)
+										td
+											input.tongtrongluongCourier(type="number" readonly)
 				.form-row
 					.form-group.col-lg-12
 						textarea.big(placeholder="Yêu cầu dịch vụ*")
