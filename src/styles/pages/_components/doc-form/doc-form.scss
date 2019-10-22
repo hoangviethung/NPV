@@ -536,5 +536,257 @@
 				}
 			}
 		}
+
+		.bang-booking {
+			width: 1200px;
+
+			table {
+				&.mt-10 {
+					margin-top: 10px;
+				}
+
+				width: 1200px;
+			}
+
+			tr {
+
+				td,
+				th {
+					padding: 10px;
+
+					&.col-talbe-8 {
+						width: 800.000004px;
+					}
+
+					&.col-table-6 {
+						width: 600px;
+					}
+
+					&.col-table-4 {
+						width: 399.9999996px;
+					}
+
+					&.col-table-3 {
+						width: 300px;
+					}
+
+					&.col-table-2 {
+						width: 200.000004px;
+					}
+
+					&.col-table-12 {
+						width: 1200px;
+					}
+				}
+
+				th {
+					border-top: 1px solid #000000;
+					border-right: 1px solid #000000;
+					border-left: 1px solid #000000;
+					border-bottom: 0;
+
+					font-size: 14px;
+					font-style: italic;
+					font-weight: 400;
+
+					&.bold {
+						font-weight: 700;
+					}
+				}
+
+				td {
+					border-bottom: 1px solid #000000;
+					border-right: 1px solid #000000;
+					border-left: 1px solid #000000;
+					border-top: 0;
+
+					&.border-top {
+						border-top: 1px solid #000000;
+					}
+
+					&.bold {
+						font-weight: 700;
+						font-size: 20px;
+					}
+				}
+			}
+		}
+
+		.bang-hbl {
+			table {
+				width: 100%;
+
+				tr {
+
+					td,
+					th {
+						padding: 10px;
+						vertical-align: top;
+					}
+
+					td {
+						border: 1px solid $main-color-1;
+
+						&.text-center {
+							text-align: center;
+						}
+
+						&.no-border-top {
+							border-top: none;
+						}
+
+						&.no-border-bottom {
+							border-bottom: none;
+						}
+
+						&.bold {
+							font-weight: 700;
+							font-size: 20px;
+						}
+
+						h3 {
+							font-size: 40px;
+							color: $main-color-1;
+							text-align: center;
+						}
+
+						span {
+							display: block;
+							font-size: 13px;
+							color: $main-color-1;
+						}
+
+						p {
+							&.blue {
+								color: $main-color-1;
+							}
+						}
+					}
+
+					th {
+						border-right: 1px solid $main-color-1;
+						border-left: 1px solid $main-color-1;
+						border-bottom: 1px solid $main-color-1;
+						color: $main-color-1;
+						font-size: 13px;
+
+						&.no-border-bottom {
+							border-bottom: none;
+						}
+					}
+				}
+			}
+
+			.ngay-thang-nam {
+				padding-top: 200px;
+				padding-right: 40px;
+				padding-bottom: 40px;
+				text-align: right;
+				border-right: 1px solid $main-color-1;
+				border-left: 1px solid $main-color-1;
+			}
+		}
+
+		.bang-hawb {
+			table {
+				width: 100%;
+
+				tr {
+
+					td,
+					th {
+						padding: 10px;
+						vertical-align: top;
+
+						&.vertical-center {
+							vertical-align: middle;
+						}
+					}
+
+					td {
+						border: 1px solid $main-color-1;
+
+						&.none-border-right {
+							border-right: 1px solid transparent;
+						}
+
+						&.text-center {
+							text-align: center;
+						}
+
+						&.no-border-top {
+							border-top: none;
+						}
+
+						&.no-border-bottom {
+							border-bottom: none;
+						}
+
+						&.bold {
+							font-weight: 700;
+							font-size: 20px;
+						}
+
+						h3 {
+							font-size: 40px;
+							color: $main-color-1;
+							text-align: center;
+
+							&.text-left {
+								text-align: left;
+							}
+						}
+
+						h4 {
+							font-size: 20px;
+							color: $main-color-1;
+							text-align: center;
+
+							&.text-left {
+								text-align: left;
+							}
+						}
+
+						span {
+							display: block;
+							font-size: 13px;
+							color: $main-color-1;
+						}
+
+						p {
+							&.blue {
+								color: $main-color-1;
+							}
+
+							&.text-left {
+								text-align: left;
+							}
+						}
+					}
+
+					th {
+						border-right: 1px solid $main-color-1;
+						border-left: 1px solid $main-color-1;
+						border-bottom: 1px solid $main-color-1;
+						color: $main-color-1;
+						font-size: 13px;
+
+						&.no-border-bottom {
+							border-bottom: none;
+						}
+					}
+				}
+			}
+
+			.ngay-thang-nam {
+				padding-top: 200px;
+				padding-right: 40px;
+				padding-bottom: 40px;
+				text-align: right;
+				border-right: 1px solid $main-color-1;
+				border-left: 1px solid $main-color-1;
+			}
+		}
+
 	}
 }

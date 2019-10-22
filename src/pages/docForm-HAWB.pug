@@ -1,0 +1,176 @@
+doctype html
+
+html(lang="en")
+
+	head
+		title NPV | HAWB
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, user-scalable=no")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		style.
+			#loading{-webkit-transition:.8s;-o-transition:.8s;position:fixed;top:0;right:0;bottom:0;left:0;z-index:99999;transition:.8s;background:#fff;width:100%;height:100%}#loading #progress{-webkit-transition:.8s;-o-transition:.8s;display:none;transition:.8s;background:#000;width:0;height:1px}#loading #progress,#loading .progstat-wrapper{-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);position:absolute;top:50%;transform:translateY(-50%)}#loading .progstat-wrapper{margin-top:0;width:100%;color:#000;font-size:14px;font-weight:300;letter-spacing:3px;text-align:center}#loading .logo-loader{-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);margin-top:-100px;width:350px;height:350px}
+		script.
+			!function(){function n(n){return document.getElementById(n)}document.addEventListener("DOMContentLoaded",function(){var e=n("loading"),t=n("progress"),o=n("progstat"),r=document.images,i=0,d=r.length;if(0==d)return u();function a(){var n=100/d*(i+=1)<<0;if(t.style.width=n,o.innerHTML=n,i===d)return u()}function u(){e.style.opacity=0,setTimeout(function(){e.style.display="none";var n=document.getElementById("loading");n.parentNode.removeChild(n)},1500)}for(var c=0;c<d;c++){var s=new Image;s.onload=a,s.onerror=a,s.src=r[c].src}},!1)}();
+		link(rel="stylesheet", href="./css/core.min.css")
+		link(rel="stylesheet", href="./css/main.min.css")
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&display=swap&subset=vietnamese" rel="stylesheet">
+
+	body
+		//- LOADING
+		#loading
+			.logo-loader
+				img(src="./img/loading.gif", alt="")
+			.progstat-wrapper Loading: 
+				span#progstat 0
+				| %
+			#progress
+		#fb-root
+		//- MAIN CONTENT
+		section#doc-form
+			.content-docForm
+				.container
+					.bang-hawb
+						table
+							tr
+								td(colspan=2 rowspan=2).col-table-6
+									span Shipper
+									p CX TECHNOLOGY ( VN ) CORPORATION LOT CT, LOT T, AREA C, TAN THUAN EXPORT PROCESSING ZONE, TAN THUAN DONG WARD, DISTRICT 7, HO CHI MINH CITY, VIETNAM
+								td.none-border-right(colspan=2 rowspan=3).col-table-6.text-center
+									p.text-left Not Nego tiable
+									h3.text-left Air Waybill
+								td(colspan=1 rowspan=3).col-table-6.text-center.vertical-center
+									img(src="./img/HBL-logo.jpg", alt="", srcset="")
+							tr
+							tr
+								td(colspan=1 rowspan=3)
+									span Consignee's Name And Addess
+									p GRAND MAX CO.,LTD NO.479, ROOM NO. (A2), AYE YEIK THAR LANE 2, NEW UNIVERSITY AVENUE ROAD, BAHAN TOWNSHIP, YANGON, **
+								td(colspan=1 rowspan=3)
+									span Consignee's Account Nummber
+							tr
+								td(colspan=3 rowspan=1)
+									p Copy 1, 2 and 3 of this Air Way Bil are originals and have the same vaidty.
+							tr
+								td(colspan=3 rowspan=2)
+									p It is agreed that the goods descibed hererin are accepted in apparent good order and condion except as noted) for carrage subject to conditions of contract on the rrs harnal The shippers aHention Es drawn to the notice of concerning carrier's intaton.of linbeity shioper may fvase such linitaton of liablity by declar
+							tr
+								td(colspan=2 rowspan =2)
+									span Issuing Carrier's Agent Name and City
+									h4.text-left NPV EXPRESS & LOGISTICS CO.,LTD
+							tr
+								td(colspan=3 rowspan=5)
+									span Consignee's Name And Addess
+									h4.text-left FREIGHT PREPAID
+							tr
+								td(colspan=1 rowspan =2)
+									span Agent's IATA Code
+								td(colspan=1 rowspan =2)
+									span Account No.
+							tr
+							tr
+								td(colspan=2 rowspan=2)
+									span Airport of Departure (Addr, of First Carrier and request)
+									p TAN SON NHAT AIRPORT, VIETNAM
+						table
+							tr
+								th
+									span to
+								th
+									span By First Carrier
+									br
+									| (Routing and Desstination)
+								th
+									span to
+								th
+									span by
+								th
+									span to
+								th
+									span by
+								th
+									span Currency
+								th
+									span CHGS Code
+								th(colspan=2)
+									span WT/VA
+								th(colspan=2)
+									span Other
+								th
+									span Declared Value for Carriage
+								th
+									span Declared Value for Custom
+							tr
+								td
+									p RGN
+								td
+									p VN
+								td
+									p
+								td
+									p
+								td
+									p
+								td
+									p
+								td
+									p USD
+								td
+									p
+								td
+									span PPD
+								td
+									span COLL
+								td
+									span PPD
+								td
+									span COLL
+								td
+									p NVD
+								td
+									p NCV
+						.ngay-thang-nam
+							p SHIPPED ON BOARD
+							p HOCHIMINH, VIETNAM
+							p Aug 27, 2019
+						table
+							tr
+								td
+									p.blue Taken in charge in apperent good order and condition, unless otherwise noted herein, at the place of receipt of transport and delivery as mentioned above. Weight measures, nirks, numbers, quality, contents and value as declared by the Shipper but unknown by the Freight Forwarder.
+									p.blue In accepting this Bill of lading the Merchant expressly accepts and agrees to all its stipulations, exceptions and conditions whether written, printed, stamped or otherwise incorported and in particular to the terms oyerleaf as if they were all signed by the Merchant.
+									p.blue Once of these bill of lading must be surrendered duly endorsed in exchange for the goods. Inwitness where of the original Bills of lading all of this tenor and date have been signed in the number stated below one of which being accomplished the other (S) to be void
+						table
+							tr
+								th Freight & Charges
+								th Prepaid
+								th Collect
+								th.no-border-bottom Stamp  & Signature
+							tr
+								td.no-border-top.no-border-bottom.text-center
+									p FCL/FCL-CY/CY
+									p OOLU7773669/40DC/OOLFSC4866
+								td.no-border-top.no-border-bottom.text-center
+									p 01X40´DC CONTAINER S.T.C.:
+								td.no-border-top.no-border-bottom.text-center
+									p 01X40´DC CONTAINER S.T.C.:
+								td.no-border-top.no-border-bottom.text-center
+									p 1140 PKG AS PER BILL
+									p SAY: ONE FORTY FEET HIGH CUBE CONTAINER(S) ONLY. SHIPPER´S LOAD, COUNT, STOW AND SEAL
+							tr
+								th.no-border-top.no-border-bottom
+								th.no-border-top.no-border-bottom
+								th.no-border-top.no-border-bottom
+								th.no-border-top.no-border-bottom As agent of carrier
+							tr
+								td.no-border-top
+								td.no-border-top
+								td.no-border-top
+								td.no-border-top As agent of carrier
+
+		//- include scripts
+		//- GOOGLE MAP
+		script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?&key=AIzaSyCHvmyTralDp2Y0m7zEiN185u1vtArcC5s&libraries=places")
+		//- FACEBOOK
+		//- script(type="text/javascript", src='https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3') 
+		script(type="text/javascript", src="./js/map.js")
+		script(type="text/javascript", src="./js/core.min.js")
+		script(type="text/javascript", src="./js/main.min.js")
