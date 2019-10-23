@@ -174,8 +174,9 @@ function showBackToTop() {
 }
 
 function libraryImgVideo() {
-	$('[data-fancybox="images').fancybox({
-		animationEffect: "rotate",
+
+	$('.library .img-item .d-none a').fancybox({
+		animationEffect: "slide",
 		transitionEffect: "circular",
 		buttons: [
 			'zoom',
@@ -199,11 +200,12 @@ function libraryImgVideo() {
 			'fullscreen',
 		],
 	})
-}
 
-function showAlbumImg() {
-	$('.library .item').on('click', function() {
-		$(this).siblings('.d-none a').trigger('click');
+	$('.library .img-item').each(function() {
+		let _this = $(this);
+		_this.on('click', function() {
+			$(this).find('.d-none a').eq(0).triggerHandler('click');
+		})
 	})
 }
 
@@ -464,7 +466,6 @@ $(document).ready(function() {
 	tienIchTabTuDien();
 	activeHeader();
 	libraryImgVideo();
-	showAlbumImg();
 	addBlockTableForm();
 	getNameFile();
 	showFAQ();
