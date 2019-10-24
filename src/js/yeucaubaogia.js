@@ -45,6 +45,8 @@ const YeuCauBaoGia = () => {
 			soLuong += `${rowData.soLuong}\n`;
 			trongLuong += `${rowData.trongLuong}\n`;
 		})
+		console.log();
+
 		textareaKichThuoc.value = kichThuoc;
 		textareaSoLuong.value = soLuong;
 		textareaTrongLuong.value = trongLuong;
@@ -87,7 +89,9 @@ const YeuCauBaoGia = () => {
 		})
 		const btn = newRow.querySelector('input[type="button"]')
 		btn.addEventListener('click', () => {
-			console.log(btn.parentNode.parentNode.parentNode.removeChild(btn.parentNode.parentNode));
+			btn.parentNode.parentNode.parentNode.removeChild(btn.parentNode.parentNode);
+			const rowArray = Array.from(document.querySelectorAll('.yeu-cau-bao-gia .table-input'));
+			getAllDataToArea(rowArray);
 		})
 	}
 
@@ -97,6 +101,8 @@ const YeuCauBaoGia = () => {
 			removeButtonArray.forEach(btn => {
 				btn.addEventListener('click', () => {
 					btn.parentNode.removeChild(btn);
+					const rowArray = Array.from(document.querySelectorAll('.yeu-cau-bao-gia .table-input'));
+					getAllDataToArea(rowArray);
 				})
 			})
 		}
