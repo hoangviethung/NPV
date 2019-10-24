@@ -1,5 +1,5 @@
 .yeu-cau-bao-gia {
-	margin       : 60px 0 135px;
+	margin: 60px 0 135px;
 	padding-right: 40px;
 
 	.form-row {
@@ -12,22 +12,22 @@
 
 	.title {
 		h3 {
-			font-size    : 34px;
-			color        : #2B2B2B;
+			font-size: 34px;
+			color: #2B2B2B;
 			margin-bottom: 20px;
 		}
 	}
 
 	p {
-		font-size    : 14px;
-		color        : #2B2B2B;
-		font-style   : italic;
+		font-size: 14px;
+		color: #2B2B2B;
+		font-style: italic;
 		margin-bottom: 20px;
 	}
 
 	.form-group {
-		position     : relative;
-		padding      : 0 10px;
+		position: relative;
+		padding: 0 10px;
 		margin-bottom: 20px;
 
 		&.small {
@@ -35,24 +35,24 @@
 		}
 
 		input[type='text'] {
-			width      : 100%;
-			font-size  : 16px;
-			color      : #707070;
-			font-style : italic;
+			width: 100%;
+			font-size: 16px;
+			color: #707070;
+			font-style: italic;
 			line-height: 45px;
-			padding    : 0 40px 0 20px;
-			border     : 1px solid #C1C1C1;
-			font-style : italic;
+			padding: 0 40px 0 20px;
+			border: 1px solid #C1C1C1;
+			font-style: italic;
 		}
 
 		input[type='date'] {
-			display   : block;
-			color     : #707070;
-			border    : 1px solid #C1C1C1;
-			padding   : 10px 15px;
-			width     : 100%;
-			height    : 45px;
-			font-size : 16px;
+			display: block;
+			color: #707070;
+			border: 1px solid #C1C1C1;
+			padding: 10px 15px;
+			width: 100%;
+			height: 45px;
+			font-size: 16px;
 			font-style: italic;
 		}
 
@@ -62,75 +62,91 @@
 
 		textarea.small {
 			font-size: 16px;
-			resize   : none;
-			padding  : 15px;
-			width    : 100%;
-			height   : 140px;
-			color    : #707070;
-			border   : 1px solid #C1C1C1;
+			resize: none;
+			padding: 15px;
+			width: 100%;
+			height: 140px;
+			color: #707070;
+			border: 1px solid #C1C1C1;
 		}
 
 		textarea.big {
-			resize : none;
+			resize: none;
 			padding: 15px;
-			width  : 100%;
-			height : 215px;
-			color  : #707070;
-			border : 1px solid #C1C1C1;
+			width: 100%;
+			height: 215px;
+			color: #707070;
+			border: 1px solid #C1C1C1;
 		}
 
 		label {
-			cursor     : pointer;
-			width      : 100%;
-			color      : #FFFFFF;
+			cursor: pointer;
+			width: 100%;
+			color: #FFFFFF;
 			line-height: 45px;
-			padding    : 0 15px;
-			background : #3E4095;
+			padding: 0 15px;
+			background: #3E4095;
 		}
 
 		select {
-			width     : 100%;
+			width: 100%;
 			background: none;
-			height    : 45px;
-			color     : #707070;
-			border    : 1px solid #C1C1C1;
-			padding   : 10px 15px;
+			height: 45px;
+			color: #707070;
+			border: 1px solid #C1C1C1;
+			padding: 10px 15px;
 			font-style: italic;
 		}
 
 		.icon {
-			position : absolute;
-			right    : 35px;
-			top      : 50%;
+			position: absolute;
+			right: 35px;
+			top: 50%;
 			transform: translateY(-50%);
 		}
 
 		.submit {
-			position  : absolute;
-			bottom    : 30px;
-			right     : 30px;
+			position: absolute;
+			bottom: 30px;
+			right: 30px;
 			background: none;
-			border    : none;
+			border: none;
 
 			span {
 				font-size: 16px;
-				color    : #2B2B2B;
+				color: #2B2B2B;
 			}
 		}
 	}
 
+	table,
+	thead,
+	tbody,
+	tr,
+	td,
+	th {
+		border-collapse: collapse;
+		border: 1px solid black;
+
+		input,
+		textarea {
+			border: 0;
+			width: 100%;
+		}
+	}
+
 	table {
-		width        : 100%;
-		text-align   : center;
-		margin-bottom: 20px;
+		width: 100%;
+		text-align: center;
+		min-width: 745px;
 
 		thead {
 			tr {
 				th {
-					height    : 50px;
+					height: 50px;
 					background: $main-color-1;
-					border    : 1px solid #FFFFFF;
-					color     : #FFFFFF;
+					border: 1px solid #FFFFFF;
+					color: #FFFFFF;
 				}
 			}
 		}
@@ -146,6 +162,20 @@
 						}
 					}
 				}
+
+				// .addmore {
+				// 	input {
+				// 		display: block;
+				// 	}
+				// }
+
+				// &:nth-child(1) {
+				// 	.addmore {
+				// 		input {
+				// 			display: none !important;
+				// 		}
+				// 	}
+				// }
 			}
 
 			input[type='number'] {
@@ -155,7 +185,7 @@
 	}
 
 	@media (max-width: 1024.98px) {
-		margin       : 30px 0;
+		margin: 30px 0;
 		padding-right: 15px;
 
 		.col-lg-8 {
@@ -174,7 +204,7 @@
 
 		.title {
 			h3 {
-				font-size    : 24px;
+				font-size: 24px;
 				margin-bottom: 5px;
 			}
 		}
@@ -184,28 +214,36 @@
 
 			textarea.small {
 				padding: 9px;
-				height : 45px;
+				height: 45px;
 			}
 
 			textarea.big {
 				padding: 9px;
-				height : 160px;
+				height: 160px;
 			}
 
 			label {
-				cursor     : pointer;
-				width      : 100%;
-				color      : #FFFFFF;
+				cursor: pointer;
+				width: 100%;
+				color: #FFFFFF;
 				line-height: 45px;
-				padding    : 0 15px;
-				background : #3E4095;
+				padding: 0 15px;
+				background: #3E4095;
 			}
 
 			.submit {
-				right : 15px;
+				right: 15px;
 				bottom: 15px;
 			}
 		}
 
 	}
+}
+
+.table-responsive {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	overflow-x: auto;
+	margin-bottom: 30px;
 }

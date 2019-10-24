@@ -78,7 +78,7 @@
  	var bounds = map.getBounds();
  	var markerInViewPort = [];
 
- 	Array.prototype.forEach.call(markers, (marker, index) => {
+ 	Array.prototype.forEach.call(markers, function (marker, index) {
  		if (bounds.contains(marker.getPosition()) === true) {
  			markerInViewPort.push(locations[index])
  		}
@@ -97,16 +97,16 @@
  		var marker;
 
  		var myoverlay = new google.maps.OverlayView();
- 		myoverlay.draw = function() {
+ 		myoverlay.draw = function () {
  			this.getPanes().markerLayer.id = 'markerLayer';
  		};
  		myoverlay.setMap(map);
 
- 		google.maps.event.addListener(map, 'click', function() {
+ 		google.maps.event.addListener(map, 'click', function () {
  			infowindow.close();
  		});
 
- 		Array.prototype.forEach.call(locations, (locationElement, index) => {
+ 		Array.prototype.forEach.call(locations, function (locationElement, index) {
  			marker = new google.maps.Marker({
  				position: new google.maps.LatLng(locationElement.lat, locationElement.lng),
  				map: map,
@@ -116,8 +116,8 @@
 
  			bounds.extend(marker.position);
 
- 			google.maps.event.addListener(marker, "click", ((marker, locationElement) => {
- 				return () => {
+ 			google.maps.event.addListener(marker, "click", (function (marker, locationElement) {
+ 				return function () {
  					map.setCenter(marker.getPosition());
  					infowindow.setContent(
  						`<div class="maker-info" style="width:100%">
@@ -145,15 +145,15 @@
  		})
 
  		if (document.getElementById("map-list")) {
- 			google.maps.event.addListener(map, "idle", function() {
+ 			google.maps.event.addListener(map, "idle", function () {
 
  				listMarkerInViewPortHtml = "";
  				locations = getLocationInViewPort(map, markers, locations);
 
- 				console.log(locations);
+ 				// console.log(locations);
  				if (locations.length > 0) {
- 					Array.prototype.forEach.call(locations, (marker, index) => {
- 						console.log(marker);
+ 					Array.prototype.forEach.call(locations, function (marker, index) {
+ 						// console.log(marker);
  						listMarkerInViewPortHtml += `
 							<div class="map-item" onclick="myClick(${index})">
 								<h4>${marker.name}</h4>
@@ -185,7 +185,7 @@
 
  		map.fitBounds(bounds);
 
- 		var listener = google.maps.event.addListener(map, "idle", function() {
+ 		var listener = google.maps.event.addListener(map, "idle", function () {
  			if (map.getZoom() > 12) {
  				map.setZoom(12);
  			}

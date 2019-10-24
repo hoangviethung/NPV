@@ -74,76 +74,64 @@
 							option(value="") TEST
 							option(value="") TEST
 							option(value="") TEST
-				table
-					thead
-						tr
-							th(colspan=3) Kích thước kiện (cm)
-							th(rowspan=2) Số lượng (kiện)
-							th(rowspan=2) Trọng lượng / kiện (kgs)
-							th(rowspan=2) Tổng thể tích (cbm)
-							th(rowspan=2) Tổng trọng lượng (kgs)
-							th(colspan=2) Trọng lượng tính cước (kgs)
-						tr
-							th Dài
-							th Rộng
-							th Cao
-							th Air
-							th Courier
-					tbody
-						tr.table-input
-							td
-								input.dai(type="number" placeholder="123 cm")
-							td
-								input.rong(type="number" placeholder="123 cm")
-							td
-								input.cao(type="number" placeholder="123 cm")
-							td
-								input.soluong(type="number" placeholder="5 kiện")
-							td
-								input.trongluong(type="number" placeholder="123 kgs")
-							td
-								input.tongthetich(type="number" readonly)
-							td
-								input.tongtrongluong(type="number" readonly)
-							td
-								input.tongtrongluongAIR(type="number" readonly)
-							td
-								input.tongtrongluongCourier(type="number" readonly)
-						tr.table-input
-							td
-								input.dai(type="number" placeholder="123 cm")
-							td
-								input.rong(type="number" placeholder="123 cm")
-							td
-								input.cao(type="number" placeholder="123 cm")
-							td
-								input.soluong(type="number" placeholder="5 kiện")
-							td
-								input.trongluong(type="number" placeholder="123 kgs")
-							td
-								input.tongthetich(type="number" readonly)
-							td
-								input.tongtrongluong(type="number" readonly)
-							td
-								input.tongtrongluongAIR(type="number" readonly)
-							td
-								input.tongtrongluongCourier(type="number" readonly)
-						tr.table-tong-cong
-							td(colspan=3)
-								input(type="number" readonly placeholder="Tổng Cộng")
-							td
-								input(type="number" readonly)
-							td
-								input(type="number" readonly)
-							td
-								input(type="number" readonly)
-							td
-								input(type="number" readonly)
-							td
-								input(type="number" readonly)
-							td
-								input(type="number" readonly)
-				//- 3 THÔNG SỐ CHO BACK END LẤY DATA (BỊ ẨN - THÊM ATTR HIDDEN ĐỂN ẨN)
+				.yeu-cau-bao-gia
+					table
+						thead
+							tr
+								th(colspan=3) Kích thước kiện (cm)
+								th(rowspan=2) Số lượng (kiện)
+								th(rowspan=2) Trọng lượng / kiện (kgs)
+								th(rowspan=2) Tổng thể tích (cbm)
+								th(rowspan=2) Tổng trọng lượng (kgs)
+								th(colspan=2) Trọng lượng tính cước (kgs)
+								th
+							tr
+								th Dài
+								th Rộng
+								th Cao
+								th Air
+								th Courier
+								th
+						tbody
+							tr.table-input
+								td
+									input.dai(type="number" placeholder="123cm")
+								td
+									input.rong(type="number" placeholder="123cm")
+								td
+									input.cao(type="number" placeholder="123cm")
+								td
+									input.soluong(type="number" placeholder="5 kiện")
+								td
+									input.trongluong(type="number" placeholder="123kg")
+								td
+									input.tongthetich(type="number" readonly)
+								td
+									input.tongtrongluong(type="number" readonly)
+								td
+									input.tongtrongluongAIR(type="number" readonly)
+								td
+									input.tongtrongluongCourier(type="number" readonly)
+								td.remove 
+									input(type='button' value='remove' disabled)
+							tr.table-tong-cong
+								td(colspan=3)
+									input(type="number" readonly placeholder="Tổng Cộng")
+								td
+									input(type="number" readonly)
+								td
+									input(type="number" readonly)
+								td
+									input(type="number" readonly)
+								td
+									input(type="number" readonly)
+								td
+									input(type="number" readonly)
+								td
+									input(type="number" readonly)
+								td
+									input(type="number" readonly)
+					//- 3 THÔNG SỐ CHO BACK END LẤY DATA (BỊ ẨN - THÊM ATTR HIDDEN ĐỂN ẨN)
 				.form-row
 					.form-group.col-lg-4
 						label Dài Rộng Cao ( Bị Ẩn )
