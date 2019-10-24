@@ -400,7 +400,7 @@ $(document).ready(function() {
 	showSearchMobile();
 	showSubMenu();
 	_getThumbnailYoutube();
-	// Yeu Cau Bao Gia	
+	// Yeu Cau Bao Gia
 	YeuCauBaoGia();
 	new WOW().init();
 })

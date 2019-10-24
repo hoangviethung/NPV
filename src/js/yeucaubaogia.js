@@ -3,7 +3,7 @@ const YeuCauBaoGia = () => {
 	const textareaKichThuoc = document.querySelector('.box-hiden-dai-rong-cao');
 	const textareaSoLuong = document.querySelector('.box-so-luong');
 	const textareaTrongLuong = document.querySelector('.box-trong-luong');
-	const bodyTableBaoGia = document.querySelector('.yeu-cau-bao-gia table tbody');
+	const bodyTableBaoGia = document.querySelector('.yeu-cau-bao-gia-table table tbody');
 
 	const getDataPerRow = row => {
 		let rowData = {};
@@ -35,6 +35,7 @@ const YeuCauBaoGia = () => {
 		return rowData;
 	};
 
+
 	const getAllDataToArea = (rowArray) => {
 		let kichThuoc = '';
 		let soLuong = '';
@@ -45,7 +46,6 @@ const YeuCauBaoGia = () => {
 			soLuong += `${rowData.soLuong}\n`;
 			trongLuong += `${rowData.trongLuong}\n`;
 		})
-		console.log();
 
 		textareaKichThuoc.value = kichThuoc;
 		textareaSoLuong.value = soLuong;
@@ -65,7 +65,7 @@ const YeuCauBaoGia = () => {
 		row.querySelector('.tongtrongluong').value = tongTrongLuong;
 
 		if (rowData.dai && rowData.rong && rowData.cao && rowData.soLuong && rowData.trongLuong) {
-			const lastInputRow = document.querySelectorAll('.yeu-cau-bao-gia .table-input')[document.querySelectorAll('.yeu-cau-bao-gia .table-input').length - 1]
+			const lastInputRow = document.querySelectorAll('.yeu-cau-bao-gia-table .table-input')[document.querySelectorAll('.yeu-cau-bao-gia-table .table-input').length - 1]
 			const valueLastRow = getDataPerRow(lastInputRow);
 			if (valueLastRow.dai && valueLastRow.rong && valueLastRow.cao && valueLastRow.soLuong && valueLastRow.trongLuong) {
 				return addRow(row);
@@ -80,7 +80,7 @@ const YeuCauBaoGia = () => {
 			input.value = null;
 		})
 		newRow.querySelector('input[type="button"]').removeAttribute('disabled')
-		const rowArray = Array.from(document.querySelectorAll('.yeu-cau-bao-gia .table-input'));
+		const rowArray = Array.from(document.querySelectorAll('.yeu-cau-bao-gia-table .table-input'));
 		Array.from(newRow.querySelectorAll('input')).forEach(input => {
 			input.addEventListener('change', () => {
 				calculateRow(newRow);
@@ -90,36 +90,81 @@ const YeuCauBaoGia = () => {
 		const btn = newRow.querySelector('input[type="button"]')
 		btn.addEventListener('click', () => {
 			btn.parentNode.parentNode.parentNode.removeChild(btn.parentNode.parentNode);
-			const rowArray = Array.from(document.querySelectorAll('.yeu-cau-bao-gia .table-input'));
+			const rowArray = Array.from(document.querySelectorAll('.yeu-cau-bao-gia-table .table-input'));
 			getAllDataToArea(rowArray);
 		})
+		tinhtong();
 	}
 
 	const removeRow = () => {
-		const removeButtonArray = Array.from(document.querySelectorAll('.yeu-cau-bao-gia .table-input .remove input'));
+		const removeButtonArray = Array.from(document.querySelectorAll('.yeu-cau-bao-gia-table .table-input .remove input'));
 		if (removeButtonArray) {
 			removeButtonArray.forEach(btn => {
 				btn.addEventListener('click', () => {
 					btn.parentNode.removeChild(btn);
-					const rowArray = Array.from(document.querySelectorAll('.yeu-cau-bao-gia .table-input'));
+					const rowArray = Array.from(document.querySelectorAll('.yeu-cau-bao-gia-table .table-input'));
 					getAllDataToArea(rowArray);
 				})
 			})
 		}
+		tinhtong();
 	}
 
 	const run = () => {
-		const rowArray = Array.from(document.querySelectorAll('.yeu-cau-bao-gia .table-input'));
+		const rowArray = Array.from(document.querySelectorAll('.yeu-cau-bao-gia-table .table-input'));
 		if (rowArray) {
 			rowArray.forEach(row => {
 				Array.from(row.querySelectorAll('input')).forEach(input => {
 					input.addEventListener('change', () => {
 						calculateRow(row);
 						getAllDataToArea(rowArray);
+						tinhtong(row);
 					})
 				})
 			})
 		}
+	}
+
+	const tinhtong = () => {
+		$('.yeu-cau-bao-gia-table input[type="number"]').on('change', function(e) {
+			let SUM_soluong = 0;
+			let SUM_trongluong = 0;
+			let SUM_tongthetich = 0;
+			let SUM_tongtrongluong = 0;
+			let SUM_trongluongtinhcuocAir = 0;
+			let SUM_trongluongtinhcuocCourier = 0;
+
+			$('.soluong').each(function() {
+				SUM_soluong += Number($(this).val());
+			})
+
+			$('.trongluong').each(function() {
+				SUM_trongluong += Number($(this).val());
+			})
+
+			$('.tongthetich').each(function() {
+				SUM_tongthetich += Number($(this).val());
+			})
+
+			$('.tongtrongluong').each(function() {
+				SUM_tongtrongluong += Number($(this).val());
+			})
+
+			$('.tongtrongluongAIR').each(function() {
+				SUM_trongluongtinhcuocAir += Number($(this).val());
+			})
+
+			$('.tongtrongluongCourier').each(function() {
+				SUM_trongluongtinhcuocCourier += Number($(this).val());
+			})
+
+			$('.SUM_soluong').val(SUM_soluong);
+			$('.SUM_trongluong').val(SUM_trongluong);
+			$('.SUM_tongthetich').val(SUM_tongthetich);
+			$('.SUM_tongtrongluong').val(SUM_tongtrongluong);
+			$('.SUM_trongluongtinhcuocAir').val(SUM_trongluongtinhcuocAir);
+			$('.SUM_trongluongtinhcuocCourier').val(SUM_trongluongtinhcuocCourier);
+		});
 	}
 
 	// init

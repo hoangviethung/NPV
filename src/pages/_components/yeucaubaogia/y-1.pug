@@ -74,7 +74,7 @@
 							option(value="") TEST
 							option(value="") TEST
 							option(value="") TEST
-				.yeu-cau-bao-gia
+				.yeu-cau-bao-gia-table
 					table
 						thead
 							tr
@@ -117,28 +117,28 @@
 								td(colspan=3)
 									input(type="number" readonly placeholder="Tổng Cộng")
 								td
-									input(type="number" readonly)
+									input.SUM_soluong(type="number" readonly)
 								td
-									input(type="number" readonly)
+									input.SUM_trongluong(type="number" readonly)
 								td
-									input(type="number" readonly)
+									input.SUM_tongthetich(type="number" readonly)
 								td
-									input(type="number" readonly)
+									input.SUM_tongtrongluong(type="number" readonly)
 								td
-									input(type="number" readonly)
+									input.SUM_trongluongtinhcuocAir(type="number" readonly)
 								td
-									input(type="number" readonly)
+									input.SUM_trongluongtinhcuocCourier(type="number" readonly)
 								td
 									input(type="number" readonly)
 					//- 3 THÔNG SỐ CHO BACK END LẤY DATA (BỊ ẨN - THÊM ATTR HIDDEN ĐỂN ẨN)
 				.form-row
-					.form-group.col-lg-4
+					.form-group.col-md-4
 						label Dài Rộng Cao ( Bị Ẩn )
 						textarea.small.box-hiden-dai-rong-cao(name="" placeholder="Dài x Rộng x Cao" readonly)
-					.form-group.col-lg-4
+					.form-group.col-md-4
 						label(for) Số lượng ( Bị Ẩn )
 						textarea.small.box-so-luong(name="" placeholder="Số lượng" readonly)
-					.form-group.col-lg-4
+					.form-group.col-md-4
 						label(for) Trọng lượng ( Bị Ẩn )
 						textarea.small.box-trong-luong(name=""  placeholder="Trọng lượng" readonly)
 				//- KẾT THÚC
