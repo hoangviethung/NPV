@@ -167,4 +167,22 @@
 	.see-more {
 		margin: 35px auto 0;
 	}
+
+	@media (max-width: 1024.98px) {
+		.list-item {
+			.item {
+				flex     : 0 0 50%;
+				max-width: 50%;
+			}
+		}
+	}
+
+	@media (max-width: 767.98px) {
+		.list-item {
+			.item {
+				flex     : 0 0 100%;
+				max-width: 100%;
+			}
+		}
+	}
 }
