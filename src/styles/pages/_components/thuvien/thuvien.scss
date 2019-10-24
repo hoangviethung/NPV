@@ -169,7 +169,11 @@
 	}
 
 	@media (max-width: 1024.98px) {
+		margin: 60px 0;
+
 		.list-item {
+			margin: 30px -8px 0;
+
 			.item {
 				flex     : 0 0 50%;
 				max-width: 50%;
