@@ -84,14 +84,13 @@
 								th(rowspan=2) Tổng thể tích (cbm)
 								th(rowspan=2) Tổng trọng lượng (kgs)
 								th(colspan=2) Trọng lượng tính cước (kgs)
-								th
+								th(rowspan=2) Tác vụ
 							tr
 								th Dài
 								th Rộng
 								th Cao
 								th Air
 								th Courier
-								th
 						tbody
 							tr.table-input
 								td
@@ -112,8 +111,8 @@
 									input.tongtrongluongAIR(type="number" readonly)
 								td
 									input.tongtrongluongCourier(type="number" readonly)
-								td.remove 
-									input(type='button' value='remove' disabled)
+								td.remove
+									input(type='button' value='Xóa' disabled)
 							tr.table-tong-cong
 								td(colspan=3)
 									input(type="number" readonly placeholder="Tổng Cộng")
