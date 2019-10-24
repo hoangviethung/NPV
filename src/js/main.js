@@ -68,7 +68,7 @@ function activeHeader() {
 		if ($(this).scrollTop() > 500) {
 			$('header').addClass('active');
 		} else {
-			$('header').remove('.active');
+			$('header').removeClass('active');
 		}
 	});
 }
@@ -390,7 +390,6 @@ $(document).ready(function() {
 	sliderCustomer();
 	showBackToTop();
 	activeMenuByUrl();
-	// showToolBarNav();
 	showListPC();
 	showList480();
 	tienIchTabTuDien();
