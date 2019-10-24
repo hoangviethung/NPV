@@ -62,15 +62,13 @@ class Tab {
 }
 
 function activeHeader() {
-	if ($(window) > 1024) {
-		$(this).scroll(function() {
-			if ($(this).scrollTop() > 150) {
-				$('header').addClass('active');
-			} else {
-				$('header').removeClass('active');
-			}
-		});
-	}
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 500) {
+			$('header').addClass('active');
+		} else {
+			$('header').remove('.active');
+		}
+	});
 }
 
 function sliderHomeLocator() {
@@ -388,7 +386,6 @@ function activeMenuByUrl() {
 			$(this).parents('.nav-item').addClass('active');
 		}
 	})
-
 }
 
 function tinhtong(selector) {
