@@ -84,6 +84,9 @@ function sliderHomeLocator() {
 		},
 		breakpoints: {
 			1024: {
+				slidesPerView: 2,
+			},
+			480: {
 				slidesPerView: 1,
 			}
 		},
