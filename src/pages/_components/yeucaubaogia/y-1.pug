@@ -74,7 +74,7 @@
 							option(value="") TEST
 							option(value="") TEST
 							option(value="") TEST
-				.table-responsive
+				.yeu-cau-bao-gia
 					table
 						thead
 							tr
@@ -95,15 +95,15 @@
 						tbody
 							tr.table-input
 								td
-									input.dai(type="number" placeholder="123 cm")
+									input.dai(type="number" placeholder="123cm")
 								td
-									input.rong(type="number" placeholder="123 cm")
+									input.rong(type="number" placeholder="123cm")
 								td
-									input.cao(type="number" placeholder="123 cm")
+									input.cao(type="number" placeholder="123cm")
 								td
 									input.soluong(type="number" placeholder="5 kiện")
 								td
-									input.trongluong(type="number" placeholder="123 kgs")
+									input.trongluong(type="number" placeholder="123kg")
 								td
 									input.tongthetich(type="number" readonly)
 								td
@@ -112,11 +112,13 @@
 									input.tongtrongluongAIR(type="number" readonly)
 								td
 									input.tongtrongluongCourier(type="number" readonly)
-								td.addmore 
-									input(type='button' value='add')
+								td.remove 
+									input(type='button' value='remove' disabled)
 							tr.table-tong-cong
 								td(colspan=3)
 									input(type="number" readonly placeholder="Tổng Cộng")
+								td
+									input(type="number" readonly)
 								td
 									input(type="number" readonly)
 								td

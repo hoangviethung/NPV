@@ -119,6 +119,22 @@
 		}
 	}
 
+	table,
+	thead,
+	tbody,
+	tr,
+	td,
+	th {
+		border-collapse: collapse;
+		border: 1px solid black;
+
+		input,
+		textarea {
+			border: 0;
+			width: 100%;
+		}
+	}
+
 	table {
 		width: 100%;
 		text-align: center;
@@ -146,6 +162,20 @@
 						}
 					}
 				}
+
+				// .addmore {
+				// 	input {
+				// 		display: block;
+				// 	}
+				// }
+
+				// &:nth-child(1) {
+				// 	.addmore {
+				// 		input {
+				// 			display: none !important;
+				// 		}
+				// 	}
+				// }
 			}
 
 			input[type='number'] {

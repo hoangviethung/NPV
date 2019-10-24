@@ -1,6 +1,4 @@
-import {
-	YeuCauBaoGia
-} from "./yeucaubaogia";
+import YeuCauBaoGia from "./yeucaubaogia";
 
 // Function thêm class lazyload vào các thẻ <img> có thuộc tính [data-src]
 const addClassLazyload = () => {
@@ -382,7 +380,6 @@ function getNameFile() {
 
 function activeMenuByUrl() {
 	var url = window.location.href.split('/').pop();
-
 	let listNavItem = $('.bottom-header .nav-list .nav-item a');
 	listNavItem.each(function () {
 		let hung = $(this).attr('href');
@@ -390,9 +387,7 @@ function activeMenuByUrl() {
 			$(this).parents('.nav-item').addClass('active');
 		}
 	})
-
 }
-
 
 $(document).ready(function () {
 	objectFitImages("img.ofc");
