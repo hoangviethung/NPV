@@ -159,7 +159,7 @@ const YeuCauBaoGia = () => {
 			})
 
 			$('.SUM_soluong').val(SUM_soluong);
-			$('.SUM_trongluong').val(SUM_trongluong);
+			// $('.SUM_trongluong').val(SUM_trongluong);
 			$('.SUM_tongthetich').val(SUM_tongthetich);
 			$('.SUM_tongtrongluong').val(SUM_tongtrongluong);
 			$('.SUM_trongluongtinhcuocAir').val(SUM_trongluongtinhcuocAir);

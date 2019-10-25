@@ -87,7 +87,7 @@
 		label {
 			cursor     : pointer;
 			width      : 100%;
-			color      : #FFFFFF;
+			color      : #f3f3f3;
 			line-height: 45px;
 			padding    : 0 15px;
 			background : #3E4095;
@@ -159,7 +159,7 @@
 					height    : 50px;
 					background: $main-color-1;
 					border    : 1px solid #FFFFFF;
-					color     : #FFFFFF;
+					color     : #f3f3f3;
 				}
 			}
 		}
@@ -168,6 +168,10 @@
 			tr {
 				&.table-tong-cong {
 					td {
+						input {
+							font-weight: 700;
+						}
+
 						&:first-child {
 							input {
 								text-align: center;
