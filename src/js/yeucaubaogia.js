@@ -60,9 +60,19 @@ const YeuCauBaoGia = () => {
 		const tongTrongLuong = rowData.soLuong * rowData.trongLuong;
 
 		row.querySelector('.tongthetich').value = tongTheTich;
-		row.querySelector('.tongtrongluongAIR').value = tongtrongluongAIR;
-		row.querySelector('.tongtrongluongCourier').value = tongtrongluongCourier;
 		row.querySelector('.tongtrongluong').value = tongTrongLuong;
+
+		// SO SÁNH 2 CỘT AIR VÀ  COURIER -> NẾU NHỎ HƠN CỘT TỔNG TRỌNG LƯỢNG THÌ LẤY DATA CỦA TỔNG TRỌNG LƯỢNG
+		if (tongTrongLuong > tongtrongluongAIR || tongTrongLuong > tongtrongluongCourier) {
+			row.querySelector('.tongtrongluongAIR').value = tongTrongLuong;
+			row.querySelector('.tongtrongluongCourier').value = tongTrongLuong;
+			console.log('Tổng trọng lượng LỚN HƠN 1 trong 2');
+		} else {
+			row.querySelector('.tongtrongluongAIR').value = tongtrongluongAIR;
+			row.querySelector('.tongtrongluongCourier').value = tongtrongluongCourier;
+			console.log('Tổng trọng lượng NHỎ 1 trong 2');
+		}
+
 
 		if (rowData.dai && rowData.rong && rowData.cao && rowData.soLuong && rowData.trongLuong) {
 			const lastInputRow = document.querySelectorAll('.yeu-cau-bao-gia-table .table-input')[document.querySelectorAll('.yeu-cau-bao-gia-table .table-input').length - 1]
