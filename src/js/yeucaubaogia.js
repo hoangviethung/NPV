@@ -62,17 +62,15 @@ const YeuCauBaoGia = () => {
 		row.querySelector('.tongthetich').value = tongTheTich;
 		row.querySelector('.tongtrongluong').value = tongTrongLuong;
 
-		// SO SÁNH 2 CỘT AIR VÀ  COURIER -> NẾU NHỎ HƠN CỘT TỔNG TRỌNG LƯỢNG THÌ LẤY DATA CỦA TỔNG TRỌNG LƯỢNG
-		if (tongTrongLuong > tongtrongluongAIR || tongTrongLuong > tongtrongluongCourier) {
+		// SO SÁNH 2 CỘT AIR VÀ COURIER -> NẾU NHỎ HƠN CỘT TỔNG TRỌNG LƯỢNG THÌ LẤY DATA CỦA TỔNG TRỌNG LƯỢNG
+		if (tongTrongLuong > tongtrongluongAIR) {
 			row.querySelector('.tongtrongluongAIR').value = tongTrongLuong;
+		} else if (tongTrongLuong > tongtrongluongCourier) {
 			row.querySelector('.tongtrongluongCourier').value = tongTrongLuong;
-			console.log('Tổng trọng lượng LỚN HƠN 1 trong 2');
 		} else {
 			row.querySelector('.tongtrongluongAIR').value = tongtrongluongAIR;
 			row.querySelector('.tongtrongluongCourier').value = tongtrongluongCourier;
-			console.log('Tổng trọng lượng NHỎ 1 trong 2');
 		}
-
 
 		if (rowData.dai && rowData.rong && rowData.cao && rowData.soLuong && rowData.trongLuong) {
 			const lastInputRow = document.querySelectorAll('.yeu-cau-bao-gia-table .table-input')[document.querySelectorAll('.yeu-cau-bao-gia-table .table-input').length - 1]
@@ -168,12 +166,13 @@ const YeuCauBaoGia = () => {
 				SUM_trongluongtinhcuocCourier += Number($(this).val());
 			})
 
-			$('.SUM_soluong').val(SUM_soluong);
+			// IN RA MÀN HÌNH GIÁ TRỊ TỔNG => LÀM TRÒN ĐẾN 2 CHỮ SÓ THẬP PHÂN CUỐI
+			$('.SUM_soluong').val(Math.ceil(SUM_soluong));
 			// $('.SUM_trongluong').val(SUM_trongluong);
-			$('.SUM_tongthetich').val(SUM_tongthetich);
-			$('.SUM_tongtrongluong').val(SUM_tongtrongluong);
-			$('.SUM_trongluongtinhcuocAir').val(SUM_trongluongtinhcuocAir);
-			$('.SUM_trongluongtinhcuocCourier').val(SUM_trongluongtinhcuocCourier);
+			$('.SUM_tongthetich').val(Math.round(SUM_tongthetich * 100 + Number.EPSILON) / 100);
+			$('.SUM_tongtrongluong').val(Math.round(SUM_tongtrongluong * 100 + Number.EPSILON) / 100);
+			$('.SUM_trongluongtinhcuocAir').val(Math.round(SUM_trongluongtinhcuocAir * 100 + Number.EPSILON) / 100);
+			$('.SUM_trongluongtinhcuocCourier').val(Math.round(SUM_trongluongtinhcuocCourier * 100 + Number.EPSILON) / 100);
 		});
 	}
 

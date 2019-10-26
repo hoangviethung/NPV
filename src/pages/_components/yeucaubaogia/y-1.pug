@@ -74,6 +74,12 @@
 							option(value="") TEST
 							option(value="") TEST
 							option(value="") TEST
+				//- CÁC CÔNG THỨC BẢNG YÊU CẦU BÁO GIÁ:
+				//- 1. Tổng thể tích = (dài * rộng * cao) / 1,000,000 * số lượng / kiện
+				//- 2. Tổng trọng lượng = số lượng kiện * trọng lượng / kiện
+				//- 3. Trọng lượng tính cước AIR = (dài * rộng * cao) / 6,000 * số lượng / kiện
+				//- 4. Trọng lượng tính cước Courier = dài * rộng * cao) / 5000 * số lượng / kiện
+				//- Lưu ý: SO SÁNH 2 SỐ Air AND Courier nếu nhỏ hơn => lấy data tổng trọng lượng
 				.yeu-cau-bao-gia-table
 					table
 						thead
@@ -83,7 +89,7 @@
 								th(rowspan=2) Trọng lượng / kiện (kgs)
 								th(rowspan=2) Tổng thể tích (cbm)
 								th(rowspan=2) Tổng trọng lượng (kgs)
-								th(colspan=2).bg-white Trọng lượng tính cước (kgs)
+								th(colspan=2) Trọng lượng tính cước (kgs)
 								th(rowspan=2) Tác vụ
 							tr
 								th Dài

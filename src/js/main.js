@@ -355,6 +355,7 @@ function showSearchMobile() {
 function showSubMenu() {
 	if ($(window).width() < 1024) {
 		$('header .bottom-header .nav-item').click(function(e) {
+			
 			$(this).siblings('.nav-item').children('.sub-menu').slideUp();
 			$('header .bottom-header .nav-item').not(this).find('img').removeClass('active');
 

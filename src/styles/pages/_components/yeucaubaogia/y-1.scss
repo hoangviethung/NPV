@@ -142,8 +142,8 @@
 		&.remove {
 			input {
 				cursor    : pointer;
-				background: $main-color-1;
-				color     : #FFFFFF;
+				background: #f3f3f3;
+				color     : #707070;
 			}
 		}
 	}
@@ -157,14 +157,9 @@
 			tr {
 				th {
 					height    : 50px;
-					background: $main-color-1;
-					border    : 1px solid #FFFFFF;
-					color     : #FFFFFF;
-
-					&.bg-white {
-						background: #f3f3f3;
-						color     : #707070;
-					}
+					border    : 1px solid #c1c1c1;
+					background: #f3f3f3;
+					color     : #707070;
 				}
 			}
 		}
