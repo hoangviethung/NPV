@@ -87,10 +87,10 @@
 		label {
 			cursor     : pointer;
 			width      : 100%;
-			color      : #f3f3f3;
+			color      : #707070;
 			line-height: 45px;
 			padding    : 0 15px;
-			background : #3E4095;
+			background : #f3f3f3;
 		}
 
 		select {
@@ -160,6 +160,11 @@
 					background: $main-color-1;
 					border    : 1px solid #FFFFFF;
 					color     : #f3f3f3;
+
+					&.bg-white {
+						background: #f3f3f3;
+						color     : #707070;
+					}
 				}
 			}
 		}
@@ -179,20 +184,6 @@
 						}
 					}
 				}
-
-				// .addmore {
-				// 	input {
-				// 		display: block;
-				// 	}
-				// }
-
-				// &:nth-child(1) {
-				// 	.addmore {
-				// 		input {
-				// 			display: none !important;
-				// 		}
-				// 	}
-				// }
 			}
 
 			input[type='number'] {
@@ -237,15 +228,6 @@
 			textarea.big {
 				padding: 9px;
 				height : 160px;
-			}
-
-			label {
-				cursor     : pointer;
-				width      : 100%;
-				color      : #FFFFFF;
-				line-height: 45px;
-				padding    : 0 15px;
-				background : #3E4095;
 			}
 
 			.submit {
