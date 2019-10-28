@@ -84,7 +84,7 @@ const YeuCauBaoGia = () => {
 	const addRow = row => {
 		const newRow = row.cloneNode(true);
 		bodyTableBaoGia.insertBefore(newRow, bodyTableBaoGia.querySelector('.table-tong-cong'));
-		Array.from(newRow.querySelectorAll('input[type="number"]')).forEach(input => {
+		Array.from(newRow.querySelectorAll('input[type="number"],input[type="text"]')).forEach(input => {
 			input.value = null;
 		})
 		newRow.querySelector('input[type="button"]').removeAttribute('disabled')
@@ -134,7 +134,7 @@ const YeuCauBaoGia = () => {
 	}
 
 	const tinhtong = () => {
-		$('.yeu-cau-bao-gia-table input[type="number"]').on('change', function(e) {
+		$('.yeu-cau-bao-gia-table input[type="number"]').on('change', function (e) {
 			let SUM_soluong = 0;
 			let SUM_trongluong = 0;
 			let SUM_tongthetich = 0;
@@ -142,27 +142,27 @@ const YeuCauBaoGia = () => {
 			let SUM_trongluongtinhcuocAir = 0;
 			let SUM_trongluongtinhcuocCourier = 0;
 
-			$('.soluong').each(function() {
+			$('.soluong').each(function () {
 				SUM_soluong += Number($(this).val());
 			})
 
-			$('.trongluong').each(function() {
+			$('.trongluong').each(function () {
 				SUM_trongluong += Number($(this).val());
 			})
 
-			$('.tongthetich').each(function() {
+			$('.tongthetich').each(function () {
 				SUM_tongthetich += Number($(this).val());
 			})
 
-			$('.tongtrongluong').each(function() {
+			$('.tongtrongluong').each(function () {
 				SUM_tongtrongluong += Number($(this).val());
 			})
 
-			$('.tongtrongluongAIR').each(function() {
+			$('.tongtrongluongAIR').each(function () {
 				SUM_trongluongtinhcuocAir += Number($(this).val());
 			})
 
-			$('.tongtrongluongCourier').each(function() {
+			$('.tongtrongluongCourier').each(function () {
 				SUM_trongluongtinhcuocCourier += Number($(this).val());
 			})
 

@@ -2,24 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f522f277-9d83-411f-b300-1f09708b7da9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/NPV.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/VuSon.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/FAQ.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/arival-notice.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/booking-dangky.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/booking-kiemtra.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/cacchinhsach.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/main.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/main.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/docForm-HAWB.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/docForm-HAWB.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/delivery-order.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/dichvu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/docForm-HAWB.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/docForm-HBL-01.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/docForm-HBL-02.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/docForm-bien-bang-giao-hang-01.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/docForm-bien-bang-giao-hang-02.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/docForm-bien-bang-giao-hang-03.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/docForm-booking-01.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/docForm-booking-02.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/docForm-booking-03.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/docForm-giay-uy-quyen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/docForm-lenh-giao-hang-01.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/docForm-lenh-giao-hang-02.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/docForm-loading-01.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/docForm-loading-02.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/docForm-thong-bao-hang-den-01.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/docForm-thong-bao-hang-den-02.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/docForm-thong-bao-hang-den-03.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/gioithieu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/hethongcuahang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/js/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/main.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/js/main.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/main.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/map.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/js/yeucaubaogia.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/yeucaubaogia.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/yeucaubaogia.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/yeucaubaogia.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/kiemtrahangnhap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/kiemtrahangxuat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/kiemtravantaidon.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lichsuhinhthanh.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lienhetructiep.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/proof-of-delivery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/request.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tamnhinsumenh.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/thuvien-hinhanh.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/thuvien-video.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tienich-cangbien.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tienich-chuyendoi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tienich-container.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tienich-incoterm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tienich-phuphi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tienich-tigia.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tienich-tudien.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tintuc-ct.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tintuc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/yeucaubaogia.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/map.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/yeucaubaogia.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/yeucaubaogia.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/_components/yeucaubaogia/y-1.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_components/yeucaubaogia/y-1.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/docForm-HAWB.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/docForm-HAWB.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/pages/_components/doc-form/doc-form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/pages/_components/doc-form/doc-form.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/pages/_components/yeucaubaogia/y-1.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/pages/_components/yeucaubaogia/y-1.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +79,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -63,6 +104,9 @@
       <option name="presentableId" value="Default" />
       <updated>1571871051870</updated>
       <workItem from="1571871053252" duration="900000" />
+      <workItem from="1572228873183" duration="349000" />
+      <workItem from="1572229244369" duration="199000" />
+      <workItem from="1572229462106" duration="242000" />
     </task>
     <servers />
   </component>
@@ -74,7 +118,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
