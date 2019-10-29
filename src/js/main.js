@@ -77,7 +77,7 @@ function sliderHomeLocator() {
 	var swpier = new Swiper('.slider-HomeLocator', {
 		slidesPerView: 4,
 		speed: 1000,
-		loop: false,
+		loop: true,
 		simulateTouch: false,
 		autoplay: {
 			delay: 5000,
