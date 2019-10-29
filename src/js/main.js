@@ -77,7 +77,8 @@ function sliderHomeLocator() {
 	var swpier = new Swiper('.slider-HomeLocator', {
 		slidesPerView: 4,
 		speed: 1000,
-		loop: true,
+		loop: false,
+		simulateTouch: false,
 		autoplay: {
 			delay: 5000,
 			disableOnInteraction: false,
@@ -355,7 +356,7 @@ function showSearchMobile() {
 function showSubMenu() {
 	if ($(window).width() < 1024) {
 		$('header .bottom-header .nav-item').click(function(e) {
-			
+
 			$(this).siblings('.nav-item').children('.sub-menu').slideUp();
 			$('header .bottom-header .nav-item').not(this).find('img').removeClass('active');
 
