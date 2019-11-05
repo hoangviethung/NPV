@@ -3,10 +3,10 @@ const YeuCauBaoGia = () => {
 	const hiddenSoLuong = document.querySelector('.box-so-luong');
 	const hiddenTrongLuong = document.querySelector('.box-trong-luong');
 	const body = document.querySelector('.yeu-cau-bao-gia-table table tbody');
-	const rowSum = body.querySelector('.table-tong-cong');
+	const rowSum = document.querySelector('.table-tong-cong');
 
 	const getAllRow = () => {
-		return Array.from(body.querySelectorAll('.table-input'));
+		return Array.from(document.querySelectorAll('.table-input'));
 	};
 
 	const getRowData = row => {
@@ -130,7 +130,7 @@ const YeuCauBaoGia = () => {
 			setRowRemoveHandler(row);
 		});
 
-		body.addEventListener('change', () => {
+		document.addEventListener('change', () => {
 			UpdateDataEveryTableChange();
 		})
 	})();
