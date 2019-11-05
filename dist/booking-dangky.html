@@ -173,21 +173,47 @@
 									</select>
 								</div>
 								<div class="form-group col-lg-6">
-									<label for="">Type of move</label>
-									<select name="">
-										<option value="">FCL</option>
-										<option value="">TEST</option>
-										<option value="">TEST</option>
-										<option value="">TEST</option>
-										<option value="">TEST</option>
-										<option value="">TEST</option>
+									<label>Type of move</label>
+									<select id="type_Of_Move" name="">
+										<option value="1">FCL</option>
+										<option value="2">LCL</option>
+										<option value="3">AIR</option>
 									</select>
 								</div>
-								<div class="form-group col-lg-6">
+								<div class="form-group col-lg-6 FCL">
+									<label for="Contdropoffplace">Cont drop off place</label>
+									<input id="Contdropoffplace" type="text" placeholder="Cont drop off place*">
+								</div>
+								<div class="form-group col-lg-3 FCL">
+									<label for="Quantity">Quantity</label>
+									<input id="Quantity" type="number" placeholder="Quantity">
+								</div>
+								<div class="form-group col-lg-3 FCL">
+									<label>Type of move*</label>
+									<select name="">
+										<option value="FL20">20 FL</option>
+										<option value="GOH20">20 GOH</option>
+										<option value="OT20">20 OT</option>
+										<option value="RF20">20 RF</option>
+										<option value="DC40">40 DC</option>
+										<option value="FL40">40 FL</option>
+										<option value="HC40">40 HC</option>
+										<option value="HR40">40 HR</option>
+										<option value="OT40">40 OT</option>
+										<option value="RF40">40 RF</option>
+										<option value="GOH40">40 GOH</option>
+										<option value="HC45">45 HC</option>
+									</select>
+								</div>
+								<div class="form-group col-lg-12 LCL hidden">
+									<label for="Measurement(CBM)">Measurement (CBM)</label>
+									<input id="Measurement" type="text" placeholder="Measurement (CBM)">
+								</div>
+								<div class="form-group col-lg-6 AIR hidden">
 									<label for="GrossWeight">Gross Weight</label>
 									<input id="GrossWeight" type="text" placeholder="Gross Weight">
 								</div>
-								<div class="form-group col-lg-6">
+								<div class="form-group col-lg-6 AIR hidden">
 									<label for="Volume">Volume</label>
 									<input id="Volume" type="text" placeholder="Volume">
 								</div>

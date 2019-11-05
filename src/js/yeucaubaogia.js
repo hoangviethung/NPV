@@ -75,23 +75,23 @@ const YeuCauBaoGia = () => {
 		let SUM_trongluongtinhcuocAir = 0;
 		let SUM_trongluongtinhcuocCourier = 0;
 
-		Array.from(body.querySelectorAll('.soluong')).forEach(item => {
+		Array.from(document.querySelectorAll('.soluong')).forEach(item => {
 			SUM_soluong += Number(item.value);
 		});
 
-		Array.from(body.querySelectorAll('.tongthetich')).forEach(item => {
+		Array.from(document.querySelectorAll('.tongthetich')).forEach(item => {
 			SUM_tongthetich += Number(item.value);
 		});
 
-		Array.from(body.querySelectorAll('.tongtrongluong')).forEach(item => {
+		Array.from(document.querySelectorAll('.tongtrongluong')).forEach(item => {
 			SUM_tongtrongluong += Number(item.value);
 		});
 
-		Array.from(body.querySelectorAll('.tongtrongluongAIR')).forEach(item => {
+		Array.from(document.querySelectorAll('.tongtrongluongAIR')).forEach(item => {
 			SUM_trongluongtinhcuocAir += Number(item.value);
 		});
 
-		Array.from(body.querySelectorAll('.tongtrongluongCourier')).forEach(item => {
+		Array.from(document.querySelectorAll('.tongtrongluongCourier')).forEach(item => {
 			SUM_trongluongtinhcuocCourier += Number(item.value);
 		});
 
@@ -107,7 +107,6 @@ const YeuCauBaoGia = () => {
 		document.querySelector('.SUM_tongtrongluong').value = SUM_tongtrongluong;
 		document.querySelector('.SUM_trongluongtinhcuocAir').value = SUM_trongluongtinhcuocAir;
 		document.querySelector('.SUM_trongluongtinhcuocCourier').value = SUM_trongluongtinhcuocCourier;
-
 
 		// Set list data to hidden textarea
 		let kichThuoc = '';
@@ -125,14 +124,16 @@ const YeuCauBaoGia = () => {
 	};
 
 	(() => {
-		getAllRow().forEach(row => {
-			setRowHandler(row);
-			setRowRemoveHandler(row);
-		});
+		if (document.querySelector('.yeu-cau-bao-gia-table')) {
+			getAllRow().forEach(row => {
+				setRowHandler(row);
+				setRowRemoveHandler(row);
+			});
 
-		document.addEventListener('change', () => {
-			UpdateDataEveryTableChange();
-		})
+			document.addEventListener('change', () => {
+				UpdateDataEveryTableChange();
+			})
+		}
 	})();
 };
 

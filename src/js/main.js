@@ -384,6 +384,29 @@ function activeMenuByUrl() {
 	})
 }
 
+function showTypeOfMove() {
+	$('#type_Of_Move').change(function(e) {
+		e.preventDefault();
+
+		let selected = $(this).val();
+
+		$('.LCL').removeClass('hidden');
+		$('.AIR').removeClass('hidden');
+		$('.FCL').removeClass('hidden');
+
+		if (selected == 1) {
+			$('.LCL').addClass('hidden');
+			$('.AIR').addClass('hidden');
+		} else if (selected == 2) {
+			$('.FCL').addClass('hidden');
+			$('.AIR').addClass('hidden');
+		} else {
+			$('.FCL').addClass('hidden');
+			$('.LCL').addClass('hidden');
+		}
+	});
+}
+
 $(document).ready(function() {
 	objectFitImages("img.ofc");
 	sliderHomeBanner();
@@ -404,6 +427,7 @@ $(document).ready(function() {
 	showSearchMobile();
 	showSubMenu();
 	_getThumbnailYoutube();
+	showTypeOfMove();
 	// Yeu Cau Bao Gia
 	YeuCauBaoGia();
 	new WOW().init();

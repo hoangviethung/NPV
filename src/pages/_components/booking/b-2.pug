@@ -45,18 +45,39 @@
 							option(value="") TEST
 							option(value="") TEST
 					.form-group.col-lg-6
-						label(for="") Type of move
+						label Type of move
+						select#type_Of_Move(name="")
+							option(value=1) FCL
+							option(value=2) LCL
+							option(value=3) AIR
+					.form-group.col-lg-6.FCL
+						label(for="Contdropoffplace") Cont drop off place
+						input#Contdropoffplace(type="text" placeholder="Cont drop off place*")
+					.form-group.col-lg-3.FCL
+						label(for="Quantity") Quantity
+						input#Quantity(type="number" placeholder="Quantity")
+					.form-group.col-lg-3.FCL
+						label Type of move*
 						select(name="")
-							option(value="") FCL
-							option(value="") TEST
-							option(value="") TEST
-							option(value="") TEST
-							option(value="") TEST
-							option(value="") TEST
-					.form-group.col-lg-6
+							option(value='FL20') 20 FL
+							option(value='GOH20') 20 GOH
+							option(value='OT20') 20 OT
+							option(value='RF20') 20 RF
+							option(value='DC40') 40 DC
+							option(value='FL40') 40 FL
+							option(value='HC40') 40 HC
+							option(value='HR40') 40 HR
+							option(value='OT40') 40 OT
+							option(value='RF40') 40 RF
+							option(value='GOH40') 40 GOH
+							option(value='HC45') 45 HC
+					.form-group.col-lg-12.LCL.hidden
+						label(for="Measurement(CBM)") Measurement (CBM)
+						input#Measurement(type="text" placeholder="Measurement (CBM)")
+					.form-group.col-lg-6.AIR.hidden
 						label(for="GrossWeight") Gross Weight
 						input#GrossWeight(type="text" placeholder="Gross Weight")
-					.form-group.col-lg-6
+					.form-group.col-lg-6.AIR.hidden
 						label(for="Volume") Volume
 						input#Volume(type="text" placeholder="Volume")
 					.form-group.col-lg-12
