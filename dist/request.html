@@ -193,17 +193,18 @@
 								</div>
 								<div class="form-group col-lg-6">
 									<label for="">Type of Shipping*</label>
-									<select name="">
-										<option value="">FCL</option>
-										<option value="">TEST</option>
-										<option value="">TEST</option>
-										<option value="">TEST</option>
-										<option value="">TEST</option>
-										<option value="">TEST</option>
+									<select id="type_Of_Move" name="">
+										<option value="FCL">FCL</option>
+										<option value="LCL">LCL</option>
+										<option value="AIR">AIR</option>
 									</select>
 								</div>
+								<div class="form-group col-lg-6 AIR hidden">
+									<label for="Dimension">Dimension*</label>
+									<input id="Dimension" type="text" placeholder="Dimension*">
+								</div>
 							</div>
-							<div class="form-row">
+							<div class="form-row FCL">
 								<div class="form-group">
 									<label for="">Container/seal number</label>
 									<div class="form-table-wrapper">

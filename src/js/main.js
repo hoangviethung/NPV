@@ -394,10 +394,10 @@ function showTypeOfMove() {
 		$('.AIR').removeClass('hidden');
 		$('.FCL').removeClass('hidden');
 
-		if (selected == 1) {
+		if (selected == 'FCL') {
 			$('.LCL').addClass('hidden');
 			$('.AIR').addClass('hidden');
-		} else if (selected == 2) {
+		} else if (selected == 'LCL') {
 			$('.FCL').addClass('hidden');
 			$('.AIR').addClass('hidden');
 		} else {

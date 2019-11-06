@@ -61,14 +61,14 @@
 							option(value="") TEST
 					.form-group.col-lg-6
 						label(for="") Type of Shipping*
-						select(name="")
-							option(value="") FCL
-							option(value="") TEST
-							option(value="") TEST
-							option(value="") TEST
-							option(value="") TEST
-							option(value="") TEST
-				.form-row
+						select#type_Of_Move(name="")
+							option(value="FCL") FCL
+							option(value="LCL") LCL
+							option(value="AIR") AIR
+					.form-group.col-lg-6.AIR.hidden
+						label(for="Dimension") Dimension*
+						input#Dimension(type="text" placeholder="Dimension*")
+				.form-row.FCL
 					.form-group
 						label(for="") Container/seal number
 						.form-table-wrapper
