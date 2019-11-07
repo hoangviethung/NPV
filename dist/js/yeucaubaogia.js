@@ -54,16 +54,32 @@ const YeuCauBaoGia = () => {
 		});
 	};
 
+	const checkAllTableInputField = () => {
+		let field = true;
+
+		Array.from(document.querySelectorAll('.yeu-cau-bao-gia-table .table-input input')).forEach(item => {
+			if (!item.value) {
+				field = false
+			}
+		})
+
+		return field;
+	}
+
 	const addRow = check => {
-		if (check) {
-			const newRow = body.querySelector('.table-input').cloneNode(true);
-			Array.from(newRow.querySelectorAll('input[type="text"], input[type="number"]')).forEach(input => {
-				input.value = null;
-			});
-			newRow.querySelector('input[type="button"]').removeAttribute('disabled');
-			setRowHandler(newRow);
-			setRowRemoveHandler(newRow);
-			body.insertBefore(newRow, rowSum);
+
+		if (checkAllTableInputField()) {
+
+			if (check) {
+				const newRow = body.querySelector('.table-input').cloneNode(true);
+				Array.from(newRow.querySelectorAll('input[type="text"], input[type="number"]')).forEach(input => {
+					input.value = null;
+				});
+				newRow.querySelector('input[type="button"]').removeAttribute('disabled');
+				setRowHandler(newRow);
+				setRowRemoveHandler(newRow);
+				body.insertBefore(newRow, rowSum);
+			}
 		}
 	};
 

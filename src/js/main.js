@@ -12,6 +12,12 @@ const addClassLazyload = () => {
 	});
 }
 
+Date.prototype.toDateInputValue = (function() {
+	var local = new Date(this);
+	local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
+	return local.toJSON().slice(0, 10);
+});
+
 // Script cho tab
 class Tab {
 	selector;
@@ -407,6 +413,10 @@ function showTypeOfMove() {
 	});
 }
 
+function setDateDefault() {
+	$($('input[type=date]')).val(new Date().toDateInputValue());
+}
+
 $(document).ready(function() {
 	objectFitImages("img.ofc");
 	sliderHomeBanner();
@@ -428,6 +438,7 @@ $(document).ready(function() {
 	showSubMenu();
 	_getThumbnailYoutube();
 	showTypeOfMove();
+	setDateDefault();
 	// Yeu Cau Bao Gia
 	YeuCauBaoGia();
 	new WOW().init();
