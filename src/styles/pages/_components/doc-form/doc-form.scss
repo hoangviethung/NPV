@@ -702,6 +702,10 @@
 							vertical-align: middle;
 						}
 
+						&.vertical-bottom {
+							vertical-align: bottom;
+						}
+
 						&.text-center {
 							text-align: center;
 						}
@@ -772,6 +776,14 @@
 
 							&.italic {
 								font-style: italic;
+							}
+
+							&.border-bottom-dotted {
+								border-bottom: 2px dotted #000000;
+							}
+
+							&.mt-10 {
+								margin-top: 10px;
 							}
 						}
 					}
