@@ -1,4 +1,5 @@
 import YeuCauBaoGia from "./yeucaubaogia";
+import RequestForm from "./request";
 
 // Function thêm class lazyload vào các thẻ <img> có thuộc tính [data-src]
 const addClassLazyload = () => {
@@ -9,6 +10,42 @@ const addClassLazyload = () => {
 		} else {
 			el.className = "lazyload"
 		}
+	});
+}
+
+// CONTROL SVG
+const SVG = () => {
+	jQuery('img.svg').each(function() {
+		var $img = jQuery(this);
+		var imgID = $img.attr('id');
+		var imgClass = $img.attr('class');
+		var imgURL = $img.attr('src');
+
+		jQuery.get(imgURL, function(data) {
+			// Get the SVG tag, ignore the rest
+			var $svg = jQuery(data).find('svg');
+
+			// Add replaced image's ID to the new SVG
+			if (typeof imgID !== 'undefined') {
+				$svg = $svg.attr('id', imgID);
+			}
+			// Add replaced image's classes to the new SVG
+			if (typeof imgClass !== 'undefined') {
+				$svg = $svg.attr('class', imgClass + ' replaced-svg');
+			}
+
+			// Remove any invalid XML tags as per http://validator.w3.org
+			$svg = $svg.removeAttr('xmlns:a');
+
+			// Check if the viewport is set, if the viewport is not set the SVG wont't scale.
+			if (!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+				$svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+			}
+
+			// Replace image with new SVG
+			$img.replaceWith($svg);
+
+		}, 'xml');
 	});
 }
 
@@ -244,75 +281,6 @@ function showListPC() {
 	});
 }
 
-function addBlockTableForm() {
-
-	let i = 0;
-
-	$('body').on('click', '.tac-vu .add', function() {
-
-		// Giá trị Type Container
-		let TypeContainer = $('.tableForm').eq(0).find('.TypeContainer option:selected').val();
-		let nameTypeContainer = 'containers[' + i + '].TypeContainer';
-
-		// Giá trị ContainerNo
-		let ContainerNo = $('.tableForm').eq(0).find('.ContainerNo input').val();
-		let nameContainerNo = 'containers[' + i + '].ContainerNo';
-
-		// Giá trị SealNo
-		let SealNo = $('.tableForm').eq(0).find('.SealNo input').val();
-		let nameSealNo = 'containers[' + i + '].SealNo';
-
-		// Giá trị GW
-		let GW = $('.tableForm').eq(0).find('.GW input').val();
-		let nameGW = 'containers[' + i + '].GW';
-
-		// Giá trị CBM
-		let CBM = $('.tableForm').eq(0).find('.CBM input').val();
-		let nameCBM = 'containers[' + i + '].CBM';
-
-		// Giá trị NumberOfPackage
-		let NumberOfPackage = $('.tableForm').eq(0).find('.NumberOfPackage input').val();
-		let nameNumberOfPackage = 'containers[' + i + '].NumberOfPackage';
-
-		// Giá trị Unit
-		let Unit = $('.tableForm').eq(0).find('.Unit option:selected').val();
-		let nameUnit = 'containers[' + i + '].Unit';
-
-		// Khi nhập vào nút thêm sẽ copy ra thêm 1 table
-		var item_news = $(this).parents('.tableForm');
-		item_news.parent().append(item_news.prop('outerHTML'));
-
-		// Giá trị thứ i của containers[i] tăng lên sau mỗi lần click
-		i++;
-
-		// Tạo thành Array
-		let rowList = Array.from($('.tableForm'));
-
-		// Quăng value đã chọn vào đối tượng mới
-		$(rowList[rowList.length - 1]).find('.TypeContainer select').val(TypeContainer);
-		$(rowList[rowList.length - 1]).find('.ContainerNo input').val(ContainerNo);
-		$(rowList[rowList.length - 1]).find('.SealNo input').val(SealNo);
-		$(rowList[rowList.length - 1]).find('.GW input').val(GW);
-		$(rowList[rowList.length - 1]).find('.CBM input').val(CBM);
-		$(rowList[rowList.length - 1]).find('.NumberOfPackage input').val(NumberOfPackage);
-		$(rowList[rowList.length - 1]).find('.Unit select').val(Unit);
-		// Thêm Name cho các trường
-		$(rowList[rowList.length - 1]).find('.TypeContainer select').attr('name', nameTypeContainer);
-		$(rowList[rowList.length - 1]).find('.ContainerNo input').attr('name', nameContainerNo);
-		$(rowList[rowList.length - 1]).find('.SealNo input').attr('name', nameSealNo);
-		$(rowList[rowList.length - 1]).find('.GW input').attr('name', nameGW);
-		$(rowList[rowList.length - 1]).find('.CBM input').attr('name', nameCBM);
-		$(rowList[rowList.length - 1]).find('.NumberOfPackage input').attr('name', nameNumberOfPackage);
-		$(rowList[rowList.length - 1]).find('.Unit select').attr('name', nameUnit);
-	});
-
-	// XÓA ĐỐI TƯỚNG KHI CLICK VÀO
-	$('body').on('click', '.tac-vu .delete', function() {
-		var item_delete = $(this).parents('.tableForm');
-		item_delete.remove();
-	});
-}
-
 const tienIchTabTuDien = () => {
 	return new Tab('.tienich-tudien .tab-container');
 }
@@ -423,6 +391,7 @@ function setDateDefault() {
 
 $(document).ready(function() {
 	objectFitImages("img.ofc");
+	SVG();
 	sliderHomeBanner();
 	sliderHomeLocator();
 	sliderMember();
@@ -434,7 +403,6 @@ $(document).ready(function() {
 	tienIchTabTuDien();
 	activeHeader();
 	libraryImgVideo();
-	addBlockTableForm();
 	getNameFile();
 	showFAQ();
 	showMenuMobile();
@@ -445,6 +413,7 @@ $(document).ready(function() {
 	setDateDefault();
 	// Yeu Cau Bao Gia
 	YeuCauBaoGia();
+	RequestForm();
 	new WOW().init();
 })
 

@@ -1,16 +1,18 @@
 .list-service-home {
-	.container-fluid {
-		padding: 0;
+	.list-item {
+		overflow: auto;
+		width   : 100%;
 	}
 
 	.block-service {
-		height: 490px;
+		float: left;
+		width: 50%;
 
 		figure.big-img {
+			height  : 500px;
 			cursor  : pointer;
 			position: relative;
 			overflow: hidden;
-			height  : 100%;
 
 			img {
 				transition: .5s all ease-in-out;
@@ -61,86 +63,97 @@
 			}
 		}
 
-		.more-service {
+		figure.small-img {
+			height  : 250px;
+			cursor  : pointer;
+			overflow: hidden;
+
 			display  : flex;
 			flex-wrap: wrap;
 
-			.item {
+			img {
+				flex      : 0 0 50%;
+				max-width : 50%;
+				transition: .3s all ease-in-out;
+			}
+
+			figcaption {
+				position : relative;
 				flex     : 0 0 50%;
 				max-width: 50%;
-				position : relative;
-				height   : 245px;
 
-				figure.small-img {
-					cursor  : pointer;
-					position: relative;
-					height  : 100%;
-					overflow: hidden;
+				color     : #FFFFFF;
+				background: #2B2B2B;
 
-					img {
-						transition: .5s all ease-in-out;
+				.box-content {
+					position: absolute;
+					top     : 30px;
+					left    : 30px;
+					width   : 88%;
+
+					h5 {
+						margin-bottom: 5px;
+						font-size    : 25px;
+						font-weight  : 400;
 					}
 
-					&.bg-black {
-						background: #2B2B2B;
-						color     : #FFFFFF;
+					p {
+						-webkit-line-clamp: 3;
+						margin-bottom     : 20px;
+						max-height        : 72px;
+						font-size         : 16px;
 					}
 
-					&.bg-white {
-						background: #F3F3F3;
-						color     : #2B2B2B;
+					>a {
+						padding-left: 25px;
 					}
+				}
+			}
 
-					&:hover {
-						img {
-							transform: scale(1.1);
+			&:hover {
+				img {
+					transform: scale(1.1);
+				}
+			}
+		}
+
+		&:nth-child(3),
+		&:nth-child(6) {
+			figure {
+				flex-direction: row-reverse;
+
+				figcaption {
+					background: #F3F3F3;
+					color     : #2B2B2B;
+
+					svg {
+						g {
+							stroke: #040404;
 						}
-					}
 
-					figcaption {
-						width   : 88%;
-						position: absolute;
-						top     : 30px;
-						left    : 30px;
-
-						h5 {
-							font-size    : 25px;
-							font-weight  : 400;
-							margin-bottom: 5px;
-						}
-
-						p {
-							font-size         : 16px;
-							margin-bottom     : 20px;
-							max-height        : 72px;
-							-webkit-line-clamp: 3;
-						}
-
-						>a {
-							img {
-								transition: .3s all ease-in-out;
-							}
-
-							&:hover {
-								img {
-									transform: scale(1.1);
-								}
-							}
+						path {
+							fill: #040404;
 						}
 					}
 				}
 			}
 		}
+
+		&:nth-child(5) {
+			float: right;
+		}
+	}
+
+	@media (max-width: 1024.98px) {
+		.block-service {
+			width: 100%;
+		}
 	}
 
 	@media (max-width: 767.98px) {
-		padding: 0 15px;
-
 		.block-service {
-			height: auto;
-
 			figure.big-img {
-				height: 100%;
+				height: auto;
 
 				figcaption {
 					top : 25px;
@@ -162,72 +175,41 @@
 				}
 			}
 
-			.more-service {
-				.item {
+			figure.small-img {
+				position: relative;
+				height  : auto;
+
+				img {
 					flex     : 0 0 100%;
 					max-width: 100%;
-					height   : 215px;
+					height   : 254.08px;
+				}
 
-					figure.small-img {
-						figcaption {
-							h5 {
-								font-size: 16px;
-							}
+				figcaption {
+					flex     : 0 0 100%;
+					max-width: 100%;
+					height   : 254.08px;
 
-							p {
-								font-size: 14px;
-							}
+					.box-content {
+						background: transparent;
+						top       : 25px;
+						left      : 20px;
+
+						h5 {
+							font-size    : 16px;
+							margin-bottom: 15px;
+						}
+
+						p {
+							padding-left: 10px;
+							font-size   : 14px;
+						}
+
+						>a {
+							padding-left: 10px;
 						}
 					}
 				}
-			}
-		}
-
-		.block-service {
-			&:nth-child(1) {
-				order: 1;
-			}
-
-			&:nth-child(2) {
-				order: 2;
-
-				.more-service {
-					.item {
-						&:nth-child(1) {
-							order: 2;
-						}
-
-						&:nth-child(2) {
-							order: 1;
-						}
-
-						// &:nth-child(3) {
-						// 	order: 4;
-						// }
-
-						// &:nth-child(4) {
-						// 	order: 3;
-						// }
-					}
-				}
-			}
-
-			&:nth-child(3) {
-				order: 4;
-
-				.item {
-					&:nth-child(3) {
-						order: 4;
-					}
-
-					&:nth-child(4) {
-						order: 3;
-					}
-				}
-			}
-
-			&:nth-child(4) {
-				order: 3;
 			}
 		}
 	}
