@@ -1,5 +1,5 @@
 .request {
-	margin: 60px 0 122px;
+	margin       : 60px 0 122px;
 	padding-right: 40px;
 
 	.form-row {
@@ -7,8 +7,8 @@
 	}
 
 	h3 {
-		font-size: 34px;
-		color: #2B2B2B;
+		font-size    : 34px;
+		color        : #2B2B2B;
 		margin-bottom: 45px;
 	}
 
@@ -17,8 +17,8 @@
 	}
 
 	.form-group {
-		position: relative;
-		padding: 0 10px;
+		position     : relative;
+		padding      : 0 10px;
 		margin-bottom: 20px;
 
 		&.small {
@@ -26,62 +26,62 @@
 		}
 
 		input[type='text'] {
-			width: 100%;
-			font-size: 16px;
-			color: #707070;
-			font-style: italic;
+			width      : 100%;
+			font-size  : 16px;
+			color      : #707070;
+			font-style : italic;
 			line-height: 45px;
-			padding: 0 20px;
-			border: 1px solid #C1C1C1;
-			font-style: italic;
+			padding    : 0 20px;
+			border     : 1px solid #C1C1C1;
+			font-style : italic;
 		}
 
 		input[type='number'] {
-			width: 100%;
-			font-size: 16px;
-			color: #707070;
-			font-style: italic;
-			line-height: 45px;
+			width       : 100%;
+			font-size   : 16px;
+			color       : #707070;
+			font-style  : italic;
+			line-height : 45px;
 			padding-left: 20px;
-			border: 1px solid #C1C1C1;
-			font-style: italic;
+			border      : 1px solid #C1C1C1;
+			font-style  : italic;
 		}
 
 		input[type='date'] {
-			display: block;
-			color: #707070;
-			border: 1px solid #C1C1C1;
-			padding: 10px 15px;
-			width: 100%;
-			height: 45px;
-			font-size: 16px;
+			display   : block;
+			color     : #707070;
+			border    : 1px solid #C1C1C1;
+			padding   : 10px 15px;
+			width     : 100%;
+			height    : 45px;
+			font-size : 16px;
 			font-style: italic;
 		}
 
 		textarea.small {
 			font-size: 16px;
-			resize: none;
-			padding: 15px;
-			width: 100%;
-			height: 90px;
-			color: #707070;
-			border: 1px solid #C1C1C1;
+			resize   : none;
+			padding  : 15px;
+			width    : 100%;
+			height   : 90px;
+			color    : #707070;
+			border   : 1px solid #C1C1C1;
 		}
 
 		textarea.big {
-			resize: none;
+			resize : none;
 			padding: 15px;
-			width: 100%;
-			height: 160px;
-			color: #707070;
-			border: 1px solid #C1C1C1;
+			width  : 100%;
+			height : 160px;
+			color  : #707070;
+			border : 1px solid #C1C1C1;
 		}
 
 		label {
-			cursor: pointer;
-			width: 100%;
-			font-size: 18px;
-			color: #2B2B2B;
+			cursor       : pointer;
+			width        : 100%;
+			font-size    : 18px;
+			color        : #2B2B2B;
 			margin-bottom: 10px;
 
 			&.color-red {
@@ -89,20 +89,20 @@
 			}
 
 			&.block {
-				color: #FFFFFF;
+				color      : #FFFFFF;
 				line-height: 45px;
-				padding: 0 15px;
-				background: #3E4095;
+				padding    : 0 15px;
+				background : #3E4095;
 			}
 		}
 
 		select {
-			width: 100%;
+			width     : 100%;
 			background: none;
-			height: 45px;
-			color: #707070;
-			border: 1px solid #C1C1C1;
-			padding: 10px 15px;
+			height    : 45px;
+			color     : #707070;
+			border    : 1px solid #C1C1C1;
+			padding   : 10px 15px;
 			font-style: italic;
 		}
 
@@ -138,7 +138,7 @@
 
 		table {
 			border: 1px solid #C1C1C1;
-			width: 100%;
+			width : 100%;
 
 			th,
 			td {
@@ -146,13 +146,13 @@
 			}
 
 			th {
-				font-size: 16px;
-				color: white;
+				font-size : 16px;
+				color     : white;
 				background: #3e4095;
 				text-align: center;
-				height: 50px;
-				padding: 10px;
-				width: 25%;
+				height    : 50px;
+				padding   : 10px;
+				width     : 25%;
 			}
 
 			td {
@@ -190,21 +190,26 @@
 				}
 
 				&.tac-vu {
-					width: 81px;
+					width     : 81px;
 					text-align: center;
 
 					img {
-						cursor: pointer;
+						cursor : pointer;
 						display: inline-block;
-						margin: 0 5px;
+						margin : 0 5px;
 					}
 				}
 			}
 		}
 	}
 
+	.tableFormHidden {
+		width     : 100%;
+		margin-top: 20px;
+	}
+
 	@media (max-width: 1024.98px) {
-		margin: 30px 0;
+		margin       : 30px 0;
 		padding-right: 15px;
 
 		h3 {
@@ -227,8 +232,8 @@
 
 		button {
 			display: block;
-			margin: 0 auto;
-			float: unset;
+			margin : 0 auto;
+			float  : unset;
 		}
 	}
 

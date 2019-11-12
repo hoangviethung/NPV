@@ -237,6 +237,10 @@ select {
 	word-wrap: normal;
 }
 
+select:disabled {
+	background: rgb(235, 235, 228) !important;
+}
+
 button,
 [type="button"],
 [type="reset"],

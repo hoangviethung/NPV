@@ -128,12 +128,14 @@ const YeuCauBaoGia = () => {
 		let kichThuoc = '';
 		let soLuong = '';
 		let trongLuong = '';
+
 		getAllRow().forEach(row => {
 			const rowData = getRowData(row);
 			kichThuoc += `${rowData.dai}x${rowData.rong}x${rowData.cao}\n`;
 			soLuong += `${rowData.soluong}\n`;
 			trongLuong += `${rowData.trongluong}\n`;
 		});
+
 		hiddenKichThuoc.value = kichThuoc;
 		hiddenSoLuong.value = soLuong;
 		hiddenTrongLuong.value = trongLuong;
@@ -150,6 +152,30 @@ const YeuCauBaoGia = () => {
 				UpdateDataEveryTableChange();
 			})
 		}
+		$('body').on('keyup', '.yeu-cau-bao-gia-table input[type=number]', function() {
+			const inputVal = $(this).val();
+			if (Number(inputVal) < 0) {
+				$(this).val("")
+			}
+			if (inputVal === "") {
+				$(this).val("")
+			}
+			if (isNaN(inputVal)) {
+				$(this).val("")
+			}
+		})
+		$('body').on('change', '.yeu-cau-bao-gia-table input[type=number]', function() {
+			const inputVal = $(this).val();
+			if (Number(inputVal) < 0) {
+				$(this).val("")
+			}
+			if (inputVal === "") {
+				$(this).val("")
+			}
+			if (isNaN(inputVal)) {
+				$(this).val("")
+			}
+		})
 	})();
 };
 

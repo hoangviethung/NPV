@@ -221,23 +221,31 @@
 													</thead>
 													<tbody>
 														<tr>
-															<td class="TypeContainer">
-																<select>
-																	<option value="0">20'DC</option>
-																	<option value="1">TEST</option>
-																	<option value="2">TEST</option>
-																	<option value="3">TEST</option>
-																	<option value="4">TEST</option>
+															<td>
+																<select class="TypeContainer">
+																	<option value="20´DC">20'DC</option>
+																	<option value="20´FL">20'FL</option>
+																	<option value="20´GOH">20'GOH</option>
+																	<option value="20´OT">20'OT</option>
+																	<option value="20´RF">20'RF</option>
+																	<option value="40´DC">40'DC</option>
+																	<option value="40´FL">40'FL</option>
+																	<option value="40´GOH">40'GOH</option>
+																	<option value="40´HC">40'HC</option>
+																	<option value="40´HR">40'HR</option>
+																	<option value="40´OT">40'OT</option>
+																	<option value="40´RF">40'RF</option>
+																	<option value="45´HC">45'HC</option>
 																</select>
 															</td>
-															<td class="ContainerNo">
-																<input type="text" placeholder="Nhập">
+															<td>
+																<input class="ContainerNo" type="text" placeholder="Nhập">
 															</td>
-															<td class="SealNo">
-																<input type="text" placeholder="Nhập">
+															<td>
+																<input class="SealNo" type="text" placeholder="Nhập">
 															</td>
-															<td class="GW">
-																<input type="number" value="0" min="0" max="100">
+															<td>
+																<input class="GW" type="number" value="0" min="0" max="100">
 															</td>
 														</tr>
 													</tbody>
@@ -255,20 +263,24 @@
 													</thead>
 													<tbody>
 														<tr>
-															<td class="CBM">
-																<input type="number" value="0" min="0" max="100">
+															<td>
+																<input class="CBM" type="number" value="0" min="0" max="100">
 															</td>
-															<td class="NumberOfPackage">
-																<input type="number" value="0" min="0" max="100">
+															<td>
+																<input class="NumberOfPackage" type="number" value="0" min="0" max="100">
 															</td>
-															<td class="Unit">
-																<select>
-																	<option value="">BAG</option>
-																	<option value="">TEST</option>
-																	<option value="">TEST</option>
-																	<option value="">TEST</option>
-																	<option value="">TEST</option>
-																	<option value="">TEST</option>
+															<td>
+																<select class="Unit">
+																	<option value="BAG">BAG</option>
+																	<option value="BOX">BOX</option>
+																	<option value="BOXES">BOXES</option>
+																	<option value="CTNS">CTNS</option>
+																	<option value="FEU">FEU</option>
+																	<option value="PC">PC</option>
+																	<option value="PKG">PKG</option>
+																	<option value="PKGS">PKGS</option>
+																	<option value="PCS">PCS</option>
+																	<option value="ROLL">ROLL</option>
 																</select>
 															</td>
 															<td class="tac-vu"><img class="add" src="./img/icons/tacvu-them.svg" alt="" srcset=""><img class="delete" src="./img/icons/tacvu-xoa.svg" alt="" srcset=""></td>
@@ -278,6 +290,12 @@
 											</div>
 										</div>
 									</div>
+								</div>
+							</div>
+							<div class="tableFormHidden">
+								<div class="form-group">
+									<label>Table Data Hidden</label>
+									<textarea class="big box-hidden-data"></textarea>
 								</div>
 							</div>
 							<div class="form-row">
