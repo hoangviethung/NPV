@@ -677,14 +677,31 @@
 				}
 			}
 
-			.ngay-thang-nam {
-				padding-top   : 200px;
-				padding-right : 40px;
-				padding-bottom: 40px;
-				text-align    : right;
-				border-right  : 1px solid $main-color-1;
-				border-left   : 1px solid $main-color-1;
+			.bottom-box {
+				display        : flex;
+				justify-content: space-between;
+				flex-wrap      : wrap;
+				padding-top    : 200px;
+				padding-bottom : 40px;
+				border-right   : 1px solid $main-color-1;
+				border-left    : 1px solid $main-color-1;
+
+				.text-1,
+				.text-2,
+				.ngay-thang-nam {
+					flex      : 0 0 33.333333%;
+					max-width : 33.333333%;
+					text-align: center;
+					padding   : 0 30px;
+				}
+
+				.ngay-thang-nam {
+					padding-right: 40px;
+					text-align   : right;
+				}
 			}
+
+
 		}
 
 		.bang-hawb {
