@@ -386,7 +386,11 @@ function showTypeOfMove() {
 }
 
 function setDateDefault() {
-	$($('input[type=date]')).val(new Date().toDateInputValue());
+	let today = new Date().toDateInputValue();
+
+	$($('input[type=date]')).val(today);
+
+	$($('input[type=date]')).attr('min', today)
 }
 
 $(document).ready(function() {
