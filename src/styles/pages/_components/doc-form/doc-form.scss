@@ -2,6 +2,11 @@
 	margin-top   : 45px;
 	margin-bottom: 200px;
 
+	ul {
+		list-style: none;
+		padding   : 0;
+	}
+
 	.header-docForm {
 		.thong-tin-cong-ty {
 			color: $main-color-1;

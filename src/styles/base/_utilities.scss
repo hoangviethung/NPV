@@ -312,6 +312,11 @@
 .aside-form-report-request {
 	margin: 130px 0 45px;
 
+	ul {
+		list-style: none;
+		padding   : 0;
+	}
+
 	.title-tracking {
 		margin-bottom: 20px;
 
