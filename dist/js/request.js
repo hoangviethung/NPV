@@ -57,13 +57,13 @@ function RequestForm() {
 		$('.tableForm').each(function(index) {
 			if (index !== 0) {
 				let item = {
-					TypeContainer: $(this).find('.TypeContainer').val(),
-					Unit: $(this).find('.Unit').val(),
-					SealNo: $(this).find('.SealNo').val(),
-					Gw: $(this).find('.GW').val(),
-					ContainerNo: $(this).find('.ContainerNo').val(),
-					Cbm: $(this).find('.CBM').val(),
-					NumberOfPackage: $(this).find('.NumberOfPackage').val(),
+					type: $(this).find('.TypeContainer').val(),
+					unit: $(this).find('.Unit').val(),
+					sealNo: $(this).find('.SealNo').val(),
+					grossweight: $(this).find('.GW').val(),
+					containerNo: $(this).find('.ContainerNo').val(),
+					cbm: $(this).find('.CBM').val(),
+					package: $(this).find('.NumberOfPackage').val(),
 				}
 				dataJson.push(item)
 			}
