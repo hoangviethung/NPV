@@ -39,9 +39,10 @@ function RequestForm() {
 				})
 				$('.form-table-wrapper').append(newRow);
 			}
+			console.log('clicked');
+
 			cb();
 		});
-
 	}
 
 	function remove(cb) {
