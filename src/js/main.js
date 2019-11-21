@@ -311,6 +311,9 @@ function showMenuMobile() {
 		$(this).siblings('.search-mobile').find('.search').removeClass('active');
 		$(this).siblings('.search-mobile').find('.close').removeClass('active');
 
+		$(this).find('.show-menu').toggleClass('active');
+		$(this).find('.close').toggleClass('active');
+
 		$('.top-header').removeClass('active');
 		$('.bottom-header').toggleClass('active');
 	});
@@ -319,6 +322,9 @@ function showMenuMobile() {
 function showSearchMobile() {
 	$('.search-mobile').click(function(e) {
 		e.preventDefault();
+		$(this).siblings('.toggle-menu-mobile').find('.show-menu').removeClass('active');
+		$(this).siblings('.toggle-menu-mobile').find('.close').removeClass('active');
+
 		$(this).find('.search').toggleClass('active');
 		$(this).find('.close').toggleClass('active');
 

@@ -289,9 +289,17 @@ header {
 			transform: translateY(-50%);
 			left     : 15px;
 
-			img {
-				&.hiden {
+			.show-menu {
+				&.active {
 					display: none;
+				}
+			}
+
+			.close {
+				display: none;
+
+				&.active {
+					display: block;
 				}
 			}
 		}
