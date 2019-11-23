@@ -314,6 +314,9 @@ function showMenuMobile() {
 		$(this).find('.show-menu').toggleClass('active');
 		$(this).find('.close').toggleClass('active');
 
+		$('body').toggleClass('disabled');
+		$('.overlay').toggleClass('active');
+
 		$('.top-header').removeClass('active');
 		$('.bottom-header').toggleClass('active');
 	});
@@ -327,6 +330,9 @@ function showSearchMobile() {
 
 		$(this).find('.search').toggleClass('active');
 		$(this).find('.close').toggleClass('active');
+
+		$('.overlay').removeClass('active');
+		$('body').removeClass('disabled');
 
 		$('.bottom-header').removeClass('active');
 		$('.top-header').toggleClass('active');

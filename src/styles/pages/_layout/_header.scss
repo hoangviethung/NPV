@@ -379,6 +379,7 @@ header {
 			transition  : .3s all ease-in-out;
 			border-top  : 1px solid $main-color-1;
 			border-right: 1px solid $main-color-1;
+			overflow-y  : auto;
 
 			&.active {
 				left: 0;
