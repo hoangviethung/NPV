@@ -79,6 +79,8 @@ footer {
 		}
 
 		.form-group-1 {
+			position: relative;
+
 			input {
 				width         : 100%;
 				font-size     : 16px;
@@ -87,6 +89,17 @@ footer {
 				padding-bottom: 5px;
 				border-bottom : 1px solid #FFFFFF;
 				color         : rgba(255, 255, 255, 0.6);
+			}
+
+			button {
+				display      : none;
+				position     : absolute;
+				right        : 0;
+				top          : 0;
+				background   : #ffffff;
+				border       : none;
+				width        : 50px;
+				border-radius: 3px;
 			}
 		}
 
@@ -154,6 +167,16 @@ footer {
 
 		.follow-me {
 			padding: 0 20px;
+
+			.form-group-1 {
+				input {
+					padding-right: 60px;
+				}
+
+				button {
+					display: block;
+				}
+			}
 		}
 	}
 }
