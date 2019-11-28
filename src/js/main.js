@@ -1,5 +1,8 @@
 import YeuCauBaoGia from "./yeucaubaogia";
 import RequestForm from "./request";
+import {
+	inflate
+} from "zlib";
 
 // Function thêm class lazyload vào các thẻ <img> có thuộc tính [data-src]
 const addClassLazyload = () => {
@@ -106,9 +109,14 @@ class Tab {
 	}
 }
 
+function checkPageVerify() {
+	let indexPage = $('.index-page').parents('main').addClass('pt-0');
+}
+
 function activeHeader() {
+	let heightHeader = $('header').height();
 	$(window).scroll(function() {
-		if ($(this).scrollTop() > 500) {
+		if ($(this).scrollTop() > heightHeader) {
 			$('header').addClass('active');
 		} else {
 			$('header').removeClass('active');
@@ -408,6 +416,7 @@ function setDateDefault() {
 $(document).ready(function() {
 	objectFitImages("img.ofc");
 	SVG();
+	checkPageVerify();
 	sliderHomeBanner();
 	sliderHomeLocator();
 	sliderMember();

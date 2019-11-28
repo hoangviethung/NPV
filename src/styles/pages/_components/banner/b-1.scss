@@ -2,17 +2,18 @@
 	.slider-HomeBanner {
 		figure {
 			position: relative;
-			height  : 850px;
+			height  : 70vh;
 
 			figcaption {
-				position: absolute;
-				color   : #FFFFFF;
-				left    : 215px;
-				top     : 155px;
-				z-index : 1;
+				position : absolute;
+				color    : #FFFFFF;
+				left     : 15%;
+				transform: translateX(-15%);
+				top      : 155px;
+				z-index  : 1;
 
 				.title {
-					font-size     : 52px;
+					font-size     : 80px;
 					letter-spacing: 5px;
 					font-weight   : 400;
 					line-height   : 1.2;
@@ -46,21 +47,42 @@
 		.swiper-slide {
 			figure {
 				img {
-					transition      : 1s all ease-in-out;
 					transition-delay: 1s;
+					transition      : 1s all ease-in-out;
+					transform-origin: 0 0;
+					animation       : leaves 5s ease-in-out infinite alternate;
+
+					@-webkit-keyframes leaves {
+						0% {
+							-webkit-transform: scale(1);
+						}
+
+						100% {
+							transform: scale(1.025);
+						}
+					}
+
+					@keyframes leaves {
+						0% {
+							transform: scale(1);
+						}
+
+						100% {
+							transform: scale(1.025);
+						}
+					}
 				}
 
 				figcaption {
 					.title {
-						transform       : translateX(-200%);
-						transition      : 1s all ease-in-out;
-						transition-delay: 1s;
+						transform : translateX(-200%);
+						transition: 1.3s all ease-in-out;
 					}
 
 					.description {
 						transform       : translateX(-200%);
-						transition      : 1s all ease-in-out;
-						transition-delay: 2s;
+						transition      : 1.3s all ease-in-out;
+						transition-delay: 1s;
 					}
 				}
 			}

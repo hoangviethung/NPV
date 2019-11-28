@@ -7,8 +7,16 @@ body {
 main {
 	padding-top: 120px;
 
+	&.pt-0 {
+		padding-top: 0;
+	}
+
 	@media (max-width: 1024.98px) {
 		padding-top: 70px;
+
+		&.pt-0 {
+			padding-top: 70px;
+		}
 	}
 }
 
