@@ -582,6 +582,14 @@
 					&.col-table-12 {
 						width: 1200px;
 					}
+
+					&.no-border-top {
+						border-top: none;
+					}
+
+					&.no-border-bottom {
+						border-bottom: none;
+					}
 				}
 
 				th {
