@@ -114,9 +114,8 @@ function checkPageVerify() {
 }
 
 function activeHeader() {
-	let heightHeader = $('header').height();
 	$(window).scroll(function() {
-		if ($(this).scrollTop() > heightHeader) {
+		if ($(this).scrollTop() > 0) {
 			$('header').addClass('active');
 		} else {
 			$('header').removeClass('active');
@@ -435,7 +434,7 @@ $(document).ready(function() {
 	showSubMenu();
 	_getThumbnailYoutube();
 	showTypeOfMove();
-	setDateDefault();
+	// setDateDefault();
 	// Yeu Cau Bao Gia
 	YeuCauBaoGia();
 	RequestForm();
