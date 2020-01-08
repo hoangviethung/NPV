@@ -49,18 +49,21 @@
 			padding    : 0 40px 0 20px;
 			border     : 1px solid #C1C1C1;
 			font-style : italic;
+
+			&::placeholder {
+				font-weight: 400;
+			}
 		}
 
 		input[type='date'] {
-			display    : block;
-			color      : #707070;
-			border     : 1px solid #C1C1C1;
-			padding    : 10px 15px;
-			width      : 100%;
-			height     : 45px;
-			font-size  : 16px;
-			font-style : italic;
-			font-weight: 700;
+			display   : block;
+			color     : #707070;
+			border    : 1px solid #C1C1C1;
+			padding   : 10px 15px;
+			width     : 100%;
+			height    : 45px;
+			font-size : 16px;
+			font-style: italic;
 		}
 
 		input[type='date']:not(.has-value)::before {
@@ -73,9 +76,13 @@
 			padding    : 15px;
 			width      : 100%;
 			height     : 140px;
-			color      : #707070;
+			color      : #3E4095;
 			border     : 1px solid #C1C1C1;
 			font-weight: 700;
+
+			&::placeholder {
+				font-weight: 400;
+			}
 		}
 
 		textarea.big {
@@ -83,9 +90,13 @@
 			padding    : 15px;
 			width      : 100%;
 			height     : 215px;
-			color      : #707070;
+			color      : #3E4095;
 			border     : 1px solid #C1C1C1;
 			font-weight: 700;
+
+			&::placeholder {
+				font-weight: 400;
+			}
 		}
 
 		label {
@@ -98,14 +109,13 @@
 		}
 
 		select {
-			width      : 100%;
-			background : none;
-			height     : 45px;
-			color      : #707070;
-			font-weight: 700;
-			border     : 1px solid #C1C1C1;
-			padding    : 10px 15px;
-			font-style : italic;
+			width     : 100%;
+			background: none;
+			height    : 45px;
+			color     : #707070;
+			border    : 1px solid #C1C1C1;
+			padding   : 10px 15px;
+			font-style: italic;
 		}
 
 		.icon {
