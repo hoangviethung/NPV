@@ -51,13 +51,14 @@
 			font-style : italic;
 
 			&::placeholder {
+				color      : rgba($color: #707070, $alpha: .5);
 				font-weight: 400;
 			}
 		}
 
 		input[type='date'] {
 			display   : block;
-			color     : #707070;
+			color     : #3E4095;
 			border    : 1px solid #C1C1C1;
 			padding   : 10px 15px;
 			width     : 100%;
@@ -81,6 +82,7 @@
 			font-weight: 700;
 
 			&::placeholder {
+				color      : rgba($color: #707070, $alpha: .5);
 				font-weight: 400;
 			}
 		}
@@ -95,6 +97,7 @@
 			font-weight: 700;
 
 			&::placeholder {
+				color      : rgba($color: #707070, $alpha: .5);
 				font-weight: 400;
 			}
 		}
@@ -109,13 +112,20 @@
 		}
 
 		select {
+			cursor    : pointer;
 			width     : 100%;
 			background: none;
 			height    : 45px;
-			color     : #707070;
 			border    : 1px solid #C1C1C1;
 			padding   : 10px 15px;
+			color     : #3E4095;
 			font-style: italic;
+
+			option {
+				&:disabled {
+					color: #707070;
+				}
+			}
 		}
 
 		.icon {
