@@ -49,11 +49,9 @@
 				height    : 100%;
 				top       : 0;
 				left      : 0;
-				background: rgb(188, 46, 49);
-				background: -moz-linear-gradient(180deg, rgba(188, 46, 49, 0.9) 0%, rgba(188, 46, 49, 0.19931722689075626) 100%, rgba(188, 46, 49, 0) 100%);
-				background: -webkit-linear-gradient(180deg, rgba(188, 46, 49, 0.9) 0%, rgba(188, 46, 49, 0.19931722689075626) 100%, rgba(188, 46, 49, 0) 100%);
-				background: linear-gradient(180deg, rgba(188, 46, 49, 0.9) 0%, rgba(188, 46, 49, 0.19931722689075626) 100%, rgba(188, 46, 49, 0) 100%);
-				filter    : progid:DXImageTransform.Microsoft.gradient(startColorstr="#bc2e31", endColorstr="#bc2e31", GradientType=1);
+				background: rgb(75, 75, 75);
+				background: linear-gradient(180deg, rgba(75, 75, 75, 0.9) 0%, rgba(75, 75, 75, 0.19931722689075626) 100%, rgba(75, 75, 75, 0) 100%);
+				filter    : progid:DXImageTransform.Microsoft.gradient(startColorstr="rgb(75, 75, 75)", endColorstr="rgb(75, 75, 75);", GradientType=1);
 			}
 
 			&:hover {

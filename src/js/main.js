@@ -415,7 +415,7 @@ function setDateDefault() {
 $(document).ready(function() {
 	objectFitImages("img.ofc");
 	SVG();
-	checkPageVerify();
+	// checkPageVerify();
 	sliderHomeBanner();
 	sliderHomeLocator();
 	sliderMember();

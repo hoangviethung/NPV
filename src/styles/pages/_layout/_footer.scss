@@ -88,7 +88,7 @@ footer {
 				border        : none;
 				padding-bottom: 5px;
 				border-bottom : 1px solid #FFFFFF;
-				color         : rgba(255, 255, 255, 0.6);
+				color         : rgba(255, 255, 255, 0.8);
 			}
 
 			button {
@@ -108,10 +108,10 @@ footer {
 
 			select {
 				width     : 100%;
-				background: #2F3178;
+				background: rgb(75, 75, 75);
 				border    : none;
 				padding   : 10px;
-				color     : rgba(255, 255, 255, 0.6);
+				color     : rgba(255, 255, 255, 0.8);
 
 				optgroup {
 					font-size  : 16px;
@@ -134,7 +134,7 @@ footer {
 		top           : 0;
 		left          : 0;
 		pointer-events: none;
-		background    : rgba(62, 63, 149, 0.8);
+		background    : rgba(99, 99, 99, 0.8);
 	}
 
 	@media (max-width: 1024.98px) {
@@ -184,7 +184,7 @@ footer {
 .coppy-right {
 	width     : 100%;
 	padding   : 15px 0;
-	background: #292B77;
+	background: rgba(75, 75, 75, 0.8);
 
 	h5 {
 		display    : inline-block;
