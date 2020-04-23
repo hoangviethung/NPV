@@ -119,11 +119,15 @@ const YeuCauBaoGia = () => {
 
 		// IN RA MÀN HÌNH GIÁ TRỊ TỔNG => LÀM TRÒN ĐẾN 2 CHỮ SÓ THẬP PHÂN CUỐI
 		document.querySelector('.SUM_soluong').value = SUM_soluong;
-		document.querySelector('.SUM_tongthetich').value = SUM_tongthetich;
-		document.querySelector('.SUM_tongtrongluong').value = SUM_tongtrongluong;
 		document.querySelector('.SUM_trongluongtinhcuocAir').value = SUM_trongluongtinhcuocAir;
 		document.querySelector('.SUM_trongluongtinhcuocCourier').value = SUM_trongluongtinhcuocCourier;
-
+		// CHẠY FOR
+		document.querySelectorAll('.SUM_tongthetich').forEach((item) => {
+			item.value = SUM_tongthetich;
+		})
+		document.querySelectorAll('.SUM_tongtrongluong').forEach((item) => {
+			item.value = SUM_tongtrongluong;
+		})
 		// Set list data to hidden textarea
 		let kichThuoc = '';
 		let soLuong = '';

@@ -18,6 +18,7 @@
 		}
 	}
 
+
 	p {
 		font-size    : 14px;
 		color        : #2B2B2B;
@@ -28,6 +29,11 @@
 	.yeu-cau-bao-gia-table {
 		overflow-x   : auto;
 		margin-bottom: 20px;
+
+		h5 {
+			font-size    : 18px;
+			margin-bottom: 20px;
+		}
 	}
 
 	.form-group {
@@ -37,6 +43,10 @@
 
 		&.small {
 			padding: 0 5px;
+		}
+
+		h5 {
+			font-size: 18px;
 		}
 
 		input[type='text'] {
@@ -158,6 +168,7 @@
 		border-collapse: collapse;
 		border         : 1px solid #c1c1c1;
 
+
 		input,
 		textarea {
 			border: 0;
@@ -177,6 +188,8 @@
 		width     : 100%;
 		text-align: center;
 		min-width : 745px;
+
+
 
 		thead {
 			tr {
