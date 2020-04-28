@@ -92,9 +92,9 @@
 					.form-group.col-lg-6
 						input( type="text" placeholder="Số lượng*")
 					.form-group.col-lg-6
-						input.SUM_tongthetich(readonly type="text" placeholder="Tổng trọng lượng* (kgs)")
+						input.SUM_tongtrongluong(readonly type="text" placeholder="Tổng trọng lượng* (kgs)")
 					.form-group.col-lg-6
-						input.SUM_tongtrongluong(readonly type="text" placeholder="Tổng khối lượng* (cbm)")
+						input.SUM_tongthetich(readonly type="text" placeholder="Tổng khối lượng* (cbm)")
 					.form-group.col-lg-6
 						select(name="")
 							option(selected disabled hidden) Phương thức vận chuyển*
@@ -143,7 +143,7 @@
 							option(value="") TEST
 							option(value="") TEST
 							option(value="") TEST
-				.form-row
+				.form-row.d-none
 					.form-group.col-md-4
 						label Dài Rộng Cao ( Bị Ẩn )
 						textarea.small.box-hiden-dai-rong-cao(name="" placeholder="Dài x Rộng x Cao" readonly)
