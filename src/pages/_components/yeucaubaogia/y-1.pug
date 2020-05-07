@@ -6,6 +6,8 @@
 			p Trong trường hợp quý khách hàng có yêu cầu về dịch vụ Giao hàng tận nơi, Khai thuê Hải quan hoặc các dịch vụ khác vui lòng điền các yêu cầu theo mẫu dưới đây để nhận được báo giá.
 			form(action="#" method="method")
 				.form-row
+					.form-group.col-lg-12
+						h5 Tên khách hàng
 					.form-group.col-lg-6
 						input#name(type="text" placeholder="Họ và tên*")
 					.form-group.col-lg-6
@@ -18,14 +20,86 @@
 						input(type="text" placeholder="Email*")
 					.form-group.col-lg-6
 						input(type="text" placeholder="Địa chỉ")
+								//- CÁC CÔNG THỨC BẢNG YÊU CẦU BÁO GIÁ:
+				//- 1. Tổng thể tích = (dài * rộng * cao) / 1,000,000 * số lượng / kiện
+				//- 2. Tổng trọng lượng = số lượng kiện * trọng lượng / kiện
+				//- 3. Trọng lượng tính cước AIR = (dài * rộng * cao) / 6,000 * số lượng / kiện
+				//- 4. Trọng lượng tính cước Courier = dài * rộng * cao) / 5000 * số lượng / kiện
+				//- Lưu ý: SO SÁNH 2 SỐ Air AND Courier nếu nhỏ hơn => lấy data tổng trọng lượng
+				.yeu-cau-bao-gia-table
+					h5 Chi tiết kiện hàng
+					table
+						thead
+							tr
+								th(colspan=3) Kích thước kiện (cm)
+								th(rowspan=2) Số lượng (kiện)
+								th(rowspan=2) Trọng lượng / kiện (kgs)
+								th(rowspan=2) Thể tích / kiện (cbm)
+								th(rowspan=2) Tổng thể tích (cbm)
+								th(rowspan=2) Tổng trọng lượng (kgs)
+								th(colspan=2) Trọng lượng tính cước (kgs)
+								th(rowspan=2) Tác vụ
+							tr
+								th Dài
+								th Rộng
+								th Cao
+								th Air
+								th Courier
+						tbody
+							tr.table-input
+								td
+									input.dai(type="number" placeholder="123cm")
+								td
+									input.rong(type="number" placeholder="123cm")
+								td
+									input.cao(type="number" placeholder="123cm")
+								td
+									input.soluong(type="number" placeholder="5 kiện")
+								td
+									input.trongluong(type="number" placeholder="123kg")
+								td
+									input.thetich__1kienhang(type="number" readonly)
+								td
+									input.tongthetich(type="text" readonly)
+								td
+									input.tongtrongluong(type="text" readonly)
+								td
+									input.tongtrongluongAIR(type="text" readonly)
+								td
+									input.tongtrongluongCourier(type="text" readonly)
+								td.remove
+									input(type='button' value='Xóa' disabled)
+							tr.table-tong-cong
+								td(colspan=3)
+									input(type="number" readonly placeholder="Tổng Cộng")
+								td
+									input.SUM_soluong(type="text" readonly)
+								td
+									input.SUM_trongluong(type="text" readonly)
+								td
+									input.SUM_thetich__1kien(type="text" readonly)
+								td
+									input.SUM_tongthetich(type="text" readonly)
+								td
+									input.SUM_tongtrongluong(type="text" readonly)
+								td
+									input.SUM_trongluongtinhcuocAir(type="text" readonly)
+								td
+									input.SUM_trongluongtinhcuocCourier(type="text" readonly)
+								td
+									input(type="text" readonly)
+					//- 3 THÔNG SỐ CHO BACK END LẤY DATA (BỊ ẨN - THÊM ATTR HIDDEN ĐỂN ẨN)
+				.form-row
+					.form-group.col-lg-12
+						h5 Thông tin lô hàng
 					.form-group.col-lg-6
 						input(type="text" placeholder="Tên hàng hóa*")
 					.form-group.col-lg-6
-						input(type="text" placeholder="Số lượng*")
+						input( type="text" placeholder="Số lượng*")
 					.form-group.col-lg-6
-						input(type="text" placeholder="Tổng trọng lượng* (kgs)")
+						input.SUM_tongtrongluong(readonly type="text" placeholder="Tổng trọng lượng* (kgs)")
 					.form-group.col-lg-6
-						input(type="text" placeholder="Tổng khối  lượng* (cbm)")
+						input.SUM_tongthetich(readonly type="text" placeholder="Tổng khối lượng* (cbm)")
 					.form-group.col-lg-6
 						select(name="")
 							option(selected disabled hidden) Phương thức vận chuyển*
@@ -74,70 +148,7 @@
 							option(value="") TEST
 							option(value="") TEST
 							option(value="") TEST
-				//- CÁC CÔNG THỨC BẢNG YÊU CẦU BÁO GIÁ:
-				//- 1. Tổng thể tích = (dài * rộng * cao) / 1,000,000 * số lượng / kiện
-				//- 2. Tổng trọng lượng = số lượng kiện * trọng lượng / kiện
-				//- 3. Trọng lượng tính cước AIR = (dài * rộng * cao) / 6,000 * số lượng / kiện
-				//- 4. Trọng lượng tính cước Courier = dài * rộng * cao) / 5000 * số lượng / kiện
-				//- Lưu ý: SO SÁNH 2 SỐ Air AND Courier nếu nhỏ hơn => lấy data tổng trọng lượng
-				.yeu-cau-bao-gia-table
-					table
-						thead
-							tr
-								th(colspan=3) Kích thước kiện (cm)
-								th(rowspan=2) Số lượng (kiện)
-								th(rowspan=2) Trọng lượng / kiện (kgs)
-								th(rowspan=2) Tổng thể tích (cbm)
-								th(rowspan=2) Tổng trọng lượng (kgs)
-								th(colspan=2) Trọng lượng tính cước (kgs)
-								th(rowspan=2) Tác vụ
-							tr
-								th Dài
-								th Rộng
-								th Cao
-								th Air
-								th Courier
-						tbody
-							tr.table-input
-								td
-									input.dai(type="number" placeholder="123cm")
-								td
-									input.rong(type="number" placeholder="123cm")
-								td
-									input.cao(type="number" placeholder="123cm")
-								td
-									input.soluong(type="number" placeholder="5 kiện")
-								td
-									input.trongluong(type="number" placeholder="123kg")
-								td
-									input.tongthetich(type="text" readonly)
-								td
-									input.tongtrongluong(type="text" readonly)
-								td
-									input.tongtrongluongAIR(type="text" readonly)
-								td
-									input.tongtrongluongCourier(type="text" readonly)
-								td.remove
-									input(type='button' value='Xóa' disabled)
-							tr.table-tong-cong
-								td(colspan=3)
-									input(type="number" readonly placeholder="Tổng Cộng")
-								td
-									input.SUM_soluong(type="text" readonly)
-								td
-									input.SUM_trongluong(type="text" readonly)
-								td
-									input.SUM_tongthetich(type="text" readonly)
-								td
-									input.SUM_tongtrongluong(type="text" readonly)
-								td
-									input.SUM_trongluongtinhcuocAir(type="text" readonly)
-								td
-									input.SUM_trongluongtinhcuocCourier(type="text" readonly)
-								td
-									input(type="text" readonly)
-					//- 3 THÔNG SỐ CHO BACK END LẤY DATA (BỊ ẨN - THÊM ATTR HIDDEN ĐỂN ẨN)
-				.form-row
+				.form-row.d-none
 					.form-group.col-md-4
 						label Dài Rộng Cao ( Bị Ẩn )
 						textarea.small.box-hiden-dai-rong-cao(name="" placeholder="Dài x Rộng x Cao" readonly)
@@ -147,7 +158,6 @@
 					.form-group.col-md-4
 						label Trọng lượng ( Bị Ẩn )
 						textarea.small.box-trong-luong(name=""  placeholder="Trọng lượng" readonly)
-				//- KẾT THÚC
 				.form-row
 					.form-group.col-lg-12
 						textarea.big(placeholder="Yêu cầu dịch vụ*")

@@ -122,6 +122,9 @@
 						<p>Trong trường hợp quý khách hàng có yêu cầu về dịch vụ Giao hàng tận nơi, Khai thuê Hải quan hoặc các dịch vụ khác vui lòng điền các yêu cầu theo mẫu dưới đây để nhận được báo giá.</p>
 						<form action="#" method="method">
 							<div class="form-row">
+								<div class="form-group col-lg-12">
+									<h5>Tên khách hàng</h5>
+								</div>
 								<div class="form-group col-lg-6">
 									<input id="name" type="text" placeholder="Họ và tên*">
 								</div>
@@ -140,6 +143,101 @@
 								<div class="form-group col-lg-6">
 									<input type="text" placeholder="Địa chỉ">
 								</div>
+							</div>
+							<div class="yeu-cau-bao-gia-table">
+								<h5>Chi tiết kiện hàng</h5>
+								<table>
+									<thead>
+										<tr>
+											<th colspan="3">Kích thước kiện (cm)</th>
+											<th rowspan="2">Số lượng (kiện)</th>
+											<th rowspan="2">Trọng lượng / kiện (kgs)</th>
+											<th rowspan="2">Thể tích / kiện (cbm)</th>
+											<th rowspan="2">Tổng thể tích (cbm)</th>
+											<th rowspan="2">Tổng trọng lượng (kgs)</th>
+											<th colspan="2">Trọng lượng tính cước (kgs)</th>
+											<th rowspan="2">Tác vụ</th>
+										</tr>
+										<tr>
+											<th>Dài</th>
+											<th>Rộng</th>
+											<th>Cao</th>
+											<th>Air</th>
+											<th>Courier</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="table-input">
+											<td>
+												<input class="dai" type="number" placeholder="123cm">
+											</td>
+											<td>
+												<input class="rong" type="number" placeholder="123cm">
+											</td>
+											<td>
+												<input class="cao" type="number" placeholder="123cm">
+											</td>
+											<td>
+												<input class="soluong" type="number" placeholder="5 kiện">
+											</td>
+											<td>
+												<input class="trongluong" type="number" placeholder="123kg">
+											</td>
+											<td>
+												<input class="thetich__1kienhang" type="number" readonly>
+											</td>
+											<td>
+												<input class="tongthetich" type="text" readonly>
+											</td>
+											<td>
+												<input class="tongtrongluong" type="text" readonly>
+											</td>
+											<td>
+												<input class="tongtrongluongAIR" type="text" readonly>
+											</td>
+											<td>
+												<input class="tongtrongluongCourier" type="text" readonly>
+											</td>
+											<td class="remove">
+												<input type="button" value="Xóa" disabled>
+											</td>
+										</tr>
+										<tr class="table-tong-cong">
+											<td colspan="3">
+												<input type="number" readonly placeholder="Tổng Cộng">
+											</td>
+											<td>
+												<input class="SUM_soluong" type="text" readonly>
+											</td>
+											<td>
+												<input class="SUM_trongluong" type="text" readonly>
+											</td>
+											<td>
+												<input class="SUM_thetich__1kien" type="text" readonly>
+											</td>
+											<td>
+												<input class="SUM_tongthetich" type="text" readonly>
+											</td>
+											<td>
+												<input class="SUM_tongtrongluong" type="text" readonly>
+											</td>
+											<td>
+												<input class="SUM_trongluongtinhcuocAir" type="text" readonly>
+											</td>
+											<td>
+												<input class="SUM_trongluongtinhcuocCourier" type="text" readonly>
+											</td>
+											<td>
+												<input type="text" readonly>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="form-row">
+								<div class="form-group col-lg-12">
+									<h5>Thông tin lô hàng</h5>
+								</div>
 								<div class="form-group col-lg-6">
 									<input type="text" placeholder="Tên hàng hóa*">
 								</div>
@@ -147,10 +245,10 @@
 									<input type="text" placeholder="Số lượng*">
 								</div>
 								<div class="form-group col-lg-6">
-									<input type="text" placeholder="Tổng trọng lượng* (kgs)">
+									<input class="SUM_tongtrongluong" readonly type="text" placeholder="Tổng trọng lượng* (kgs)">
 								</div>
 								<div class="form-group col-lg-6">
-									<input type="text" placeholder="Tổng khối  lượng* (cbm)">
+									<input class="SUM_tongthetich" readonly type="text" placeholder="Tổng khối lượng* (cbm)">
 								</div>
 								<div class="form-group col-lg-6">
 									<select name="">
@@ -216,89 +314,7 @@
 									</select>
 								</div>
 							</div>
-							<div class="yeu-cau-bao-gia-table">
-								<table>
-									<thead>
-										<tr>
-											<th colspan="3">Kích thước kiện (cm)</th>
-											<th rowspan="2">Số lượng (kiện)</th>
-											<th rowspan="2">Trọng lượng / kiện (kgs)</th>
-											<th rowspan="2">Tổng thể tích (cbm)</th>
-											<th rowspan="2">Tổng trọng lượng (kgs)</th>
-											<th colspan="2">Trọng lượng tính cước (kgs)</th>
-											<th rowspan="2">Tác vụ</th>
-										</tr>
-										<tr>
-											<th>Dài</th>
-											<th>Rộng</th>
-											<th>Cao</th>
-											<th>Air</th>
-											<th>Courier</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr class="table-input">
-											<td>
-												<input class="dai" type="number" placeholder="123cm">
-											</td>
-											<td>
-												<input class="rong" type="number" placeholder="123cm">
-											</td>
-											<td>
-												<input class="cao" type="number" placeholder="123cm">
-											</td>
-											<td>
-												<input class="soluong" type="number" placeholder="5 kiện">
-											</td>
-											<td>
-												<input class="trongluong" type="number" placeholder="123kg">
-											</td>
-											<td>
-												<input class="tongthetich" type="text" readonly>
-											</td>
-											<td>
-												<input class="tongtrongluong" type="text" readonly>
-											</td>
-											<td>
-												<input class="tongtrongluongAIR" type="text" readonly>
-											</td>
-											<td>
-												<input class="tongtrongluongCourier" type="text" readonly>
-											</td>
-											<td class="remove">
-												<input type="button" value="Xóa" disabled>
-											</td>
-										</tr>
-										<tr class="table-tong-cong">
-											<td colspan="3">
-												<input type="number" readonly placeholder="Tổng Cộng">
-											</td>
-											<td>
-												<input class="SUM_soluong" type="text" readonly>
-											</td>
-											<td>
-												<input class="SUM_trongluong" type="text" readonly>
-											</td>
-											<td>
-												<input class="SUM_tongthetich" type="text" readonly>
-											</td>
-											<td>
-												<input class="SUM_tongtrongluong" type="text" readonly>
-											</td>
-											<td>
-												<input class="SUM_trongluongtinhcuocAir" type="text" readonly>
-											</td>
-											<td>
-												<input class="SUM_trongluongtinhcuocCourier" type="text" readonly>
-											</td>
-											<td>
-												<input type="text" readonly>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<div class="form-row">
+							<div class="form-row d-none">
 								<div class="form-group col-md-4">
 									<label>Dài Rộng Cao ( Bị Ẩn )</label>
 									<textarea class="small box-hiden-dai-rong-cao" name="" placeholder="Dài x Rộng x Cao" readonly></textarea>
